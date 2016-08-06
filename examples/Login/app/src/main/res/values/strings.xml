@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Login</string>
+
+    <string name="username">User Name:</string>
+    <string name="password">Password:</string>
+
+    <string name="login">Sign In</string>
+
+    <string name="prompt_username">username</string>
+    <string name="prompt_password">password</string>
+
+    <string name="hellworld">LOGIN OR REGISTER</string>
+</resources>

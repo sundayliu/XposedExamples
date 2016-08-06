@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sundayliu.demo.login.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_helloworld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/hellworld" />
+
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_username"
+            android:layout_below="@id/tv_helloworld"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_username"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:hint="@string/prompt_password"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"/>
+
+
+</RelativeLayout>
