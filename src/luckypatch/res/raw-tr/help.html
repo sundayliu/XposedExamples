@@ -1,0 +1,74 @@
+﻿<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color:#ffffff">
+<b style="color:#ff0000">Yamanın çalışması için root erişimi gerekli!</b><br/><br/>
+<b>Çeşitlerin açıklaması:</b><br/>
+-----------------<br/>
+<b style="color:#36ff00">Yeşil</b> - Bu programlara kayıt olmak için büyük şansınız var;<br/>
+<b style="color:#fffc00">Sarı</b> - Bu programın özel yaması /sdcard/LuckyPatcher/ klasöründe mevcut;<br/>
+<b style="color:#00f0ff">Mavi</b> - Bu programlarda Google reklamları var;<br/>
+<b style="color:#fc00ff">Mor</b> - Bu programlar Önyükleme listesinde var;<br/>
+<b style="color:#ff0000">İmkansız</b> - Bu programlara kayıtlı olmak için hiç şansınız yok. Bu programlar 2 parçası olur  (Uygulama ve Pro anahtar). Bu gibi durumlarda her iki ve ya bir uygulamaya yama yapılıyor.;<br/>
+<b style="color:#ff9c00">Turuncu</b> - Sistemi Uygulaması . Onlarla herhangi bir işlem yaparken çok dikkatli olun , bu uygulama veya işletim sistemi için çok kötü bir şekilde bitebilir .;<br/>
+
+<b>Önyükleme listesi</b> - a list of programs that will patch the boot device. At this point, it use only for Applications requiring the correction of libraries ".so". But custom patches do not exist, except for the old Titanium backup, which is no longer in use;<br/>
+<br/>
+<b style="color:#36ff00">Yonca</b> - bu uygulamalarda yamalı değişiklikler yapılmış;<br/>
+<b style="color:#fffc00">Yıldız</b> - means that dalvik-cache applications has been fixed(ODEX with Changes created), and this in turn means that the application will remain in its current state until the first update, or delete an application. If such ODEX removed with "Remove ODEX with Changes", then the Application will be fully restored to the state before the patch. When you update an application, problems can arise: the market will swear that he had not enough space, run Lucky Patcher and close and try again to install the application, if such an error is written to the uninstalled application select the settings Luckypatcher "Troubleshooting->Remove fixes and backups (to update app)" - all fixes dalvik-cache for all programs will be removed;<br/><br/>
+<b>Context Menu:</b><br/>
+-----------------<br/>
+<b>Lisans kontrolünü kapat (Otomatik mod!)</b> - <em> Lisans kontrolü kaldırma girişimleri. Uygulama maksimum stabilite sağlamak için Şablonların küçük bir kısmı kullanılır.</em><br/>
+<b>Lisans kontrolünü kapat (Otomatik mod! (Ters))</b> - <em> "Otomatik mod!" üzerinde bir kaç değişiklik yapıldı. Eğer "Otomatik mod!" Size yardımcı olmazsa bunu deneyin.</em><br/>
+<b>Lisans kontrolünü kapat (Extreme Auto mode!)</b> - <em>Attempts to remove license check. Used all Templates. The application is unstable. Most errors offline.</em><br/>
+<b>Lisans kontrolünü kapat (Manuel)</b> - <em>Attempts to remove license check. Removes the license for brute force.</em><br/>
+<b>Lisans kontrolünü kapat (Selected Patterns)</b> - <em>You can select a group of templates that must be applied.</em><br/>
+<b>Google reklamlarını kaldır!</b> - <em>Attempts to remove Google Ads. Sometimes it removes Ads from Applications in which have been not found Tags of Advertising (with status Not found!)</em><br/>
+<b>Remove ODEX with Changes</b> - <em>Removes ODEX file containing the changes. Thus Restoring to original status of Applications.</em><br/>
+<b>Change Permissions</b> - <em>Removes Permissions of Application.Be very careful doing this. Since the on some devices, this method can lead to a circular reboot or other undesirable consequences. Make a backup system before you try to disable permission.</em><br/>
+<b>Modifiyeli uygulama oluştur</b> - <em>Creates an installation package apk on the basis of the available patches. You should know that a rebuild apk-file is not the same as the patch is already installed application. Since the as opposed to simply patch the application is very easy to test yourself to changes, and thus work correctly so faly The install will not.</em><br/>
+<b>Patch on Reboot</b> - <em>At this point, it use only for Applications requiring the correction of libraries ".so". But custom patches do not exist, except for the old Titanium backup, which is no longer in use. Works very unstable. It is desirable to add no more than one custom patch. If its use is necessary, it will be written in a custom patch.</em><br/>
+<b>Manuel Yama!</b> - <em>Patcher to debug the Application.</em><br/>
+<b>Backup!</b> - <em>Backup apk-file for Restore Application. Apk save to /sdcard/LuckyPatcher/Backup/.</em><br/>
+<b>Restore!</b> - <em>Restore Application from apk-file in /sdcard/LuckyPatcher/Backup/.</em><br/><br/><br>
+<b>Copy Changes to dalvik-cache!</b> - <em>In the default mode, all changes remain odex-file. Some odex files not work to the application (for example when an application is moved to externalSD). Then the Copying in the dalvik-cache can help. But you can restore the application, if is only reinstall it.</em><br/>
+<b>Backup apk file for reinstall!</b> - <em>Copy apkfile to sdcard in the Data Folder of Lucky Patcher. You can reinstall (for Restore) this Application from this apk.</em><br/>
+<b>Delete dalvik-cache!</b> - <em>After creating the odex-file deletes dalvik-cache of this Application to save space. If the application does not work with odex, will have to reinstall this Application.</em><br/><br/>
+<b>Talimatlar:</b><br/>
+--------------<br/>
+
+<b>For Remove License Verification:</b><br/>
+- Use as target only original apk files signed by the developer;<br/>
+- Tap to Software and select "Remove License Verification!";<br/>
+- Select "Auto mode" and test Application with Internet;<br/>
+- If the result is negative, Select "Auto mode!(Inverse)" or "Extreme Auto mode";<br/>
+- If you're lucky, your program will be registered;<br/>
+- To return Application to its original state, you need to tap "Remove ODEX with Changes" or "Restore".<br/>
+<br/>
+<b>Google reklamların kaldırmak için:</b><br/>
+- Uygulamaya ardından "Google reklamları kaldır!"-a tıklayın;<br/>
+- Run and test Application with Internet;<br/>
+- If you're lucky, Google Ads disappeared;<br/>
+- To return Application to its original state, you need to tap "Remove ODEX with Changes" or "Restore".<br/>
+<br/>
+<b>For Custom Patch:</b><br/>
+- Tap to Software and select "Custom Patch!";<br/>
+- Run and test Application with Internet;<br/>
+- If you're lucky, patch work;<br/>
+- To return Application to its original state, you need to tap "Remove ODEX with Changes" or "Restore".<br/>
+<br/>
+<b>For Change Permissions:</b><br/>
+- Tap to Software and select "Change Permissions";<br/>
+- Tap to Permission for disable <em style="color:#ff0000">(red)</em>;<br/>
+- Tap to Permission for enable <em style="color:#36ff00">(green)</em>;<br/>
+- You must tap Apply (Reboot).<br/>
+<br/>
+<b>For Create Modified APK:</b><br/>
+- Tap to Software and select "Create Modified APK";<br/>
+- Select Patch for Modification of APK;<br/>
+- Modified installation file will be in folder /sdcard/LuckPatcher/Modified/  ;<br/>
+- You should know that a rebuild apk-file is not the same as the patch is already installed application. Since the as opposed to simply patch the application is very easy to test yourself to changes, and thus work correctly so faly The install will not.<br/>
+<br/>
+
+<b>PS: Patcher closes the application, when makes patches. This is necessary so that the new changes earned. But sometimes you may need to restart the device itself or use a third-party tools to kill the process of Applications.</b>
+</body>
+
+
+

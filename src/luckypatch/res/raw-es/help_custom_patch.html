@@ -1,0 +1,123 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+</head>
+
+<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color:#ffffff">
+
+El parche debe tener el mismo nombre que el APK en cuestión (Respetando mayúsculas y minúsculas).<br/>
+Si el archivo es un parche específico que ya existe, simplemente tienes que agregar al inicio del nombre del archivo y guardarlo cerca del existente.<br/>
+Si quieres escribir un parche para una serie de programas en uno solo, entonces al final del nombre del parche  puedes usar _%25ALL%25, por ejemplo:  el nombre del parche para todas las voces de SVOX se ve así: com.svox.classic.langpack_%25ALL%25.txt. En el cual el texto_%25ALL%25 remplaza parte del nombre del archivo, lo cuál varía dependiendo de la aplicación.
+No utilices caracteres o formatos especiales en el parche. (Sólo espacios sencillos)<br/>
+Para buscar patrones de bytes utiliza IDA Pro 6.1. Puede abrir el dalvik-cache, odex, bibliotecas y classes.dex.<br/>
+Si quieres parchar el dalvik-cache ó el odex, no olvides que los bytes de datos pueden variar en las diferentes versiones de firmware. Y tampoco olvides que los bytes no coinciden en todas las classes.dex, dalvik-cache y odex. En este caso lo verás si abres el classes.dex y el odex-file con IDA Pro.<br/>
+<br/>
+[BEGIN]<br/>
+&lt;Comentarios del parche que son visibles para el usuario antes de aplicarlo&gt;<br/>
+Parchado por XYZ Pro 5.0.5<br/>
+<br/>
+[PACKAGE]<br/>
+&lt;Descomprime el classes.dex y aplica todos los parches de [CLASSES] a él. Y genera, basado en los classes.dex, odex-file modificados.&gt;<br/>
+<br/>
+[CLASSES]<br/>
+&lt;Patrón Buscar/Remplazar classes.dex (Ver abajo)&gt;<br/>
+{"search":"63 R00 R01 R02 38 00 04 00 12 10 0F 00"}<br/>
+{"original":"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced":"12 00 6A W00 W01 W02 00 00 12 00 0F 00"}<br/>
+<br/>
+[LIB]<br/>
+&lt;Patrón Buscar/Remplazar nombre nativo de las bibliotecas(Ver abajo)&gt; <br/>
+{"name":"libtitanium.so"}<br/>
+{"original":"00 ** 50 e2"}<br/>
+{"replaced":"00 00 50 e1"}<br/>
+<br/>
+[OTHER FILES]<br/>
+&lt;Patrón Buscar/Remplazar Otros archivos con otros nombres en /data/data/Package_Target_APK/ (Ver abajo)&gt;<br/>
+{"name":"/files/shell.dex"}<br/>
+{"original":"0F 00 00 00 1A 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+{"replaced":"0F 00 00 00 0F 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+<br/>
+[ADD-BOOT]<br/>
+&lt;Agrega automáticamente el parche a la lista de arranque del usuario. Debe ser usado en la biblioteca del parche (o en el parche [CLASSES] sin [ODEX] o sin [PACKAGE])&gt;<br/>
+<br/>
+[END]<br/>
+&lt;Comentarios del parche que serán mostrados después de aplicarlo&gt;<br/>
+Felicidades! Programa crackeado!<br/>
+<br/>
+“search” – Permite buscar un patrón de bytes y guardarlo en posiciones específicas.<br/>
+{"search":"<b style="color:#36ff00">63 </b><b style="color:#fffc00">R00 R01 R02 </b><b style="color:#36ff00">38 00 04 00 12 10 0F 00</b>"}<br/>
+En éste ejemplo los bytes en verde enmascaran tu patrón, mientras los bytes en amarillo etiquetados R00 -> R02 se almacenarán.<br/>
+Los bytes almacenados deben seguir un orden R00, R01, R02, R03… <br/>
+Los bytes guardados no pueden repetirse.<br/>
+<br/>
+“original” – Este es una máscara de patrón utilizada para encontrar el offset donde el parche será aplicado.<br/>
+{"original":"<b style="color:#36ff00">63 </b><b style="color:#fffc00">?? ?? ?? </b><b style="color:#36ff00">38 00 04 00 12 10 0F 00</b>"}<br/>
+En este caso, los bytes en verde enmascaran tu patrón, mientras que los bytes en amarillo son comodines (??, **)<br/>
+“replaced” – Esto seguirá un estado “original” , esto es lo que el offset será sobreescrito.	<br/>
+{"replaced":"<b style="color:#36ff00">12 00 6A </b><b style="color:#fffc00">W00 W01 W02 </b><b style="color:#36ff00">00 00 12 00 0F 00</b>"}<br/>
+En éste ejemplo, los bytes en verde sobreescribirán la ubicación del destino.. los bytes en amarillo se amacenan para ser ejecutados previamente “search”<br/>
+“name” – Ésto es usado para ubicar una biblioteca específica por nombre (Ver abajo en [LIB]) <br/>
+<br/>
+
+[LIB-ARMEABI],[LIB-ARMEABI-V7A],[LIB-MIPS] o [LIB-X86] - para bibliotecas desde /lib/armeabi/, /lib/armeabi-v7a/, /lib/mips/, /lib/x86/. <br/>
+<br/>
+[ODEX-PATCH] - Usado por el parche que ya tiene odex creado. Por ejemplo, una aplicación ha sido parchado con el modo automático por Remover verificación de licencias, pero necesitas hacer cambios adicionales utilizando un parche específico.  Si utilizamos un simple [PACKAGE]-[CLASSES], [ODEX] o [CLASSES]-[ODEX], el archivo odex será creado sin cambios y luego será parchado. <br/>Ejemplo:<br/>
+<br/>
+[BEGIN]<br/>
+[ODEX-PATCH]<br/>
+{"original":"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced":"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/>
+[END]<br/>
+¡Felicidades! ODEX modificado!<br/>
+<br/>
+[CLASSES] sin [PACKAGE] - Parcha el dalvik-cache de las aplicaciones. No olvides que el sistema periodicamente actualiza el dalvik-cache de las aplicaciones y todos los cambios desaparecerán. Por lo tanto, debemos agregar [ADD-BOOT]. Parchar el dalvik-cache desactualizado, es poco fiable. Pero necesita el ROM Toolbox, que encontró el odex-file y se comporta erráticamente.
+<br/>Ejemplo:<br/>
+<br/>
+[BEGIN]<br/>
+[CLASSES]<br/>
+{"original":"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced":"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/>
+[ADD-BOOT]<br/>
+[END]<br/>
+¡Felcidades!<br/>
+<br/>
+[ODEX] - Copia el dalvik-cache en /data/app/ y renómbralo a odex-file, entonces todos los serán aplicados al odex-file. El Checksums del odex incorrecto, puede no superar la inspección, diferente al odex-file creado [PACKAGE] - [CLASSES].
+<br/>Ejemplo:<br/>
+<br/>
+[BEGIN]<br/>
+[ODEX]<br/>
+{"original":"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced":"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/>
+[END]<br/>
+¡Felicidades!<br/>
+<br/>
+[CLASSES]-[ODEX] - Parcha el dalvik-cache y luego copia el dalvik-cache en /data/app/ y renómbralo a odex-file. Checksums del odex y del dalvik-cache incorrecto, puede no superar la inspección, diferente al odex-file creado [PACKAGE] - [CLASSES].
+<br/>Ejemplo:<br/>
+<br/>
+[BEGIN]<br/>
+[CLASSES]<br/>
+{"original":"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced":"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/>
+[ODEX]<br/>
+[END]<br/>
+¡Felicidades!<br/>
+<br/>
+[SQLITE] - A veces el objetivo de la aplicación puede cambar en algo del database, entonces vendrá a ayudar esta posibilidad:
+<br/>Ejemplo:<br/>
+<br/>
+[BEGIN]<br/>
+Reiniciar periodo de prueba<br/>
+[SQLITE]<br/>
+{"database":"/data/data/com.package.megaapp/databases/settings.db"}<br/>
+{"execute":"DELETE FROM table_settings WHERE name = 'SETTING__LIC'"}<br/>
+{"execute":"UPDATE table_settings SET UsedDays=0 WHERE name='Trial_set'"}<br/>
+[END]<br/>
+¡Felicidades! Tienes un nuevo periodo de prueba<br/>
+<br/>
+database - parcha el database en el dispositivo.<br/>
+execute - SQLite query.<br/>
+</body>
+
+</html>

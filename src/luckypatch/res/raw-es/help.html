@@ -1,0 +1,73 @@
+﻿<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color:#ffffff">
+<b style="color:#ff0000">Este programa necesita acceso a la raíz para funcionar (Tu dispositivo debe estar rooteado)</b><br/><br/>
+<b>Descripción:</b><br/>
+-----------------<br/>
+<b style="color:#36ff00">Verde</b> - Esta aplicación tiene gran probabilidad de ser registrado;<br/>
+<b style="color:#fffc00">Amarillo</b> - Existe un Parche Específico para esta aplicación en la carpeta /sdcard/LuckyPatcher/;<br/>
+<b style="color:#00f0ff">Azul</b> - Esta aplicación tiene Anuncios (Google Ads);<br/>
+<b style="color:#fc00ff">Violeta</b> - Esta aplicación está en la Lista de Arranque;<br/>
+<b style="color:#ff0000">Rojo</b> - Esta aplicación no se puede registrar. A excepción de que el programa se componga de dos partes (Aplicación principal y Aplicación de registro -APK Pro Key-), en cuyo caso, debes aplicar el parche a ambas aplicaciones, no sólo a la principal.;<br/>
+<b style="color:#ff9c00">Naranja</b> - Aplicación del Sistema. Ten mucho cuidado al realizar cualquier operación con ella, puede resultar perjudicial para la aplicación o el sistema operativo.;<br/>
+
+<b>Lista de Arranque</b> - Contiene la lista de programas que serán parchados cuándo el dispositivo inicie. Se utiliza sólo para aplicaciones que necesitan correción de bibliotecas ".so", pero que no existe un parche específico para las mismas; exceptuando versiones antiguas de Titanium backup, en las que no puede utilizarse;<br/>
+<br/>
+<b style="color:#fffc00">Estrella</b> - Indica que el dalvik-cache de la aplicación ha sido corregido (ODEX con cambios creados). Esto significa que la aplicación se mantendrá en su estado actual hasta que sea actualizada o eliminada. El ODEX puede ser removido con la opción "Remover ODEX con cambios". Ésto restaurará la aplicación a su estado original como antes de ser parchada. Cuando actualizas una aplicación puede surgir el siguiente problema: Google Play notificará que no queda espacio suficiente, para solucionarlo ejecuta Lucky Patcher, luego cierra  y vuelve a intentar instalar la aplicación, Si ese mismo error persiste o aparece al momento de desinstalar la aplicación selecciona en las configuraciones de Luckypatcher "Solución de problemas->Eliminar correciones y copias de seguridad (Para actualizar la App)" - Esto eliminará todas las correcciones del dalvik-cache que habían sido realizadas;<br/><br/>
+<b>Context Menu:</b><br/>
+-----------------<br/>
+<b>Remover la verificación de licencias (Modo automático)</b> - <em>Intenta eliminar la verificación de licencia por parte de Google Play. Utiliza una pequeña parte de las plantillas para asegurar la máxima estabilidad de la aplicación</em><br/>
+<b>Remover la verificación de licencias (Modo automático Inverso)</b> - <em> Existen alguna diferencias respecto al "Modo Automático". Puede ayudar en caso de que ayude el "Modo Automático".</em><br/>
+<b>Remover la verificación de licencias (Modo Automático Extremo)</b> - <em>Intenta elimar la verificación de la licencia utilizando todas las plantillas. La aplicación puede volverse inestable. La mayoría son errores de conexión.</em><br/>
+<b>Remover la verificación de licencias (Modo Manual)</b> - <em>. Remueve la licencia por fuerza bruta.</em><br/>
+<b>Remover la verificación de licencias (Seleccionando Patrones)</b> - <em>Puedes seleccionar el grupo de plantillas a modificar.</em><br/>
+<b>Remove Anuncios (Google Ads!)</b> - <em>Intenta remover los anuncios (Google Ads). Algunas veces al remover los anuncios, la aplicación puede mostrar una leyenda diciendo que el anuncio no ha sido encontrado (Not found!)</em><br/>
+<b>Remover ODEX con Cambios</b> - <em>Remueve el archivo  ODEX manteniendo los cambios. Restaurando así el estado original de las aplicaciones.</em><br/>
+<b>Modificar Permisos</b> - <em>Remueve los Permisos de acceso de las Aplicaciones. Ten mucho cuidado al modificar estos permisos. Puede producir ciclos de reinicios contínuos u otras desagradables consecuencias. Asegurate de hacer un resplando del sistema antes de eliminar permisos.</em><br/>
+<b>Crear un APK modificado</b> - <em>Crea un Paquete de Instalación APK en base a los parches aplicados. Debes saber que el archivo creado no contiene los parches aplicados . Dado que parchar una aplicación es muy fácil para probar tu mismo los cambios.</em><br/>
+<b>Parchar al reiniciar</b> - <em>Utilizalo sólo para aplicaciones que necesitan correción de bibliotecas ".so", en las que no existe un parche específico para las mismas; exceptuando versiones antiguas de Titanium backup, en las que no puede utilizarse. Trabaja muy inestable. Es recomendable no aplicar más de un Parche Específico por aplicación. Si fuera necesario, se escribirá uno.</em><br/>
+<b>Parchar manualmente</b> - <em>Parcha la aplicación para depurarla.</em><br/>
+<b>Copia de seguridad!</b> - <em>Crea una copia de respaldo (apk) para poder resturar la aplicación. El archivo Apk se guarda en /sdcard/LuckyPatcher/Backup/.</em><br/>
+<b>Restaurar!</b> - <em>Restaura la aplicación desde la carpeta /sdcard/LuckyPatcher/Backup/.</em><br/><br/><br>
+<b>Copiar cambios al dalvik-cache!</b> - <em>En el modo por defecto, todos los cambios permanecen en el odex-file. Algunos odex-file no trabajan para la aplicación (Cuando una aplicación es movida a la SD). Entonces copiar el dalvik-cache puede ayudar. Pero puede restaurar la aplicación sólo reinstándola.</em><br/>
+<b>Respaldar en archivo apk para reinstalar!</b> - <em>Copia el archivo apk a la microSD (sdcard) dentro de la carpeta Data del Lucky Patcher. Puedes reinstalar (Restaurar) esta aplicación desde el archivo apk.</em><br/>
+<b>Borar dalvik-cache!</b> - <em>Después de crear el odex-file borra el dalvik-cache de esta aplicación para ahorrar espacio. Si la aplicación no trabaja con odex, tendrás que reinstalarla.</em><br/><br/>
+<b>Instrucciones:</b><br/>
+--------------<br/>
+
+<b>Para remover la verificación de licencias:</b><br/>
+- Se usa en archivos apk originales firmados por el desarrollador;<br/>
+- Manten presionado sobre la aplicación y selecciona "Remover la verificación de licencias";<br/>
+- Selecciona "Modo automático" y prueba la aplicación con acceso a internet;<br/>
+- Si no funcionó, selecciona "Modo Automático Inverso" o "Modo Automático Extremo";<br/>
+- Si tienes suerte, el programa será registrado;<br/>
+- Para regresar la aplicación a su estado original, necesitas presionar "Remover ODEX con cambios" o "Restaurar".<br/>
+<br/>
+<b>Para remover los anuncios (Google Ads):</b><br/>
+- Manten presionado sobre la aplicación y selecciona "Remover anuncios (Google Ads)";<br/>
+- Ejecuta y prueba la aplicación con Internet;<br/>
+- Si tienes suerte, los anuncios ya no aparecerán;<br/>
+- Para regresar la aplicación a su estado original, necesitas presionar "Remover ODEX con cambios" o "Restaurar".<br/>
+<br/>
+<b>Para aplicar un parche específico:</b><br/>
+- Mantén presionado sobre la aplicación y selecciona "Parche específico!";<br/>
+- Ejecuta y prueba la aplicación con internet;<br/>
+- Si tienes suerte, el parche funcionará;<br/>
+- Para regresar la aplicación a si estado original, debes presionar "Remover ODEX con cambios" o "Restaurar".<br/>
+<br/>
+<b>Para cambiar permisos:</b><br/>
+- Presiona en el Software y selecciona "Cambiar permisos";<br/>
+- Presiona permisos para desactivar <em style="color:#ff0000">(rojo)</em>;<br/>
+- Presiona permisos para activar <em style="color:#36ff00">(verde)</em>;<br/>
+- Debes presionar Aplicar (Reiniciar).<br/>
+<br/>
+<b>Para crear un APK modificado:</b><br/>
+- Presiona el Software y selecciona "Crear APK modificado";<br/>
+- Selecciona el parche para modificar el APK;<br/>
+- El archivo de instalación modificado se guardará en la carpeta /sdcard/LuckPatcher/Modified/  ;<br/>
+- Debes saber que el archivo creado no contiene los parches aplicados . Dado que parchar una aplicación es muy fácil para probar tu mismo los cambios.<br/>
+<br/>
+
+<b>PS: El parche provoca que la aplicación se cierre, al momento de aplicarse. Esto es necesario para que lo cambios sean aplicados. Pero aún así en ocasiones es necesario que reinicies el dispositivo o que finalices la aplicacion desde el administrador de aplicaciones.</b>
+</body>
+
+
+

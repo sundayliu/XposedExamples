@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Información de la aplicación</string>
+    <string name="P_not_found">"Error: No se encontraron los archivos necesarios!
+Verifica la ubicación del dalvik-cache para corregir problemas!
+Por defecto: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Resultados</string>
+    <string name="Yes">Si</string>
+    <string name="aboutlp">LuckyPatcher es una aplicación para parchar otras aplicaciones de forma manual o automática. La intención es modificar aplicaciones instaladas. Permite cambiar permisos de las aplicaciones, aplicar parches específicos y varios tipos de parches automáticos. Espero te sea útil.</string>
+    <string name="aboutmenu">Acerca de</string>
+    <string name="abouttitle">Acerca de Lucky Patcher by ChelpuS</string>
+    <string name="activity_ads_descr">Acción de la aplicación. Contiene publicidad.</string>
+    <string name="activity_descr">Acción de la aplicación. Destino desconocido.</string>
+    <string name="additinfo">Información adicional:</string>
+    <string name="adsdescr">Muestra todas las aplicaciones con Google Ads.</string>
+    <string name="adstitle">App con Anuncios</string>
+    <string name="advanced_menu">Abrir menú de Parches</string>
+    <string name="allchanges">Todos los cambios corregidos en ODEX!</string>
+    <string name="apk_create_option">Nombre del archivo Apk compilado</string>
+    <string name="apkdescr">Cuando creas un archivo Apk basado en otros parches, puedes darle el nombre del Paquete de la aplicación.</string>
+    <string name="apklabel">Etiqueta de la aplicación</string>
+    <string name="apkpackage">Paquete de la aplicación</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="backbutton">Respaldar</string>
+    <string name="backup_done">"APK respaldado a
+"</string>
+    <string name="bootview">Lista de Arranque</string>
+    <string name="cleardalvik">Limpiar dalvik-cache y reiniciar</string>
+    <string name="cleardata">Eliminar datos</string>
+    <string name="context_automodeslvl">Modos Automáticos!</string>
+    <string name="context_crt_apk_permission">Apk con permisos y acciones cambiadas!</string>
+    <string name="context_hard_apk_permission">"Cambiar permisos
+Conservar firma original"</string>
+    <string name="context_safe_apk_permission">"Cambiar permisos y acciones
+Recontruir e instalar"</string>
+    <string name="contextads">Remover Anuncios (Google Ads)</string>
+    <string name="contextboot">"Parchar al reiniciar
+(Produce más fallos, útil sólo para parchar bibliotecas)"</string>
+    <string name="contextbootads">Remover Anuncios (Google Ads)</string>
+    <string name="contextbootcustom">Parche específico</string>
+    <string name="contextbootlvl">Remover la verificación de licencias</string>
+    <string name="contextcustompatch">Parche específico</string>
+    <string name="contextdeodex">"Remover ODEX con cambios
+(Restaurar la aplicación)"</string>
+    <string name="contextextpatch">Manual</string>
+    <string name="contextfix">Corregir cambios del dalvik-cache</string>
+    <string name="contextignore">Remover verificación de licencias</string>
+    <string name="contextlaunchapp">Abrir Aplicación</string>
+    <string name="contextlivepatch">Parche manual</string>
+    <string name="contextodex">Aplicar correción del Dalvik-cache</string>
+    <string name="contextpatt1">Cambiar correción del validador de Licencias</string>
+    <string name="contextpatt1_descr">Si se encuentra, durante la primera ejecución de la aplicación activa el internet . Este frupo de parches realiza menos cambios.</string>
+    <string name="contextpatt2">Corregir de licencia en caché (Correción de internet)</string>
+    <string name="contextpatt2_descr">Si se encuentra, trabajará sin internet.</string>
+    <string name="contextpatt3">Corregir de respuesta del código de verificación</string>
+    <string name="contextpatt3_descr">Mini-correciones para la verificación de licensias.</string>
+    <string name="contextpatt4">Reemplazar el código de respuesta</string>
+    <string name="contextpatt4_descr">Inestable, pero muy efectivo. Si se encuentra, cuándo la aplicación inicie por primera vez, activa el internet. Este tipo de aplicaciones realiza muchos cambios.</string>
+    <string name="contextpatt5">Verficación final de licencias</string>
+    <string name="contextpatt5_descr">Plantillas para la Verificación final de licencias. Si el parche funciona bien, entonces la aplicación debe funcionar sin internet.</string>
+    <string name="contextpatt6">Verficación final de licencias (Inverso)</string>
+    <string name="contextpatt6_descr">Si no funcionó\"Verificación Final de Licencias\", puedes intentar con esos parches.</string>
+    <string name="contextpattads1">Redimensionar los anuncios a un tamaño pequeño</string>
+    <string name="contextpattads1_descr">Tratando de redimensionar los anuncios a un tamaño más pequeño.</string>
+    <string name="contextpattads2">Redimensionar los anuncios a nada</string>
+    <string name="contextpattads2_descr">Intentando redimensionar el tamaño de los anuncios a nada</string>
+    <string name="contextpattads3">Destruir los anuncios de Google</string>
+    <string name="contextpattads3_descr">Intentando romper el mecanismo de obtención de anuncios (Google Ads).</string>
+    <string name="contextpattads4">Otros parches</string>
+    <string name="contextpattads4_descr">Otros parches que pueden ayudar a remover los anuncios.</string>
+    <string name="contextpattlvl1">Modo Automático!</string>
+    <string name="contextpattlvl1_descr">Número mínimo de parches. Adecuado para la mayoría de las aplicaciones con protección simple.</string>
+    <string name="contextpattlvl2">Modo Automático Inverso</string>
+    <string name="contextpattlvl2_descr">Tiene algunas diferencias al \"Modo Automático !\". Puede ser útil si el \"Modo Automático \" no funcionó.</string>
+    <string name="contextpattlvl3">Otros parches (Modo Extremo)!</string>
+    <string name="contextpattlvl3_descr">Parches adicionales (No estables).Aplicar sólo si las otras variantes no funcionan. Lo m´pas probable es que sólo funcione con internet, pero hay excepciones. Lo mejor es usarlo junto con \"Modo automático\" o \"Modo automático Inverso\".</string>
+    <string name="contextpattlvl4">Aplicar parche a dalvik-cache!</string>
+    <string name="contextpattlvl4_descr">En el modo por defecto, todos los cambios se mantienen en el odex-file. Algunos archivos odex no trabajan en algunas situaciones (Por ejemplo cuando la aplicación ha sido movida a la tarjeta de memoria). Entonces puede ayudar aplicar el parche al dalvik-cache. Pero puedes restaurar la aplicación, sólo reinstalándola.</string>
+    <string name="contextpattlvl5">Respalda en APK para reinstalar!</string>
+    <string name="contextpattlvl5_descr">Copia el APK a la tarje de memoria en la carpeta Data de Lucky Patcher. Puedes reinstalar (Restaurar) la aplicación desde el apk.</string>
+    <string name="contextpattlvl6">Borrar dalvik-cache!</string>
+    <string name="contextpattlvl6_descr">Después de crear el odex-file borra el dalvik cache de esta aplicación para ahorrar espacio. Si la aplicación no trabaja con odex, deberás reinstalarla.</string>
+    <string name="contextrestore">Restaurar</string>
+    <string name="contextselpatt">Seleccionar patrones</string>
+    <string name="copyright">Copyright ©2011, ChelpuS</string>
+    <string name="create_perm_ok">Reconstruir aplicación!</string>
+    <string name="createapk">Crear archivo Apk modificado</string>
+    <string name="createapkads">Apk con Anuncios (Google Ads) removidos</string>
+    <string name="createapkcustom">Apk modificado por un parche específico</string>
+    <string name="createapklvl">Apk con verificación de licencia removida</string>
+    <string name="createapklvlautoinverse">"Apk con verificación de licencia removida
+(Modo Automático ~Inverso~)"</string>
+    <string name="createapklvlextreme">"Apk con verificación de licencia removida
+(Modo Automático Extremo)"</string>
+    <string name="createdialog1">Reconstruir</string>
+    <string name="createdialog2">"Completado:
+
+Archivo de instalación guardado en la carpeta:"</string>
+    <string name="createdialog3">"
+
+Recuerda que aunque la aplicación está funcionando con el parche, ésto no significa que funcionará de la misma manera el Apk modificado, ya que si la aplicación nota la modificación no funcionará."</string>
+    <string name="createdialog4">- Error...</string>
+    <string name="createdialog5">Nombre del archivo:</string>
+    <string name="custom_descript">Descripción del parche específico:</string>
+    <string name="custom_sel_app">Aplicación seleccionada:</string>
+    <string name="customdescr">Muestra todas las aplicaciones con Parche específico.</string>
+    <string name="customtitle">App con parche específico</string>
+    <string name="default_target">Ahora el objetivo es Dalvik Cache.</string>
+    <string name="delboot">Presiona para eliminar de la lista de arranque</string>
+    <string name="dialog_system">Ésta es una aplicación del sistema. Ten mucho cuidado cuando realices acciones con ella, puede ser muy perjudicial para la aplicación o el sistema operativo. ¿Estás segudo que quieres trabajar con esta aplicación?</string>
+    <string name="dir_change">Mover Directorio</string>
+    <string name="dir_change_descr">"Cambiar directorio en sdcard por datos propios de Lucky Patcher. Por defecto es 
+/LuckyPatcher"</string>
+    <string name="dirr_chg">Directorio cambiado a:</string>
+    <string name="dontusepatch">Cancelar</string>
+    <string name="empty">Vacío</string>
+    <string name="equals_version">Ya tienes la última versión de Lucky Patcher...</string>
+    <string name="extpat1">Encontrado</string>
+    <string name="extpat2">Objetos similares a Licencia:</string>
+    <string name="extpat3">"Instrucciones:
+--------------
+-Presiona \"Respaldar\";
+-Activa WiFi y permite todo el tráfico de datos;
+-Presiona sobre el objeto para seleccionarlo\"Parche\";
+-Presiona \"Lanzar\" y verifica la Licencia del programa;
+-Si esto no te ayuda, presiona \"restaurar\" y repite el procedimiento con otro objeto.
+-Si todo esta bien, presiona Corregir cambios."</string>
+    <string name="extres1">"Objeto parchado
+-Presiona \"Abrir\" y verifica la licencia del programa;
+-si este objeto no ayuda, presiona\"Restaurar\" y repite el procedimiento con otro objeto."</string>
+    <string name="extres2">"No se encuentran etiquetas para este objeto
+¿Ya está parchado?!
+-Presiona \"Restaurar\" y selecciona otro objeto y presiónalo\"Parche\"."</string>
+    <string name="filter">Filtrar</string>
+    <string name="filterdescr">Selecciona la categoría para mostrar las aplicaciones.</string>
+    <string name="fixbutton">Corregir cambios</string>
+    <string name="fixeddescr">Muestra todas las aplicaciones con cambios corregidos (Estrella Amarilla).</string>
+    <string name="fixedtitle">Corrección de Dalvik-Cache (ODEX)</string>
+    <string name="goodresult">"% de Suerte
+Por favor prueba la aplicación para ver si funciona bien!
+
+Si presenta problemas o no funciona, por favor reinstala y ya no utilices el parche en esta versión."</string>
+    <string name="have_luck">"***********************
+
+La tienes"</string>
+    <string name="help">Ayuda</string>
+    <string name="help_common">General</string>
+    <string name="help_custom">Crear Parches específicos</string>
+    <string name="installsupersu">Instalar SuperSU (ICS)</string>
+    <string name="langdef">Idioma por defecto</string>
+    <string name="langen">Inglés</string>
+    <string name="langmenu">Idioma</string>
+    <string name="launchbutton">Abrir</string>
+    <string name="loadpkg">Cargando aplicaciones</string>
+    <string name="lvldescr">Muestra todas las aplicaciones con Verificación de licencia.</string>
+    <string name="lvltitle">App con LVL</string>
+    <string name="mpatcher_help">"Ayuda:
+
+ - Patrón para el hex original (longitud >3):
+ AA 1F ** 01 4C
+ ** - cualquier byte;
+
+ - Patrón para reemplazar el hex (longitud >3):
+ EA 2F ** ** **
+ ** - No cambia el byte;
+
+El número original de bytes y el número de bytes modificados debe ser el mismo;"</string>
+    <string name="new_version">Nueva versión de Lucky Patcher encontrada...</string>
+    <string name="no">No</string>
+    <string name="no_root">"No tienes acceso a la raíz! Debes tener acceso a la raíz (root) para continuar
+(Por favor actualiza Busybox o SuperUser)!
+Por favor instala SuperSu (\"Solución de Problemas-> Instala SuperSU (ICS)\") y actualiza los binarios."</string>
+    <string name="no_site">Actualización no encontrada</string>
+    <string name="nonedescr">Muestra todas las aplicaciones en las que no se encontró nada.</string>
+    <string name="nonetitle">Nada encontrado</string>
+    <string name="not_detect">"SDCard no encontrada!
+Funcionalidad limitada"</string>
+    <string name="ok">Ok</string>
+    <string name="or_hex_str">Hex-String Original :</string>
+    <string name="orientmenu">Orientación</string>
+    <string name="others">Otros</string>
+    <string name="patch_ok">Aplicar</string>
+    <string name="patchbutton">~Parchar~</string>
+    <string name="pattern1">Parche del patrón N1 - Correcto...</string>
+    <string name="pattern1_f">Parche del patrón N1 - Falló...</string>
+    <string name="pattern2">Parche del patrón N2 - Correcto...</string>
+    <string name="pattern2_f">Parche del patrón N2 - Falló...</string>
+    <string name="pattern3">Parche del patrón N3 - Correcto...</string>
+    <string name="pattern3_f">Parche del patrón N3 - Falló...</string>
+    <string name="pattern4">Parche del patrón N4 - Correcto...</string>
+    <string name="pattern4_f">Parche del patrón N4 - Falló...</string>
+    <string name="pattern5">Parche del patrón N5 - Correcto...</string>
+    <string name="pattern5_f">Parche del patrón N5 - Falló...</string>
+    <string name="pattern6">Parche del patrón N6 - Correcto...</string>
+    <string name="pattern6_f">Parche del patrón N6 - Falló...</string>
+    <string name="pattern7">Parche del patrón N7 - Correcto...</string>
+    <string name="pattern7_f">Parche del patrón N7 - Falló...</string>
+    <string name="perm_ok">Aplicar (Reiniciar)</string>
+    <string name="permission">Cambiar permisos</string>
+    <string name="permission_not_descr">No se encuentra descripción para éste permiso</string>
+    <string name="permission_not_found">Permisos no encontrados</string>
+    <string name="poorresult">"% de Suerte Parche incorrecto!
+Versión desconocida de LVL o el parche ya fué aplicado"</string>
+    <string name="punkt1">- Este programa necesita acceso a la raíz del dispositivo para funcionar</string>
+    <string name="remodex">Correción de Dalvik-cache removida</string>
+    <string name="removefixes">"Remover correciones y respaldos
+(Almacenamiento insuficiente)"</string>
+    <string name="rep_hex_str">Reemplazar Hex-String:</string>
+    <string name="restorebutton">Restaurar</string>
+    <string name="safe_perm_ok">Reconstruir e instalar!</string>
+    <string name="savebutton">Guardar objeto en un parche específico</string>
+    <string name="saved_object">Guardado en /sdcard/LuckyPatcher/ como un parche específico.</string>
+    <string name="sel_target">Seleccionar objetivo</string>
+    <string name="settings">Configuraciones</string>
+    <string name="sortbyname">Ordenar por nombre</string>
+    <string name="sortbystatus">Ordenar por estado</string>
+    <string name="sortmenu">Ordenar</string>
+    <string name="stat_boot_ads">Anuncios (Google Ads)</string>
+    <string name="stat_boot_custom">Parche específico</string>
+    <string name="stat_boot_lvl">Verificación de licencias de Google</string>
+    <string name="statads">Anuncios (Google Ads) encontrados!</string>
+    <string name="statappplace">Aplicación colocada:</string>
+    <string name="statbuild">Build:</string>
+    <string name="statcustom">Parche específico encontrado</string>
+    <string name="statdataplace">Datos colocados:</string>
+    <string name="statfix">Correciones aplicadas</string>
+    <string name="statlvl">Verificación de licencia encontrada</string>
+    <string name="statnotfix">No se corrigieron cambios</string>
+    <string name="statnotfound">No encontrado</string>
+    <string name="statnotsys">Aplicación de usuario</string>
+    <string name="statnull">No se encontraron parches</string>
+    <string name="statsys">Aplicación del sistema</string>
+    <string name="statuserid">ID de Usuario:</string>
+    <string name="statversion">Versión:</string>
+    <string name="sysdescr">Ten mucho cuidado con las acciones que realices a las aplicaciones del sistema. Haz un respaldo primero.</string>
+    <string name="systitle">Mostrar aplicaciones del sistema</string>
+    <string name="text_size">Tamaño de fuente</string>
+    <string name="title_upd">Mensaje</string>
+    <string name="truble">Solución de problemas</string>
+    <string name="uninstall">¿Seguro que deseas eliminar ésta aplicación?</string>
+    <string name="uninstallapp">Desinstalar aplicación</string>
+    <string name="update">Actualizar</string>
+    <string name="updatebusybox">Actualizar Busybox</string>
+    <string name="usepatch">Aplicar</string>
+    <string name="vers">Versión de Lucky Patcher</string>
+    <string name="viewlandscape">Modo apaisado</string>
+    <string name="viewlarge">Letra Grande</string>
+    <string name="viewmedium">Letra Normal</string>
+    <string name="viewmenu">Tamaño de Fuente</string>
+    <string name="viewportret">Modo retrato</string>
+    <string name="viewsmall">Letra Pequeña</string>
+    <string name="wait">Por favor espere</string>
+    <string name="warning">Advertencia</string>
+</resources>

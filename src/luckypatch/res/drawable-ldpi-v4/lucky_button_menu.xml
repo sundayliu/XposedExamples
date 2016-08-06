@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/pressed_menu" />
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:startColor="#ff0000ff" android:endColor="#ff000000" android:angle="270.0" />
+            <stroke android:width="5.0dip" android:color="#00ffffff" />
+            <corners android:radius="5.0dip" />
+            <padding android:left="10.0dip" android:top="20.0dip" android:right="10.0dip" android:bottom="20.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/menu" />
+</selector>

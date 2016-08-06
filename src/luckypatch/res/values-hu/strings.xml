@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Alkalmazás Info</string>
+    <string name="P_not_found">"Hiba: A programfájlok nem találhatók
+A megoldáshoz ellenőrizze helyüket a Dalvik-cache-ben!
+Alapért.: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Patch eredmények</string>
+    <string name="Yes">Igen</string>
+    <string name="aboutlp">A Lucky Patcher autom. és kézi patch-elő alkalmazás. Célja a telepített alkalmazások megváltoztatása. Meg lehet változtatni az alkalmazások engedélyeit, használhat egyéni javításokat, különböző típusú automatikus javításokat. Remélem, nagyon hasznos lesz az Ön számára.</string>
+    <string name="aboutmenu">Rólunk</string>
+    <string name="abouttitle">Lucky Patcher by ChelpuS</string>
+    <string name="activity_ads_descr">Alkalmazás tevékenység. reklámot tartalmaz.</string>
+    <string name="activity_descr">Alkalmazás tevékenység. Cél ismeretlen.</string>
+    <string name="additinfo">További információ:</string>
+    <string name="adsdescr">Minden Google reklámot tartalmazó app.</string>
+    <string name="adstitle">reklámos app.-ok</string>
+    <string name="advanced_menu">Patch-ek menüjének megnyitása</string>
+    <string name="allchanges">Az app minden változása igazodjon az ODEX-hez!</string>
+    <string name="apk_create_option">Az újrafordított apk-fájl neve</string>
+    <string name="apkdescr">Amikor létrehoz egy apk-fájlt a javítások alapján, az alkalmazásnak Cím vagy Csomagnevet adjon?</string>
+    <string name="apklabel">Címe a neve</string>
+    <string name="apkpackage">Csomagnév a neve</string>
+    <string name="app_name">Lucky Patcher HU</string>
+    <string name="app_not_found">Az alkalmazás nem található! Telepítse az alkalmazást és próbálja meg újra.</string>
+    <string name="backbutton">Bizt. mentés</string>
+    <string name="backup_done">"Apk bizt. mentése
+"</string>
+    <string name="backups_not_found">A mappához nem található biztonsági mentés:</string>
+    <string name="begin_changelog">A telepített verzió:</string>
+    <string name="bind_button">Új könyvtár a gyűjtőbe!</string>
+    <string name="bind_delete">El akarja távolítani ezt a könyvtár összerendelést?</string>
+    <string name="bind_dialog_button">Összefűzés</string>
+    <string name="bind_dialog_source">Forrásmappa adatokkal:</string>
+    <string name="bind_dialog_target">Csatolja fel a forrásmappát adatokkal:</string>
+    <string name="bind_error">Nincs adatmappa! Az eszközön nem található Data mappa.</string>
+    <string name="bind_source">Forrásmappa adatokkal:</string>
+    <string name="bind_target">Data felcsatolása:</string>
+    <string name="bootview">Boot-lista</string>
+    <string name="busybox_not_found">Figyelem: A Busybox nincs telepítve. Az LP nem tud megfelelően dolgozni.</string>
+    <string name="cleardalvik">Dalvik-cache törlése és Reboot</string>
+    <string name="cleardata">Adat törlése</string>
+    <string name="collect_logs">Naplók összegyűjtése...</string>
+    <string name="context_automodeslvl">Autom. módok!</string>
+    <string name="context_blockads">Reklám blokkolás</string>
+    <string name="context_clearhosts">Host fájlok törlése</string>
+    <string name="context_crt_apk_permission">Apk megváltozott engedélyekkel és tevékenységekkel!</string>
+    <string name="context_disableActivity">Reklámtevékenység letiltása</string>
+    <string name="context_hard_apk_permission">"Engedélyek módosítás
+Eredeti aláírás mentése"</string>
+    <string name="context_install">Telepít</string>
+    <string name="context_rebuild">Újraépít</string>
+    <string name="context_removeAds">Google reklám patch</string>
+    <string name="context_safe_apk_permission">"Engedélyek és tevékenységek megváltozatása!
+Újraépít és telepít"</string>
+    <string name="context_safe_sign_apk_permission">"Engedélyek és tevékenységek változtatása
+Eredeti aláírás mentése (Biztonságos módszer)"</string>
+    <string name="context_unblockads">Reklámok feloldása</string>
+    <string name="context_uninstall_if_installed">Eltávolít ha telepítve van</string>
+    <string name="contextads">Google reklám eltávolítása!</string>
+    <string name="contextboot">"Patch reboot alat
+(További hibák! Csak lib-ek Patchelése)"</string>
+    <string name="contextbootads">Google reklám eltávolítása</string>
+    <string name="contextbootcustom">Egyedi patch</string>
+    <string name="contextbootlvl">Licensz ellenőrzés eltávolítása</string>
+    <string name="contextcorepatch1">Aláírás-ellenőrzés mindig.</string>
+    <string name="contextcorepatch1_descr">Aláírás szükségessége.</string>
+    <string name="contextcorepatch2">Aláírás ellenőrzés tiltása</string>
+    <string name="contextcorepatch2_descr">Az alkalmazásokat nem kell újra aláírni, ha változnak a fájlok. Lehetővé teszi, hogy mentse a fejlesztő aláírását, amikor megváltoztatja az apk-t. Más emberek csak akkor tudják telepíteni ezt az apk-t, ha patch-elve van az Android rendszer.</string>
+    <string name="contextcorepatchrestore">Minden patch eltávolítása az Android rendszerből</string>
+    <string name="contextcorepatchrestore_descr">A Lucky Patcher minden módosításának eltávolítása az Android rendszerből</string>
+    <string name="contextcustompatch">Egyedi patch!</string>
+    <string name="contextdeodex">"ODEX változások eltávolítása!
+(alkalmazás visszaállítása)"</string>
+    <string name="contextextpatch">Kézi!</string>
+    <string name="contextfix">Változások a Dalvik-ba!</string>
+    <string name="contextignore">Licensz ellenőrzés eltávolítása!</string>
+    <string name="contextlaunchapp">Alkalmazás indítása!</string>
+    <string name="contextlivepatch">Kézi Patcher!</string>
+    <string name="contextodex">Dalvik-cache frissítve!</string>
+    <string name="contextpatt1">Licensz érvényesítés eltávolítása</string>
+    <string name="contextpatt1_descr">Ha ez engedélyezve van, az Internettel, az alkalmazás első indításakor aktiválódik. A patch-ek e csoportja a kisebb változtatásokat teszi meg.</string>
+    <string name="contextpatt2">Mentett licenc eltávolítása (Offline)</string>
+    <string name="contextpatt2_descr">Ha engedélyezve van, működik Internet nélkül is.</string>
+    <string name="contextpatt3">Válaszkód ellenőrzés javítása</string>
+    <string name="contextpatt3_descr">Licensz ellenőrzésre vonatkozó mini-javítások.</string>
+    <string name="contextpatt4">A Kód-ellenőrzés eltávolítása</string>
+    <string name="contextpatt4_descr">Nem stabil. De nagyon hatékony. Ha ez engedélyezve van, és az internet, aktiválódik az app első indításakor. A patch-ek e csoportja további módosításokat végez.</string>
+    <string name="contextpatt5">Végső licensz ellenőrzés</string>
+    <string name="contextpatt5_descr">Patch sablonok a végső licensz ellenőrzésre. Ha a patch jó, az alkalmazásnak működnie kell internet nélkül is.</string>
+    <string name="contextpatt6">Végső licensz ellenőrzés (Inverz)</string>
+    <string name="contextpatt6_descr">Ha nem segít a \"Végső licensz ellenőrzés\", próbálja meg ezeket a patcheket.</string>
+    <string name="contextpattads1">Reklámok átméretezése picire</string>
+    <string name="contextpattads1_descr">Próbálja újraméretezni a reklámot, így kisebb lesz.</string>
+    <string name="contextpattads2">Reklámok átméretezése nullára</string>
+    <string name="contextpattads2_descr">Próbálja újraméretezni a Google reklámot nullára.</string>
+    <string name="contextpattads3">Fogadott Google reklámok megsemmisítése!</string>
+    <string name="contextpattads3_descr">Próbálja megtörni a elért Google reklámok mechanizmusát.</string>
+    <string name="contextpattads4">Egyéb patchek!</string>
+    <string name="contextpattads4_descr">Más patchek, amelyek segítenek eltávolítani a hirdetéseket.</string>
+    <string name="contextpattamazon">Autom. mód!(Amazon Market)</string>
+    <string name="contextpattamazon_descr">Amazon Marketről származó alkalmazások licenszengedélyeinek eltávolítása.</string>
+    <string name="contextpattlvl1">Autom. mód!</string>
+    <string name="contextpattlvl1_descr">Minimális számú javítások. Alkalmas a legtöbb alkalmazás egyszerű védelmére.</string>
+    <string name="contextpattlvl2">Autom. mód!(Inverz)</string>
+    <string name="contextpattlvl2_descr">Van néhány különbsége az \"Autom. mód!tól. Ez lehet, hogy segít ha nem segít az \"Autom. mód\".</string>
+    <string name="contextpattlvl3">Egyéb patchek (Extrém mód)!</string>
+    <string name="contextpattlvl3_descr">Kiegészítő patchek (nem stabil). Alkalmazása csak akkor, ha a többi változat nem segít. Sokkal valószínűbb, hogy csak a internettel működik, de vannak kivételek. Ez a legjobban az \"Autom. mód\" vagy \"Autom. mód (Inverz)\"el együtt használható.</string>
+    <string name="contextpattlvl4">Dalvik-cache patch alkalmazása!</string>
+    <string name="contextpattlvl4_descr">Az alapértelmezett módban minden változás az Odex-fájlban marad. Néhány Odex fájl nem működik az alkalmazással (pl. ha az alkalmazás külső Sd kártyára át lett mozgatva). Ezután a Dalvik-cache patch alkalmazása segíthet. De csak akkor tudja visszaállítani az alkalmazást, ha újratelepíti.</string>
+    <string name="contextpattlvl5">Mentett apk fájl újratelepítése!</string>
+    <string name="contextpattlvl5_descr">Másolja az apk fájlt a Lucky Patcher Data mappájába. Telepítse újra (állítsa vissza) az alkalmazást ebből az apk-ból.</string>
+    <string name="contextpattlvl6">Dalvik-cache törlése!</string>
+    <string name="contextpattlvl6_descr">Az Odex-fájl létrehozása után törölje a Dalvik-cache-ből az alkalmazást helytakarékosság okán. Ha az alkalmazás nem működik az Odex-el, újra kell telepítenie az alkalmazást.</string>
+    <string name="contextrestore">Visszaállítás!</string>
+    <string name="contextselpatt">Válasszon patch mintát</string>
+    <string name="core_patch_apply">(patch alkalmazva)</string>
+    <string name="core_patch_nopatch">(nincs módosítva)</string>
+    <string name="core_patch_nopatch_no_space1">A Dalvik-cache-ben a core.jar módosításra került. Ezek a fajta módosítások eltűnnek, ha frissül a Dalvik-cache. A módosítások rögzítéséhez létre kell hoznia egy core.odex állományt. Nincs elég hely a rendszer ROM-ban a core.odex létrehozásához. Szabadítson fel kb. 4MB tárhelyet, törölje a Dalvik-cache-t és próbálja meg újra. Indítsa újra a készüléket a Dalvik-cache módosításainak alkalmazásához.</string>
+    <string name="corepatches">A rendszer módosítása</string>
+    <string name="corrupt_download">A letöltött fájl hibás. Kérem ellenőrizze az SD kártya üres területét (min. 4Mb) és próbálja később újra.</string>
+    <string name="create_perm_ok">Alkalmazás újraépítése!</string>
+    <string name="createapk">Módosított apk létrehozása</string>
+    <string name="createapkads">Apk eltávolított Google reklámokkal</string>
+    <string name="createapkcustom">Apk módosított egyedi patch-el</string>
+    <string name="createapklvl">Apk eltávolított Licensz ellenőrzéssel</string>
+    <string name="createapklvlautoinverse">"Apk eltávolított Licensz Ellenőrzéssel
+(Autom. mód!~Inverz~)"</string>
+    <string name="createapklvlextreme">"Apk eltávolított Licensz ellenőrzéssel
+(Extrém Auto mód)"</string>
+    <string name="createdialog1">Újraépítés</string>
+    <string name="createdialog2">"befejezve:
+
+
+
+A telepítési fájl ebben a mappában van:"</string>
+    <string name="createdialog3">"
+
+
+
+Emlékezzen rá! Ha az alkalmazáson fut a patch, ez nem jelenti azt, hogy működni fog módosított formájában is az APK fájl. Ha az alkalmazás ellenőrzi a változást, ez a módszer nem fog működni."</string>
+    <string name="createdialog4">- Hiba...</string>
+    <string name="createdialog5">Fájl neve:</string>
+    <string name="custom_descript">Egyedi patch megjegyzés:</string>
+    <string name="custom_sel_app">Kijelölt alkalmazás:</string>
+    <string name="customdescr">Minden egyedi patch-es app..</string>
+    <string name="customtitle">Egyedi patch-es app.-ok</string>
+    <string name="default_target">Jelenlegi célpont a Dalvik Cache.</string>
+    <string name="delboot">Megérintve törli a bootlistáról</string>
+    <string name="dialog_system">Ez egy Rendszer alkalmazás. Legyen nagyon óvatos minden velük végzett művelettel, a végén hibás lehet az alkalmazás és az operációs rendszer is! Biztos benne, hogy ezzel az alkalmazással kíván dolgozni?</string>
+    <string name="dir_change">Mappa áthelyezés</string>
+    <string name="dir_change_descr">"A Lucky patcher tulajdonú adatok mappaváltása az SD-n. Az alapértelmezett:
+/LuckyPatcher"</string>
+    <string name="dirbinder">Mappa összefűzés</string>
+    <string name="dirr_chg">A mappa áthelyezve:</string>
+    <string name="disable_autoupdate">Auto. frissítés letiltása.</string>
+    <string name="disable_autoupdate_descr">Ezzel letiltja a Lucky Patcher indulásakor az automatikus frissítés keresést.</string>
+    <string name="dontusepatch">Mégsem</string>
+    <string name="download">Letöltés...</string>
+    <string name="empty">üres</string>
+    <string name="equals_version">A Lucky Patcher legfrissebb verziójával rendelkezik :)</string>
+    <string name="error_detect">Úgy tűnik, a Lucky Patcher kényszerítetten zárt be, nem akar értesíteni engem?</string>
+    <string name="error_launch">Lehetetlen elindítani!</string>
+    <string name="error_restore">Sikertelen visszaállítás.</string>
+    <string name="extpat1">Találat</string>
+    <string name="extpat2">hasonló objektumokra a Licenszben:</string>
+    <string name="extpat3">"Útmutató
+-------------
+-
+-Érintsen a  \"Bizt. mentés\"-re;
+-Engedélyezze a WiFi-t és egyéb adateléréseket;
+-Jelölje ki a célt és érintsen a \"Patch\"-re;
+-Érintsen az \"Indítás\"ra és nézze meg a program engedélyeit;
+-Ha az objektum nem segít, érintsen a \"Visszaállítás\"ra és ismételje meg a műveletet egy másik objektumon.
+-Ha minden Oké, nyomjon a \"Változások rögzítése\" lehetőségre."</string>
+    <string name="extres1">"A cél patchelve van
+-Érintsen az \"Indítás\"ra és nézze meg a program engedélyeit;
+-Ha az objektum nem segít, érintsen a \"Visszaállítás\"ra és ismételje meg a műveletet egy másik objektumon"</string>
+    <string name="extres2">"Az objektumnak nincsenek változói
+Már patch-elt?!
+-Érintsen a \"Visszaállítás\"ra majd jelöljön ki egy másik elemet és érjen a \"Patch\"re."</string>
+    <string name="fast_start">Gyors indítás</string>
+    <string name="fast_start_descr">Az opció letiltja az ikon betöltését a Lucky Patcher indulásakor. Listát készít a késedelmes működésű alkalmazásokról...</string>
+    <string name="file_not_found">"Az alk. nem másolható SD kártyár
+ Ellenőrizze az SD-n az üres helyet vagy a busybox-ot."</string>
+    <string name="filter">Szűrő</string>
+    <string name="filterdescr">Válassza ki a megjelenítendő alkalmazások kategóriáját.</string>
+    <string name="fixbutton">Változások rögzítése</string>
+    <string name="fixeddescr">Minden megváltoztatott Dalvik-cache-es app. (Sárga csillag).</string>
+    <string name="fixedtitle">Megváltozott Dalvik-Cache (ODEX)</string>
+    <string name="goodresult">"-ban szerencsés!
+Kérem indítsa és tesztelje a programot!
+
+
+Ha a program nem működik helyesen vagy nem megfelelő, telepítse újra és ne használja a megoldást ismét erre a verzióra."</string>
+    <string name="have_luck">"***********************
+
+Ön"</string>
+    <string name="help">Súgó</string>
+    <string name="help_common">Közös</string>
+    <string name="help_custom">Egyedi patch-ek létrehozása</string>
+    <string name="hide_notify">Rejtett értesítések</string>
+    <string name="hide_notify_descr">A Lucky Patcher értesítéseinek elrejtése az értesítési sávon.</string>
+    <string name="hosts_default">\"hosts\" fájlok eredetire visszaállítása...</string>
+    <string name="hosts_not_found_changes">Nincsenek változások a \"hosts\" fájlokban...</string>
+    <string name="hosts_updated">A \"hosts\" fájlok frissítve...</string>
+    <string name="installsupersu">SuperSU (ICS) telepítése</string>
+    <string name="langdef">Alapért. nyelv</string>
+    <string name="langen">Angol</string>
+    <string name="langmenu">Nyelv</string>
+    <string name="launchbutton">Indítás</string>
+    <string name="loadpkg">Csomagok betöltése</string>
+    <string name="lvldescr">Minden Licensz ellenőrzött alkalmazás.</string>
+    <string name="lvltitle">App. LVL-el</string>
+    <string name="messageAndroidManifest">Nem lehet kibontani az AndroidManifest.xml fájlt. Lehet, hogy nincs elég hely az SD kártyán és a teljes alkalmazás nem másolható.</string>
+    <string name="messageODEX1">A Dalvik-cache-ben a core.jar módosításra került. Ezek a fajta módosítások eltűnnek, ha frissíti a Dalvik-cache-t. A módosítások rögzítéséhez létre kell hoznia egy core.odex állományt. Most a core.jar optimizálása fog megtörténni, (odex létrehozása). Végezzen el egy nandroid mentést, mielőtt az \"Igen\"re kattint. Általában az eszköz nem válaszol pár percig, utána betölt. Ennek eredményeként a készülék lefagyhat és egy kézi újraindításra lehet szükség. Újraindítást követően lépjen a \"Hibaelhárítás\"ra, érintse a \"dalvik-cache törlése\" és a \"Javítások és mentések eltávolítása\" lehetőséget. Létrehozza a core.odex-et most?</string>
+    <string name="messageSD">"SDcard nem található
+Ez a funkció nem működik SD kártya nélkül!"</string>
+    <string name="message_allow_non_market_app">Kérem engedélyezze a \"Mindig telepítse a nem GP-ről származó alkalmazásokat\".</string>
+    <string name="message_clear_data">Biztosan törölni akarja az alkalmazás összes adatát?</string>
+    <string name="modifdescr">Minden módosított app megjelenítése (Zöld lóhere).</string>
+    <string name="modiftitle">Módosított alkalmazások</string>
+    <string name="move_to_sys">"Áthelyezés a
+/system/app mappába"</string>
+    <string name="move_to_system">Biztosan át akarja helyezni az alkalmazást a /system partícióra?</string>
+    <string name="mpatcher_help">"Help:
+
+
+
+
+ - Eredeti hex mintája (hossz>3):
+ AA 1F ** 01 
+C
+ ** - bármelyik bájt;
+
+
+
+ - Kicserélt hex mintája (hossz>3):
+ EA 2F ** ** 
+*
+ ** - nem változtatott bájt;
+
+
+Az eredeti és a módosított bájtok számának egyenlőnek kell lennie.;"</string>
+    <string name="new_version">A Lucky Patcher új verziója jelent meg...</string>
+    <string name="no">Ne most...</string>
+    <string name="no_root">"Nincs root jogosultság! A folytatáshoz a legfelső szintű hozzáféréssel kell rendelkeznie...
+
+(kérem frissítse a busybox-ot vagy az su-t)
+Telepítse a SuperSu-t (\"Problémamegoldás-> SuperSU (ICS) telepítése\") és frissítse rajt a binárist."</string>
+    <string name="no_site">A honlap nem található!</string>
+    <string name="no_space_in_system">Hiba: nincs elég hely a System ROM-ban az alkalmazás számára. Kérem szabadítson fel helyet itt: /system és próbálja újra.</string>
+    <string name="nonedescr">Mutatja az összes alkalmazást, amelyben semmi sem talált a Lucky Patcher.</string>
+    <string name="nonetitle">Nincs találat</string>
+    <string name="not_detect">"SD kártya nem észlelhető!
+Korlátozott funkcionalítás!"</string>
+    <string name="notify_directory_binder">Mappa összefűzés</string>
+    <string name="notify_directory_binder_from">INNEN</string>
+    <string name="notify_directory_binder_to">IDE</string>
+    <string name="notify_patch_on_boot">Patch bootolás alatt</string>
+    <string name="notify_patched">patchelve!</string>
+    <string name="ok">Oké...</string>
+    <string name="or_hex_str">Eredeti Hex-String:</string>
+    <string name="orientmenu">Tájolás</string>
+    <string name="others">Egyéb</string>
+    <string name="patch_ok">Alkalmaz</string>
+    <string name="patch_step1">Alk. előkészítés patchelés előtt...</string>
+    <string name="patch_step2">Alkalmazás patchelése...</string>
+    <string name="patch_step3">Eredmények felülvizsgálata patch után...</string>
+    <string name="patch_step4">Odex létrehozása a változásokkal...</string>
+    <string name="patch_step6">Opcionális lépések patch után...</string>
+    <string name="patchbutton">Patch</string>
+    <string name="pattern1">Módszer Patch N1 - sikeres...</string>
+    <string name="pattern1_f">Módszer Patch N1 - sikertelen...</string>
+    <string name="pattern2">Módszer Patch N2 - sikeres...</string>
+    <string name="pattern2_f">Módszer Patch N2 - sikertelen...</string>
+    <string name="pattern3">Módszer Patch N3 - sikeres...</string>
+    <string name="pattern3_f">Módszer Patch N3 - sikertelen...</string>
+    <string name="pattern4">Módszer Patch N4 - sikeres...</string>
+    <string name="pattern4_f">Módszer Patch N4 - sikertelen...</string>
+    <string name="pattern5">Módszer Patch N5 - sikeres...</string>
+    <string name="pattern5_f">Módszer Patch N5 - sikertelen...</string>
+    <string name="pattern6">Módszer Patch N6 - sikeres...</string>
+    <string name="pattern6_f">Módszer Patch N6 - sikertelen...</string>
+    <string name="pattern7">Módszer Patch N7 - sikeres...</string>
+    <string name="pattern7_f">Módszer Patch N7 - sikertelen...</string>
+    <string name="patternamazon">Amazon Market patch - sikeres...</string>
+    <string name="patternamazon_f">Amazon Market patch - sikertelen...</string>
+    <string name="perm_ok">Alkalmazás (Reboot)</string>
+    <string name="permission">Engedélyek módosítása</string>
+    <string name="permission_not_descr">Nincs leírás ehhez az engedélyhez</string>
+    <string name="permission_not_found">Engedélyek nem találhatók!</string>
+    <string name="poorresult">"%-os szerencse! A patchelés sikertelen!
+Ismeretlen verziójú LVL vagy a patch már alkalmazva van?!"</string>
+    <string name="punkt1">- A Patchernek root elérés kell a munkához!</string>
+    <string name="reboot">Reboot</string>
+    <string name="rebuild_info">Információ</string>
+    <string name="rebuild_message">A fájlt újraépíti és elhelyezi itt</string>
+    <string name="remodex">Dalvik-cache javítások eltávolítva!</string>
+    <string name="remodexerror">Dalvik-cache nem található. Odex nem törölhető.</string>
+    <string name="removefixes">"Javítások és bizt. mentések eltávolítás
+(nincs elegendő tárhely)"</string>
+    <string name="rep_hex_str">Csere Hex-String:</string>
+    <string name="restore_build">Build</string>
+    <string name="restore_message">Szeretné telepíteni a(z)</string>
+    <string name="restore_version">Verzió</string>
+    <string name="restorebutton">Visszaállít</string>
+    <string name="safe_perm_ok">Újraépít és telepít!</string>
+    <string name="safe_perm_use_warning">Át kell helyezni az alkalmazást a /system/app/ mappába vagy Alkalmazni kell a core.jar \"Zip aláírás ellenőrzés letiltása\" az \"Az Android patchelése\"-ben.</string>
+    <string name="savebutton">Objektum mentése egyéni javítással!</string>
+    <string name="saved_object">Írása egyedi patch-ként az /sdcard/LuckyPatcher/ útvonalra.</string>
+    <string name="sel_target">Válassza ki a célt!</string>
+    <string name="send_logs">Szeretné elküldené nekem a naplókat?</string>
+    <string name="sendlog">Napló küldés</string>
+    <string name="settings">Beállítások</string>
+    <string name="sortbyname">Név szerint</string>
+    <string name="sortbystatus">Állapot szerint</string>
+    <string name="sortmenu">Rendezés</string>
+    <string name="stat_boot_ads">Google Hirdetések</string>
+    <string name="stat_boot_custom">Egyedi patch</string>
+    <string name="stat_boot_lvl">Google Licensz ellenőrzés</string>
+    <string name="statads">Google Hirdetés találat!</string>
+    <string name="statappplace">Alkalmazás helye:</string>
+    <string name="statbuild">Build:</string>
+    <string name="statcustom">Egyedi patch áll rendelkezésre!</string>
+    <string name="statdataplace">Adatok helye:</string>
+    <string name="statfix">odex-file található.</string>
+    <string name="statlvl">Licensz ellenőrzés találat!</string>
+    <string name="statmodified">Az alkalmazást korábban módosították.</string>
+    <string name="statnotfix">odex-file nem található.</string>
+    <string name="statnotfound">Nincs találat!</string>
+    <string name="statnotmodified">Az alkalmazást nem módosították.</string>
+    <string name="statnotsys">Felhasználói alkalmazások!</string>
+    <string name="statnull">Nincs eredménye a patch-elésnek!</string>
+    <string name="statsys">Rendszeralkalmazások!</string>
+    <string name="statuserid">User ID:</string>
+    <string name="statversion">Verzió:</string>
+    <string name="sysdescr">Legyen nagyon óvatos a rendszer alkalmazásait érintő műveleteknél. Kérjük, hogy mentsen előtte.</string>
+    <string name="system_app_change">Újra kell indítani a készüléket a változások alkalmazásához.</string>
+    <string name="systitle">Rendszeralkalmazások megjelenítése</string>
+    <string name="text_size">Szövegméret</string>
+    <string name="title_upd">Megjegyzés:</string>
+    <string name="toolbar_adfree">Reklámblokkolás az eszközön</string>
+    <string name="toolbar_backups">Bizt. mentések</string>
+    <string name="toolbar_rebuild">Újraépít &amp; Telepít</string>
+    <string name="truble">Hibaelhárítás</string>
+    <string name="uninstall">Valóban el kívánja távolítani az alkalmazást?</string>
+    <string name="uninstallapp">Alkalmazás eltávolítása</string>
+    <string name="unknown_error">Hiba: ismeretlen. Kérem próbálja újra.</string>
+    <string name="unused_odex_delete">Nem használt ODEX eltávolítva!</string>
+    <string name="update">Frissítés</string>
+    <string name="updatebusybox">Busybox frissítése</string>
+    <string name="usepatch">Alkalmaz</string>
+    <string name="vers">Lucky Patcher verzió</string>
+    <string name="vibration">Rezgés engedése.</string>
+    <string name="vibration_descr">Az opcióval engedélyezi a rezgést mikor megérinti az alkalmazások listáját</string>
+    <string name="viewlandscape">Tájkép</string>
+    <string name="viewlarge">Nagy</string>
+    <string name="viewmedium">Közepes</string>
+    <string name="viewmenu">Megjelenés</string>
+    <string name="viewportret">Portré</string>
+    <string name="viewsensor">Érzékelő</string>
+    <string name="viewsmall">Pici</string>
+    <string name="wait">Kérem várjon</string>
+    <string name="warning">Figyelem</string>
+</resources>

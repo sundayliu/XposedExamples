@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color:#ffffff">
+<b style="color:#ff0000">Patcher potrebuje pre správne fungovanie root práva!</b><br/><br/>
+<b>Krátky popis:</b><br/>
+-----------------<br/>
+<b style="color:#36ff00">Zelená</b> - Tento program má veľkú šancu stať sa zaregistrovaným;<br/>
+<b style="color:#fffc00">Žltá</b> - Pre tento program bol nájdený vlastný patch (záplata) v adresári /sdcard/LuckyPatcher/;<br/>
+<b style="color:#00f0ff">Modrozelená</b> - V tomto programe boli nájdené reklamy Google Ads;<br/>
+<b style="color:#fc00ff">Purpurová</b> - Tieto programy sú v BootList-e;<br/>
+<b style="color:#ff0000">Nemožné</b> - Tento program nemá šancu stať sa registrovaným. Výnimkou je aplikácia tvorená z dvoch častí (Aplikácia a  APK-Pro-Kľúč). V takom prípade je potrebné zaplátať obe strany, alebo asponň jednu z nich.;<br/>
+<b style="color:#ff9c00">Oranžová</b> - Systémová aplikácia. Buďte veľmi opatrný pri vykonávaní akejkoľvek operácie s ňou, môže to skončiť veľmi zle ako pre aplikáciu tak pre Operačný systém.;<br/>
+
+<b>BootList</b> - zoznam programov, ktoré zaplátajú bootované zariadenie. V tomto okamihu, je to použiteľné pre aplikácie vyžadujúce? opravu knižníc ".so". Ale neexistujú vlastné záplaty, okrem starého Titanium backup, ktorý sa už nepoužíva;<br/>
+<br/>
+<b style="color:#fffc00">Hviezda</b> - znamená, že dalvik-cache aplikácia bola opravená (vytvorený ODEX so zmenami), a to znamená, že aplikácia ostane v tomto stave do svojej ďalšej aktualizácie alebo do zmazania aplikácie. Ak je takýto ODEX odstránený pomocou "Odstrániť ODEX so zmenami", tak bude aplikácia kompletne obnovená do stavu pred opravou. Ak zaktualizujete aplikáciu, môžu nastať problémy: Google play (market) bude hlásiť chybu o nedostatku miesta, v takom prípade zatvorte Lucky Patcher a skúste znova nainštalovať aplikáciu, ak je takáto chyba zapísaná do odinštalovanej aplikácie vyberte nastavenia Luckypatcher-a "Riešenie problémov->Odstrániť opravy a zálohhy (pre aktualizáciu aplik.)" - všetky opravy v dalvik-cache pre všetky programy budú odstránené;<br/><br/>
+<b>Kontextové menu:</b><br/>
+-----------------<br/>
+<b>Odstrániť kontrolu licencovania (Auto mód!)</b> - <em>Pokusy o odstránenie kontrol licencovania. Použijú sa len malé časti šablón aby sa zabezpečila maximálna stabilita aplikácie</em><br/>
+<b>Odstrániť kontrolu licencovania (Auto mód!(Inverzne))</b> - <em>Je tu veĺmi málo rozdielov oproti "Auto módu!". Môžu vám pomôcť ak \"Auto mód\" nepomáha.</em><br/>
+<b>Odstrániť kontrolu licencovania (Extrémny Auto mód!)</b> - <em>Pokusy o odstránenie kontrol licencovania. Použijú sa všetky časti šablón. Aplikácia je nestabilná. Väčšina chýb je offline-ová.</em><br/>
+<b>Odstrániť kontrolu licencovania (Manuálne)</b> - <em>Pokusy o odstránenie kontrol licencovania. Odstráni licencovanie metódou brute force.</em><br/>
+<b>Odstrániť kontrolu licencovania (Zvolené Schémy)</b> - <em>Môžete si vybrať zo skupiny šablón, ktoré budú aplikované.</em><br/>
+<b>Odstrániť Google Ads!</b> - <em>Pokusy o odstránenie reklám Google Ads. Niekedy odstráni aj reklamy v aplikáciách v ktorých sa nenašli žiadne reklamné štítky (s príznakom Nič nenájdené!)</em><br/>
+<b>Odstrániť ODEX so zmenami</b> - <em>Odstráni súbor ODEX obsahujúci zmeny. Týmto dôjde k obnoveniu aplikácie do pôvodného stavu.</em><br/>
+<b>Zmena oprávnení</b> - <em>Odstráni oprávnenia aplikácie. Buďte pri tomto veľmi opatrný. Po aplikovaní môže na niektorých zariadeniach táto metóda spôsobiť zacyklený reštart alebo iné nepredvídateľné následky. Pred použitím zakázania oprávnení si určite spravte zálohu systému.</em><br/>
+<b>Vytvoriť modifikované APK</b> - <em>Vytvorí inštalačný balíček apk na základe dostupných záplat. Mali by ste vedieť, že rebuild-nutý apk-súbor nie je to isté ako zaplátaná aplikácia, ktorá je už nainštalovaná.</em><br/>
+<b>Zaplátať pri Reboot-e</b> - <em>V tomto okamihu, je to použiteľné pre aplikácie vyžadujúce? opravu knižníc Ale neexistujú vlastné záplaty, okrem starého Titanium backup, ktorý sa už nepoužíva. Funguje veľmi nestabilne. Je vhodné pridať nie viac ako jednu vlastnú záplatu ak jej použitie bude nutné bude zapísaná ako vlastná záplata.</em><br/><br/>
+<b>Manuálny Patcher!</b> - <em>Patcher na ladenie aplikácie.</em><br/>
+<b>Zálohovať!</b> - <em>Backup apk-file for Restore Application. Apk save to /sdcard/LuckyPatcher/Backup/.</em><br/>
+<b>Obnoviť!</b> - <em>Restore Application from apk-file in /sdcard/LuckyPatcher/Backup/.</em><br/><br/><br>
+<b>Skopírovať zmeny do dalvik-cache!</b> - <em>In the default mode, all changes remain odex-file. Some odex files not work to the application (for example when an application is moved to externalSD). Then the Copying in the dalvik-cache can help. But you can restore the application, if is only reinstall it.</em><br/>
+<b>Zálohovať súbor apkpre reinštaláciu!</b> - <em>Copy apkfile to sdcard in the Data Folder of Lucky Patcher. You can reinstall (for Restore) this Application from this apk.</em><br/>
+<b>Vymazať dalvik-cache!</b> - <em>After creating the odex-file deletes dalvik-cache of this Application to save space. If the application does not work with odex, will have to reinstall this Application.</em><br/><br/>
+<b>Inštruktáž:</b><br/>
+--------------<br/>
+
+<b>Pre odstránenie kontroly licencovania:</b><br/>
+- Použite ako cieľ iba súbory apk podpísané tvorcom;<br/>
+- Ťuknite na aplikáciu a vyberte "Odstrániť kontrolu licencovania!";<br/>
+- Vyberte "Auto mód" a otestujte aplikáciu pomocou Internetu;<br/>
+- Ak je výsledok negatívny, vyberte "Extrémny Auto mód";<br/>
+- Pokiaľ budete mať šťastie, vaša aplikácia bude zaregistrovaná;<br/>
+- Pre návrat aplikácie do pôvodného stavu ťuknite na "Odstrániť ODEX so zmenami".<br/>
+<br/>
+<b>Pre odstránenie reklám Google Ads:</b><br/>
+- Ťuknite na aplikáciu a vyberte "Odstrániť Google Ads!";<br/>
+- Spustite a otestujte aplikáciu pomocou Internetu;<br/>
+- Pokiaľ budete mať šťastie, Google Ads sa stratia;<br/>
+- Pre návrat aplikácie do pôvodného stavu ťuknite na "Odstrániť ODEX so zmenami".<br/>
+<br/>
+<b>Pre vlastnú záplatu:</b><br/>
+- Ťuknite na aplikáciu a vyberte "Vlastná záplata!";<br/>
+- Spustite a otestujte aplikáciu pomocou Internetu;<br/>
+- Pokiaľ budete mať šťastie, záplata zafunguje;<br/>
+- Pre návrat aplikácie do pôvodného stavu ťuknite na "Odstrániť ODEX so zmenami".<br/>
+<br/>
+<b>Pre zmenu oprávnení:</b><br/>
+- Ťuknite na aplikáciu a vyberte "Zmena oprávnení";<br/>
+- Ťuknite na oprávnenia pre zakázanie <em style="color:#ff0000">(červená)</em>;<br/>
+- Ťuknite na oprávnenia pre povolenie <em style="color:#36ff00">(zelená)</em>;<br/>
+- Musíte ťuknúť na aplikovať (Reštart).<br/>
+<br/>
+<b>Pre vytvorenie modifikovaného súboru APK:</b><br/>
+- Ťuknite na aplikáciu a vyberte "Vytvoriť modifikované APK";<br/>
+- Vyberte záplatu pre modifikáciu APK;<br/>
+- Modifikovaný inštalačný súbor sa bude nachádzať v adresári /sdcard/LuckPatcher/Modified/  ;<br/>
+- Mali by ste vedieť, že rebuild-nutý apk-súbor nie je to isté ako zaplátaná aplikácia, ktorá je už nainštalovaná.<br/>
+<br/>
+
+<b>PS: Patcher pri vykonávaní zmien/záplat automaticky uzatvára bežiacu aplikáciu. Je to nutné pre úspešnosť zmien. Niekedy je ale nutné použiť treťo-stranné aplikácie alebo reštartovať zariadenie pre ukončenie procesu aplikácií.</b>
+</body>

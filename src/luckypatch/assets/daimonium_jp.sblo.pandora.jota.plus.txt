@@ -1,0 +1,13 @@
+[BEGIN]
+Version: 2015.14
+
+Description: patch will unlock all paid features except limitation on connections to cloud storages and root enhancement (you can get free access to it 2 times per 24 hours at most; if limit is reached, you will obtain the message that it is limited, where will be the button «Try Pro», which can give you ability to use it without limitation for 30 minutes)
+
+Creator: Daimonium
+
+[PACKAGE]
+[CLASSES]
+{"original":"16 04 ** 00 BB 42 31 00 00 02"}
+{"replaced":"** ** ** ** ** ** 00 00 12 00"}
+
+[END]

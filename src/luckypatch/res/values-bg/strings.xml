@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Информация за пакета</string>
+    <string name="P_not_found">"Грешка: Програмните файлове не са намерени!
+Проверете местоположението на dalvik-кеша, за да отстраните проблема!
+По подразбиране: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Резултати от кръпката</string>
+    <string name="Yes">Да</string>
+    <string name="aboutlp">Lucky Patcher може да работи в автоматичен или ръчен режим и да прави промени във вече инсталираните приложения. Може да променя правата за достъп до тях, да използва потребителски кръпки и има голям брой автоматични такива. Надявам се, че програмата ще Ви бъде полезна.</string>
+    <string name="aboutmenu">За програмата</string>
+    <string name="abouttitle">За програмата (от ChelpuS)</string>
+    <string name="additinfo">Допълнителна информация:</string>
+    <string name="adsdescr">Покажи всички програми с реклами.</string>
+    <string name="adstitle">Програма с реклами</string>
+    <string name="advanced_menu">Отвори меню с кръпки</string>
+    <string name="allchanges">Всички промени са записани в ODEX!</string>
+    <string name="apk_create_option">Име на прекомпилирания apk файл</string>
+    <string name="apkdescr">Когато създавате apk базирано на кръпка, може да му дадете името от етикета или опаковката.</string>
+    <string name="apklabel">въз основа на етикета</string>
+    <string name="apkpackage">въз основа на опаковката</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="backbutton">Архивирай</string>
+    <string name="bootview">Boot списък</string>
+    <string name="cleardalvik">Изчисти dalvik-кеша и рестартирай</string>
+    <string name="cleardata">Изчисти Данните</string>
+    <string name="contextads">Премахни рекламите!</string>
+    <string name="contextboot">"Кръпка след рестарт!
+(Нестабилно! Само за пачване на библиотеки)"</string>
+    <string name="contextbootads">Премахни рекламите</string>
+    <string name="contextbootcustom">Потребителски кръпки</string>
+    <string name="contextbootlvl">Премахни проверка за лиценз</string>
+    <string name="contextcustompatch">Потребителски кръпки!</string>
+    <string name="contextdeodex">"Премахни промените в ODEX !
+(възстанови приложението)"</string>
+    <string name="contextextpatch">Ръчен контрол!</string>
+    <string name="contextfix">Фиксирай промените в dalvik-кеша</string>
+    <string name="contextignore">Премахни проверка за лиценз!</string>
+    <string name="contextlaunchapp">Стартирай приложението!</string>
+    <string name="contextlivepatch">Ръчна кръпка!</string>
+    <string name="contextodex">Приложи dalvik-кеш фиксации</string>
+    <string name="contextpatt1">Премахване на проверка за лиценз</string>
+    <string name="contextpatt1_descr">Ако се установи, трябва да се даде достъп на приложението до Интернет, когато го стартирате. Това допринася за по-сигурен резултат.</string>
+    <string name="contextpatt2">Фиксиране на кеширан лиценз (Интернет Фикс)</string>
+    <string name="contextpatt2_descr">Ако се установи, ще работи без Интернет.</string>
+    <string name="contextpatt3">Фиксиране на код за удостоверяване на отговор</string>
+    <string name="contextpatt3_descr">Прави някои дребни промени, които могат да помогнат в различни ситуации свързани с проверката за лиценз.</string>
+    <string name="contextpatt4">Замяна на кода за отговор</string>
+    <string name="contextpatt4_descr">Много ефективно, но нестабилно. Ако е открит, дайте достъп на приложението до Интернет, когато го стартирате за първи път. Тази група от кръпки прави повече промени.</string>
+    <string name="contextpattads1">Смаляване на рекламите</string>
+    <string name="contextpattads1_descr">Опитва се да направи размера на рекламите много малък.</string>
+    <string name="contextpattads2">Смаляване на рекламите до нула</string>
+    <string name="contextpattads2_descr">Опитва се да направи размера на рекламите нулев. Този метод често води до грешки, но по някога помага.</string>
+    <string name="contextpattads3">Унищожаване на механизма за реклама!</string>
+    <string name="contextpattads3_descr">Опитва се да разбие механизма за получаване на реклами.</string>
+    <string name="contextpattads4">Други кръпки!</string>
+    <string name="contextpattads4_descr">Други кръпки, който може да премахнат рекламите.</string>
+    <string name="contextrestore">Възстанови!</string>
+    <string name="contextselpatt">Избрани шаблони</string>
+    <string name="createapk">Създай модифицирано apk</string>
+    <string name="createapkads">Apk с премахнати реклами</string>
+    <string name="createapkcustom">Apk-то е модифицирано с потребителска кръпка</string>
+    <string name="createapklvl">Apk с премахната проверка за лиценз</string>
+    <string name="createapklvlautoinverse">"Apk с премахната проверка за лиценз
+(Автоматичен режим!~обърнат~)"</string>
+    <string name="createapklvlextreme">"Apk с премахната проверка за лиценз
+(Екстремен режим)"</string>
+    <string name="createdialog1">Преправяне</string>
+    <string name="createdialog2">"завършено:
+
+apk-то е в папка:"</string>
+    <string name="createdialog3">"
+
+Запомнете! Ако приложението работи с кръпка, не означава, че ще работи под формата на модифициран apk файл. Ако приложението проверява за промени, този метод няма да работи."</string>
+    <string name="createdialog4">- Грешка...</string>
+    <string name="createdialog5">Име на файл:</string>
+    <string name="custom_descript">Описание на потребителските кръпки:</string>
+    <string name="custom_sel_app">Избрани приложения:</string>
+    <string name="customdescr">Покажи всички програми с потребителски кръпки.</string>
+    <string name="customtitle">Програма с потребителска кръпка</string>
+    <string name="default_target">сега целта е dalvik-кеша.</string>
+    <string name="delboot">Натиснете, за да изтриете от списъка</string>
+    <string name="dialog_system">Това е системно приложение. Бъдете много внимателни когато правите промени, защото това може да се отрази на стабилността на системата. Сигурни ли сте че искате да продължите?</string>
+    <string name="dir_change">Преместване на директорията</string>
+    <string name="dir_change_descr">"Преместване на директорията за допълнителни файлове на програмата в карта памет. По подразбиране се намира в 
+/LuckyPatcher"</string>
+    <string name="dirr_chg">Директорията е променена на:</string>
+    <string name="dontusepatch">Отказ</string>
+    <string name="empty">празно</string>
+    <string name="equals_version">Имате последната версия на програмата...</string>
+    <string name="extpat1">Намерени</string>
+    <string name="extpat2">обекти сходни с лиценза:</string>
+    <string name="extpat3">"Инструкции:
+--------------
+-Натиснете \"Архивирай\";
+-Пуснете WiFi и дайте достъп на програмата до Интернет;
+-Изберете елемент и натиснете \"Kръпкa\";
+-Натиснете \"Стартирай\" и проверете лиценза на програмата;
+-Ако елемента не подейства, натиснете \"Възстанови\" и повторете процедурата с друг елемент.
+-Ако всичко е наред, натиснете Фиксация."</string>
+    <string name="extres1">"Елемента е закърпен!
+-Натиснете \"Стартирай\" и проверете лиценза на програмата;
+-Ако елемента не подейства, натиснете \"Възстанови\" и повторете процедурата с друг елемент."</string>
+    <string name="extres2">"Не е намерен нито един етикет за избрания обект!
+Вече е закърпен?!
+-натиснете \"Възстанови\" и изберете друг обект, и натиснете \"Kръпкa\"."</string>
+    <string name="filter">Филтър</string>
+    <string name="filterdescr">Изберете категория, която да се визуализира.</string>
+    <string name="fixbutton">Фиксация</string>
+    <string name="fixeddescr">Покажи всички програми с промени (Жълта звезда).</string>
+    <string name="fixedtitle">Променен dalvik-кеш (ODEX)</string>
+    <string name="goodresult">"% Успеваемост!
+Моля стартирайте програмата, за да проверите!
+
+Ако програмата не работи коректно, преинсталирайте я и не използвайте отново кръпката за тази версия."</string>
+    <string name="have_luck">"***********************
+
+Имате"</string>
+    <string name="help">Помощ</string>
+    <string name="help_common">Обща справка</string>
+    <string name="help_custom">Създай потребителска кръпка</string>
+    <string name="installsupersu">Инсталирай SuperSU (ICS)</string>
+    <string name="langdef">Български</string>
+    <string name="langen">English</string>
+    <string name="langmenu">Език</string>
+    <string name="launchbutton">Стартирай</string>
+    <string name="loadpkg">Сканиране на програмите</string>
+    <string name="lvldescr">Покажи всички програми с проверка за лиценз.</string>
+    <string name="lvltitle">Програма с проверка за лиценз</string>
+    <string name="mpatcher_help">"Помощ:
+
+ - Шаблон за оригинален Hex (дължина>3):
+ AA 1F ** 01 4C
+ ** - кой да е байт;
+
+ - Шаблон за презаместен Hex (дължина>3):
+ EA 2F ** ** **
+ ** - тези байтове не се променят;
+
+Броя на оригиналните и променени байтове трябва да е един и същ;"</string>
+    <string name="new_version">Има нова версия на програмата...</string>
+    <string name="no">Отказ</string>
+    <string name="no_root">"ROOT права отказани! Трябва да имате ROOT права, за да продължите...
+
+(моля актуализирайте Busybox или SU)!
+Моля инсталирайте TitaniumBackup, за да сканирате за ROOT права. Ако предложи да модифицира нещо в root, натиснете \"Да\".
+Влезте в настройки на Luckypatcher и натиснете \"Отстраняване на неизправности-> Актуализирай Busybox\". Актуализирай Busybox до 1.19.x.
+или влезте в настройки на Luckypatcher и натиснете \"Отстраняване на неизправности-> Инсталирай SuperSU (ICS)\" понякога това помага."</string>
+    <string name="no_site">Сайта за актуализация не е намерен!</string>
+    <string name="nonedescr">Покажи всички програми, за които нищо не е намерено.</string>
+    <string name="nonetitle">Нищо не е намерено</string>
+    <string name="not_detect">"Картата памет не е намерена!
+Режим на ограничена функционалност!"</string>
+    <string name="ok">Ок...</string>
+    <string name="or_hex_str">Оригинален Hex стринг:</string>
+    <string name="orientmenu">Ориентация</string>
+    <string name="others">Други</string>
+    <string name="patch_ok">Приложи</string>
+    <string name="patchbutton">~Кръпка~</string>
+    <string name="pattern1">Шаблон N1 - успешна кръпка...</string>
+    <string name="pattern1_f">Шаблон N1 - не е намерен...</string>
+    <string name="pattern2">Шаблон N2 - успешна кръпка...</string>
+    <string name="pattern2_f">Шаблон N2 - не е намерен...</string>
+    <string name="pattern3">Шаблон N3 - успешна кръпка...</string>
+    <string name="pattern3_f">Шаблон N3 - не е намерен...</string>
+    <string name="pattern4">Шаблон N4 - успешна кръпка...</string>
+    <string name="pattern4_f">Шаблон N4 - не е намерен...</string>
+    <string name="pattern5">Шаблон N5 - успешна кръпка...</string>
+    <string name="pattern5_f">Шаблон N5 - не е намерен...</string>
+    <string name="pattern6">Шаблон N6 - успешна кръпка...</string>
+    <string name="pattern6_f">Шаблон N6 - не е намерен...</string>
+    <string name="pattern7">Шаблон N7 - успешна кръпка...</string>
+    <string name="pattern7_f">Шаблон N7 - не е намерен...</string>
+    <string name="perm_ok">Приложи (Рестартирай)</string>
+    <string name="permission">Промени права за достъп</string>
+    <string name="permission_not_descr">За тези права не е намерено описание</string>
+    <string name="permission_not_found">Нямате права за достъп!</string>
+    <string name="poorresult">% Успеваемост! Кръпката е неуспешна или вече е приложена!</string>
+    <string name="punkt1">- Програмата изисква ROOT права, за да работи!</string>
+    <string name="remodex">Dalvik-кеш фикс премахнат!</string>
+    <string name="removefixes">"Премахни фиксове и архиви
+(недостатъчно място на диска)"</string>
+    <string name="rep_hex_str">Презаместен Hex стринг:</string>
+    <string name="restorebutton">Възстанови</string>
+    <string name="savebutton">Запамети обекта като потребителска кръпка!</string>
+    <string name="saved_object">е записано в /sdcard/LuckyPatcher/ като потребителска кръпка.</string>
+    <string name="sel_target">Изберете цел!</string>
+    <string name="settings">Настройки</string>
+    <string name="sortbyname">по име</string>
+    <string name="sortbystatus">по статус</string>
+    <string name="sortmenu">Сортирай</string>
+    <string name="stat_boot_ads">Реклами</string>
+    <string name="stat_boot_custom">Потребителска кръпка</string>
+    <string name="stat_boot_lvl">Проверка лиценз - Google</string>
+    <string name="statads">Намерени реклами!</string>
+    <string name="statappplace">Приложението е в:</string>
+    <string name="statbuild">Компилация:</string>
+    <string name="statcustom">Открита потребителска кръпка!</string>
+    <string name="statdataplace">Данните са в:</string>
+    <string name="statfix">Промените са приложени успешно!</string>
+    <string name="statlvl">Открита проверка за лиценз!</string>
+    <string name="statnotfix">Промените не са приложени!</string>
+    <string name="statnotfound">Нищо не е намерено!</string>
+    <string name="statnotsys">Потребителско приложение!</string>
+    <string name="statnull">Не са открити съвместими кръпки!</string>
+    <string name="statsys">Системно приложение!</string>
+    <string name="statuserid">Потребителско ID:</string>
+    <string name="statversion">Версия:</string>
+    <string name="sysdescr">Внимавайте и избягвайте да прилагате промени по системни приложения. Моля направете архив преди това.</string>
+    <string name="systitle">Покажи системните приложения</string>
+    <string name="text_size">Размер на текста</string>
+    <string name="title_upd">Съобщение:</string>
+    <string name="truble">Отстраняване на неизправности</string>
+    <string name="uninstall">Наистина ли искате да премахнете това приложение?</string>
+    <string name="uninstallapp">Премахни приложението</string>
+    <string name="update">Актуализирай</string>
+    <string name="updatebusybox">Актуализирай Busybox</string>
+    <string name="usepatch">Приложи</string>
+    <string name="vers">Lucky Patcher версия:</string>
+    <string name="viewlandscape">пейзаж</string>
+    <string name="viewlarge">едър шрифт</string>
+    <string name="viewmedium">нормален шрифт</string>
+    <string name="viewmenu">Изглед</string>
+    <string name="viewportret">портрет</string>
+    <string name="viewsmall">дребен шрифт</string>
+    <string name="wait">Моля, изчакайте...</string>
+    <string name="warning">Внимание!</string>
+</resources>

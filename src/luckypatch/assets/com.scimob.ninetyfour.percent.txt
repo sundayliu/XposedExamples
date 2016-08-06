@@ -1,0 +1,23 @@
+[BEGIN]
+
+Coins Mod and Premium unlocked
+for 94%
+
+- Initial Coins = 5000
+- Daily Coins = 1000
+- Level Finished Coins = 500
+- All type of Joker Price = 10
+- Premium Unlocked
+- No Ads
+
+by jacknot
+
+[OTHER FILES]
+{"name":"/shared_prefs/playerPrefs.xml"}
+{"original":"3C 3F 78 6D"}
+{"replace_from_file":"ninetyfour_playerPrefs.xml"}
+
+
+[END]
+Patched!
+By jacknot

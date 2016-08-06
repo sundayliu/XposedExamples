@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Інфармацыя пра дадатак</string>
+    <string name="P_not_found">"Памылка: Не знойдзены файл праграмы!
+Праверце месцаванне тэчкі dalvik-cache для вырашэння праблемы!
+Па змаўчанні: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Вынікі патчара</string>
+    <string name="Yes">Так</string>
+    <string name="about_working_dir">Працоўная тэчка на sdcard:</string>
+    <string name="aboutlp">Універсальны патчар! Служыць для ўнясення зменаў ва ўсталяваныя на вашай прыладзе дадаткі. У аўтаматычным рэжыме гэты дадатак можа схаваць рэкламу ці праверку ліцэнзіі ад Google Play. Таксама закладзена магчымасць ужывання карыстальніцкіх патчаў і ручны рэжым выдалення праверкі ліцэнзіі. І як бонус: выдаленне дадаткаў, ачыстка дадзеных і іх запуск. Гэтак жа можна адключаць і ўлучаць назад дазволы для іх.</string>
+    <string name="aboutmenu">Пра дадатак</string>
+    <string name="activity_ads_descr">Гэты актывіці выкарыстоўваецца для рэкламы.</string>
+    <string name="activity_descr">Актывіці дадатку. Апісання няма.</string>
+    <string name="additinfo">Дадатковая інфармацыя:</string>
+    <string name="adsdescr">Паказаць усе дадаткі з рэкламай Google.</string>
+    <string name="adstitle">Рэклама Google</string>
+    <string name="advanced_menu">Меню патчаў</string>
+    <string name="all_custom_patches_updated">Усе карыстальніцкія патчы абноўлены.</string>
+    <string name="allchanges">Змены, занесеныя ў дадатак, зафіксаваны ў ODEX файле, зараз яны нікуды не знікнуць да наступнай пераўсталёўкі ці выдалення дадатку!</string>
+    <string name="apk_create_option">Імя apk-файлаў</string>
+    <string name="apk_not_found_error">Памылка: Apk файл ня знойдзены.</string>
+    <string name="apk_size">Памер apk:</string>
+    <string name="apkdescr">Пры стварэнні apk файлаў выніковы файл можа мець імя на аснове назвы дадатку ці яго пакету.</string>
+    <string name="apklabel">На аснове label дадатку</string>
+    <string name="apkpackage">На аснове package дадатку</string>
+    <string name="app_dialog_no_root_app_control">Панэль кіравання</string>
+    <string name="app_info">Інфармацыя пра дадатак</string>
+    <string name="app_install_success">Дадатак паспяхова ўсталяваны.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">Дадатак ня знойдзены! Усталюйце яго і паспрабуйце зноўку.</string>
+    <string name="backbutton">Рэзервовая копія</string>
+    <string name="backup_data_empty">Дадзеныя дадаткі ня знойдзены. Няма чаго дадаваць у рэзервовую копію.</string>
+    <string name="backup_data_error">Памылка: падчас стварэння рэзервовай копіі адбылася памылка, дадзеныя могуць быць не захаваны.</string>
+    <string name="backup_data_success">Рэзервовая копія дадзеных дадатку паспяхова створана.</string>
+    <string name="backup_delete_message">Вы сапраўды жадаеце выдаліць рэзервовую копію?</string>
+    <string name="backup_done">"Рэзервовая копія apk захавана ў "</string>
+    <string name="backups_not_found">Рэзервовыя копіі ня знойдзены ў дырэкторыі:</string>
+    <string name="begin_changelog">Усталяваная версія</string>
+    <string name="billing_buy">Вы жадаеце паспрабаваць атрымаць гэту куплю безкаштоўна?</string>
+    <string name="billing_hack">"Аўтар і праграміст dschuermann
+"</string>
+    <string name="billing_hack2_auto_repeat_note">Для скасавання аўто куплі трэба націснуць на дадатак перайсці ў \"Прылады\">\"->\"Выдаліць вылучаныя захаваныя набыткі\" і выдаліць куплю.</string>
+    <string name="billing_hack2_new">"- Для лепшых вынікаў неабходна ўжыць патч Android-а \"Праверка подпісу заўсёды слушная\";
+- Для адключэння эмуляцыі Google Billing націсніце \"Перамыкачы\" на ніжняй панэлі Lucky Patcher-а і абярыце \"Вымкнуць эмуляцыю Google Billing\"."</string>
+    <string name="billing_hack_menu">Эмуляцыя Google Billing</string>
+    <string name="billing_hack_menu_descr">Патрабуе ўжывання \"Патч падтрымкі для InApp і LVL эмуляцыі\" да дадатку і ўжытых \"Патчы Андроіда\". Выкарыстоўвайце карыстальніцкі патч \"Support.InApp.LVL...\" для Google Play, каб усярэдзіне дадаткаў адлюстроўваліся слушныя цэны і апісанне.</string>
+    <string name="billing_hack_menu_disable">Вымкнуць эмуляцыю Google Billing</string>
+    <string name="billing_hack_menu_enable">Уключыць эмуляцыю Google Billing</string>
+    <string name="billing_hack_option">Даслаць адказ непадпісаным (можа працаваць на прыладах без root-праў)</string>
+    <string name="billing_hack_option2">Захаваць для аднаўлення закупаў</string>
+    <string name="bind_button">Дадаць новую віртуальную тэчку!</string>
+    <string name="bind_delete">Вы сапраўды хочаце выдаліць гэту віртуальную тэчку?</string>
+    <string name="bind_dialog_button">Стварыць віртуальную тэчку</string>
+    <string name="bind_dialog_source">Тэчка з дадзенымі:</string>
+    <string name="bind_dialog_target">Віртуальная тэчка для дадзеных:</string>
+    <string name="bind_error">Тэчка з дадзенымі ня знойдзена на прыладзе!</string>
+    <string name="bind_source">Тэчка з дадзеным:</string>
+    <string name="bind_target">Віртуальная тэчка для дадзеных:</string>
+    <string name="binder_browser">Агляд</string>
+    <string name="binder_browser_create_dir">Стварыць дырэкторыю</string>
+    <string name="binder_browser_current_dir">Бягучая тэчка:</string>
+    <string name="binder_browser_select">Абраць бягучую тэчку</string>
+    <string name="binder_delete">Выдаліць</string>
+    <string name="bootview">Загрузны ліст</string>
+    <string name="busybox_not_found">"Увага: busybox ня знойдзены.
+Lucky Patcher можа працаваць з памылкамі."</string>
+    <string name="button_advanced_filter">Пашыраны</string>
+    <string name="button_for_delete">Выдаліць</string>
+    <string name="button_move_to_sdcard">Перасунуць</string>
+    <string name="cancel">Скасаваць</string>
+    <string name="change_icon_lp">Змяніць значок</string>
+    <string name="change_icon_lp_descr">Тут можна памяняць значок гэтага дадатку</string>
+    <string name="changelog">Спіс зменаў</string>
+    <string name="cleardalvik">Ачыстка dalvik-cache і перазагрузка</string>
+    <string name="cleardata">Ачысціць дадзеныя</string>
+    <string name="cloneApplication">Кланаваць дадатак (Працуе не заўсёды)</string>
+    <string name="collect_logs">Збор інфармацыі пра падзеі...</string>
+    <string name="context_automodeslvl">Аўтаматычныя рэжымы</string>
+    <string name="context_backup_apk">Зрабіць рэзірвовую копію apk файла</string>
+    <string name="context_backup_data">Рэзервовая копія налад дадатку</string>
+    <string name="context_batch_operations">Аперацыі з групай дадаткаў</string>
+    <string name="context_blockads">Заблакаваць рэкламу</string>
+    <string name="context_change_components_menu">Змяніць кампаненты дадатку</string>
+    <string name="context_clearhosts">Ачысціць файл hosts ад усіх запісаў</string>
+    <string name="context_crt_apk_permission">Apk са змененымі дазволамі і актывіці</string>
+    <string name="context_dependencies">Выдаліць залежнасці</string>
+    <string name="context_dexopt_app">Адаксаваць дадатак</string>
+    <string name="context_disableActivity">Адключыць рэкламныя Activity</string>
+    <string name="context_disableComponents">"Вымкнуць кампаненты.
+Метад 'pm disable'
+(Дадатак можа ўключыць назад)"</string>
+    <string name="context_disable_google_ads">Вымкнуць рэкламныя сэрвісы Google</string>
+    <string name="context_disable_package">Адключыць дадатак (замарозіць)</string>
+    <string name="context_enable_google_ads">Улучыць рэкламныя сэрвісы Google</string>
+    <string name="context_enable_package">Уключыць дадатак (размарозіць)</string>
+    <string name="context_hard_apk_permission">"Змяніць дазволы.
+Захоўвае арыгінальны подпіс..
+Небяспечны метад."</string>
+    <string name="context_hide_lp">Схаваць Lucky Patcher</string>
+    <string name="context_hide_lp_descr">Паспрабаваць схаваць Lucky Patcher ад іншых дадаткаў. Павялічвае нагрузку на сістэму - выкарыстоўваць толькі калі мае патрэбу.</string>
+    <string name="context_install">Усталяваць</string>
+    <string name="context_install_as_system">Усталяваць як сістэмны дадатак</string>
+    <string name="context_integrate_update_selected_apps">Інтэграцыя абнаўленняў абраных дадаткаў у /system</string>
+    <string name="context_move_selected_apps_to_internal">Перасунуць вылучаныя дадаткі ў унутраную памяць</string>
+    <string name="context_move_selected_apps_to_sdcard">Перасунуць абраныя дадаткі на sdcard</string>
+    <string name="context_rebuild">Перасабраць гэты файл</string>
+    <string name="context_removeAds">Выдаліць рэкламу патчам</string>
+    <string name="context_remove_saved_purchaces">Выдаліць абраныя захаваныя набыткі</string>
+    <string name="context_restore_apk">Пераўсталяваць apk</string>
+    <string name="context_restore_data">Аднаўленне налад дадатку</string>
+    <string name="context_safe_apk_permission">"Змяніць дазволы і актывіці.
+Перасабраць і ўсталяваць"</string>
+    <string name="context_safe_sign_apk_permission">"Змяніць дазволы і актывіці.
+Захоўвае арыгінальны подпіс
+Бяспечны метад."</string>
+    <string name="context_support_patch">Патч падтрымкі для InApp і LVL эмуляцыі</string>
+    <string name="context_tools">Прылады</string>
+    <string name="context_unblockads">Выдаліць блакаванне рэкламы з hosts</string>
+    <string name="context_uninstall_if_installed">Дэўсталёўваць і ўсталяваць</string>
+    <string name="context_uninstall_selected_apps">Выдаліць вылучаныя карыстальніцкія дадаткі</string>
+    <string name="contextads">Выдаліць рэкламу</string>
+    <string name="contextbackup">Зрабіць рэзервовую копію</string>
+    <string name="contextblockfileads">Выдаліць спасылкі з apk</string>
+    <string name="contextblockfileads_descr">Выдаляе http:// спасылкі па шаблонах з AdsBlockList_user_edit.txt і AdsBlockList.txt.</string>
+    <string name="contextboot">"Патчыць пры перазагрузцы.
+(Нестабільна. Выкарыстоўваць толькі для патчу бібліятэк)"</string>
+    <string name="contextbootads">Выдаленне рэкламы</string>
+    <string name="contextbootcustom">Карыстальніцкі патч</string>
+    <string name="contextbootlvl">Выдаленне праверкі ліцэнзіі</string>
+    <string name="contextcorepatch1">Праверка подпісу заўсёды слушная</string>
+    <string name="contextcorepatch1_descr">Неабходны для пацверджання фальшывых набыткаў і фальшывых ліцэнзій, а таксама дзеля генерацыі ключа да некаторых дадаткаў. Калі гэты патч будзе патрэбен, гэта будзе паказвацца ў генератары ключа.</string>
+    <string name="contextcorepatch2">Адключыць праверку цэласці apk</string>
+    <string name="contextcorepatch2_descr">Дазваляе змяняць дадатак, ня падпісваючы яго паўторна пасля зменаў. Гэта дазваляе захаваць подпіс распрацоўніка (карысна пры перакладзе, змене афармлення і іншага ў дадатках з абаронай па подпісу).</string>
+    <string name="contextcorepatch3">Адключыць праверку подпісу ў package manager-е</string>
+    <string name="contextcorepatch3_descr">Дазваляе ўсталёўку дадаткаў з рознымі подпісамі адзін на аднаго, калі імёны пакетаў супадаюць</string>
+    <string name="contextcorepatch3_descr_plus">"+
+Дазваляе ўсталёўку дадатку з ніжэйшай версіяй, чым тое, якое ужо ўсталявана."</string>
+    <string name="contextcorepatch4">Патч падтрымкі для InApp і LVL эмуляцый</string>
+    <string name="contextcorepatch4_descr">Увага: гэты патч можа вельмі дрэнна сябе паводзіць на некаторых прашыўках! Абавязкова зрабіце рэзервовую копію. Патч неабходны для выкарыстання эмуляцый без ужывання патча падтрымкі эмуляцый да дадаткаў.</string>
+    <string name="contextcorepatch4_descr_xposed">Патч неабходны дзеля выкарыстання эмуляцый без ужывання патча падтрымкі эмуляцый да дадаткаў.</string>
+    <string name="contextcorepatch4_note">можна зрабіць толькі ў</string>
+    <string name="contextcorepatchrestore">Выдаліць усе змены з core.jar</string>
+    <string name="contextcorepatchrestore2">УВыдаліць усе змены з services.jar</string>
+    <string name="contextcorepatchrestore2_descr">Вяртае сэрвісы ў зыходны стан.</string>
+    <string name="contextcorepatchrestore_descr">Вяртае ядро ў зыходны стан, але ня прыбірае адэксаванне, калі да патчаў яно было дэадэксаваным.</string>
+    <string name="contextcustompatch">Карыстальніцкі патч</string>
+    <string name="contextdeodex">"Выдаліць ODEX са зменамі
+(Аднаўленне дадатку)"</string>
+    <string name="contextextpatch">Ручное кіраванне</string>
+    <string name="contextfix">Фіксацыя змяненняў</string>
+    <string name="contextfulloffline">Адключыць інтэрнэт</string>
+    <string name="contextfulloffline_descr">Спрабуе адключыць дадатак ад інтэрнэту і іншых сеткавых падлучэнняў.</string>
+    <string name="contextignore">Выдаліць праверку ліцэнзіі</string>
+    <string name="contextlaunchapp">Запусціць дадатак</string>
+    <string name="contextlivepatch">Патчар</string>
+    <string name="contextodex">Зафіксаваць змены</string>
+    <string name="contextpatt1">Патч замены анлайн адказу</string>
+    <string name="contextpatt1_descr">Калі будзе знойдзены, спатрэбіцца ўлучаны інтэрнэт пры першым запуску дадатку. Уносіць меней за ўсё зменаў</string>
+    <string name="contextpatt2">Патч афлайн праверак ліцэнзіі</string>
+    <string name="contextpatt2_descr">Калі будзе знойдзена, ёсць верагоднасць таго, што пры першым запуску дадатак можна будзе запусціць без Інтэрнэту..</string>
+    <string name="contextpatt3">Дробныя выпраўленні праверкі ліцэнзіі</string>
+    <string name="contextpatt3_descr">Чыніць шэраг нязначных зменаў, якія могуць дапамагчы ў розных сітуацыях.</string>
+    <string name="contextpatt4">Падмена кода адказу ад Google</string>
+    <string name="contextpatt4_descr">Дапамагае ў большасці выпадкаў. Нестабільны, можа выклікаць памылкі пры ўлучанай \"аўто-арыентацыі\" прылады, але вельмі эфектыўны.Патрабуе ўлучанага інтэрнэту пры першым запуску дадатку.</string>
+    <string name="contextpatt5">Фінальная праверка ліцэнзіі</string>
+    <string name="contextpatt5_descr">Шаблоны для фінальнай праверкі ліцэнзіі. Калі яны спрацуюць, то ёсць вялікі шанец, што дадатак будзе працаваць без Інтэрнэту.</string>
+    <string name="contextpatt6">Фінальная праверка ліцэнзіі (Інверсны)</string>
+    <string name="contextpatt6_descr">Калі не спрацавалі патчы \"Фінальная праверка ліцэнзіі\", можна паспрабаваць гэтыя.</string>
+    <string name="contextpattads1">Змяніць памер рэкламы да мінімуму</string>
+    <string name="contextpattads1_descr">Спрабуе зрабіць рэкламу максімальна маленькага памеру.</string>
+    <string name="contextpattads2">Зрабіць памер рэкламы роўным нулю</string>
+    <string name="contextpattads2_descr">Спрабуе зрабіць рэкламу нулявога памеру, такі метад часта выклікае памылкі, але бывае часам эфектыўны.</string>
+    <string name="contextpattads3">Парушае механізм атрымання рэкламы</string>
+    <string name="contextpattads3_descr">"Спрабуе парушыць алгарытм атрымання аб'яў з Інтэрнэту."</string>
+    <string name="contextpattads4">Іншыя патчы</string>
+    <string name="contextpattads4_descr">Іншыя патчы, якія былі карысныя на некаторых дадаткаў, магчыма і на гэтым дапамогуць.</string>
+    <string name="contextpattads5">Чорны прамакутнік</string>
+    <string name="contextpattads5_descr">Зачыняе сабой банар з рэкламай (бачны без верхніх галачак змяншэння памеру рэкламы).</string>
+    <string name="contextpattads6">Афлайн</string>
+    <string name="contextpattads6_descr">Модуль рэкламы думае, што інтэрнэт адключаны.</string>
+    <string name="contextpattamazon">Аўтаматычны рэжым (Амазон)</string>
+    <string name="contextpattamazon_descr">Выдаляе праверку ліцэнзіі ў дадатку з Amazon Market.</string>
+    <string name="contextpattdependencies_descr">Выдаляе залежнасці ад Google Play і іншых дадаткаў. Часам дадатак пры старце піша, што яму патрэбен абавязкова Google Play, але гэта не так.</string>
+    <string name="contextpattlvl1">Аўтаматычны рэжым</string>
+    <string name="contextpattlvl1_descr">Мінімум патчаў. Дапамагае ў большай частцы дадаткаў з сярэдняй абаронай.</string>
+    <string name="contextpattlvl2">Аўтаматычны рэжым (Інверсны)</string>
+    <string name="contextpattlvl2_descr">Тое ж самае што і \"Аўтаматычны рэжым\", але мае шэраг адрозненняў, якія могуць дапамагчы, калі не дапамог першы рэжым.</string>
+    <string name="contextpattlvl3">"Іншыя патчы
+((Экстрэмальны рэжым)"</string>
+    <string name="contextpattlvl3_descr">Дадатковыя патчы, якія могуць дапамагчы, але яны робяць дадатак вельмі нестабільным, і ў большасці выпадкаў пасля іх дадатак не працуе без Інтэрнэту.</string>
+    <string name="contextpattlvl4">Ужыць усе патчы да dalvik-cache</string>
+    <string name="contextpattlvl4_descr">Па змаўчанні ўсе змены захоўваюцца ў odex-файле, пасля выдалення якога дадатак набывае некрануты стан. Пры пераносе на вонкавую SD у Вас можа не патчыцца дадатак, можна ўключыць гэты пункт, але аднавіць яго можна будзе толькі пераўсталёўкай.</string>
+    <string name="contextpattlvl5">Зрабіць рэзервовую копію apk</string>
+    <string name="contextpattlvl5_descr">На sdcard у тэчку дадзеных Lucky Patcher-а робіцца рэзервовая копія apk-файла дадатку, з якога можна пераўсталяваць і аднавіць дадатак.</string>
+    <string name="contextpattlvl6">Выдаліць дадаткі з dalvik-cache</string>
+    <string name="contextpattlvl6_descr">Для эканоміі месца можна выдаліць dalvik-cache дадаткі пасля патчаў і стварэнні odex-файла, але калі odex не падхопіцца дадаткам, ён стане непрацаздольным (неабходна яго пераўсталяваць).</string>
+    <string name="contextpattsamsung">Аўтаматычны рэжым (Samsung)</string>
+    <string name="contextpattsamsung_descr">Выдаляе праверку ліцэнзіі ў дадатку з SamsungApps.</string>
+    <string name="contextrestore">Аднавіць з рэзервовай копіі</string>
+    <string name="contextselpatt">Абраць шаблон</string>
+    <string name="copyright">Copyright ©2011, ChelpuS</string>
+    <string name="core_error_dalvik_cache_not_found_for_core.jar">Памылка: у рэжыме патча толькі dalvik кэша. Dalvik кэш для core.jar не знойдзены ў сістэме.</string>
+    <string name="core_error_dalvik_cache_not_found_for_services.jar">Памылка: у рэжыме патча толькі dalvik кэша. Dalvik кэш для services.jar не знойдзены ў сістэме.</string>
+    <string name="core_option">Прапатчыць толькі dalvik-cache</string>
+    <string name="core_patch_apply">(патч ужыты)</string>
+    <string name="core_patch_nopatch">(не ўжыты)</string>
+    <string name="core_patch_nopatch_no_space1">Ваш dalvik-cache ад core.jar прапатчаны, але такі выгляд патча можа знікнуць пры абнаўленні dalvik-cache. Для фіксацыі патча файлам core.odex бракуе месцы ў System ROM. Вызваліце каля 4Мб у /system, выдаліце dakvik-cache і паспрабуйце зноўку. Перазагрузіце прыладу, каб патч dalvik-cache запрацаваў.</string>
+    <string name="corepatches">Патчы Андроіду</string>
+    <string name="corrupt_download">Сцягнуты файл пашкоджаны. Праверце вольнае месца на sdcard і паспрабуйце абнавіцца зноўку.</string>
+    <string name="create">Стварыць дырэкторыю</string>
+    <string name="create_clone_app">Вы сапраўды жадаеце стварыць клон гэтага дадатку?</string>
+    <string name="create_dir_error">Назва дырэкторыі не можа быць пустая.</string>
+    <string name="create_dir_error_2">Не атрымалася стварыць дырэкторыю.</string>
+    <string name="create_lic_done">Ліцэнзія паспяхова створана. Для праверкі вынікаў выключыце інтэрнэт на прыладзе і запусціце дадатак. Ёсць нядрэнны шанец, што Вам пашчасціла.</string>
+    <string name="create_perm_ok">Перасабраць дадатак</string>
+    <string name="createapk">Стварыць зменены apk</string>
+    <string name="createapkads">Apk з выразанай рэкламай Google</string>
+    <string name="createapkcustom">Apk на выснове карыстальніцкага патча</string>
+    <string name="createapklvl">Apk з выразанай праверкай ліцэнзіі</string>
+    <string name="createapklvlautoinverse">"Apk з выразанай праверкай ліцэнзіі
+(Аўтаматычны рэжым!~Інверсны~)"</string>
+    <string name="createapklvlextreme">"Apk з выразанай праверкай ліцэнзіі
+(Экстрэмальны рэжым!)"</string>
+    <string name="createapksupport">Перасабраць для працы з InApp і LVL эмуляцыяй</string>
+    <string name="createdialog1">Стварэнне apk дзеля</string>
+    <string name="createdialog1_clone">Кланаванне для</string>
+    <string name="createdialog2">"скончана:
+
+Файл усталёўкі ляжыць у:"</string>
+    <string name="createdialog3">"
+
+Запамятайце! Калі дадатак працуе слушна пасля метаду патча, гэта не азначае, што ён будзе далей так працаваць, калі стварыць зменены apk-пакет для яго, так як дадатак можа правяраць сябе на занесеныя змены і пры выяўленні такіх, паводзіць сябе непажадана. Метад стварэння змененага apk працуе значна радзей, чым патч які ужо ўсталяванага дадатку, затое дзеля ўсталёўкі такога apk не патрэбены root-доступ."</string>
+    <string name="createdialog3_clone">Увага! Некаторыя дадаткі патрабуюць выдалення арыгінала перад усталёўкай клона. Кланаваны дадатак можа не працаваць, калі ў дадатку выкарыстоўваюцца праверкі подпісу і іншыя метады абароны. Памятайце, што некаторыя службы (напрыклад Google) могуць перастаць працаваць пры кланаванні.</string>
+    <string name="createdialog4">- Падчас стварэння ўсталявальнага пакета адбылася невядомая памылка...</string>
+    <string name="createdialog5">Імя файлу:</string>
+    <string name="custom_descript">Апісанне патчу:</string>
+    <string name="custom_patches_update_not_found">Абнаўленні для карыстальніцкіх патчаў не знойдзены.</string>
+    <string name="custom_sel_app">Абраны дадатак:</string>
+    <string name="customdescr">Паказаць усе дадаткі, для якіх ёсць карыстальніцкія патчы.</string>
+    <string name="customtitle">Карыстальніцкі патч</string>
+    <string name="dalvik_cache_size">Памер dalvik-cache:</string>
+    <string name="data_dir_size">Памер тэчкі з дадзенымі:</string>
+    <string name="days_on_up">Колькасць дзён</string>
+    <string name="days_on_up_descr">У самы верх спіса будуць перасоўвацца дадаткі, усталяваныя не раней уведзенай колькасці дзён. Усталюйце 0 дзён для адключэння перасоўвання ўгару нядаўна ўсталяваных або абноўленых дадаткаў.</string>
+    <string name="default_target">Зараз патчы будуць ужыты да dalvik cache дадатку.</string>
+    <string name="delboot">Націсніце для выдалення са спісу</string>
+    <string name="delete_file">Выдаліць файл</string>
+    <string name="delete_file_message">Вы сапраўды жадаеце выдаліць гэты файл?</string>
+    <string name="dialog_system">"Гэты дадатак з'яўляецца сістэмным. Будзьце вельмі асцярожныя з кожным дзеянням ўбок сістэмных дадаткаў, бо гэта можа прывесці да поўнай непрацаздольнасці як дадатку, так і сістэмы ў цэлым. Заўсёды рабіце рэзервовыя копіі дадатку перад працай з ім. Вы ўпэўнены, што хочаце штосьці зрабіць з гэтым дадаткам?"</string>
+    <string name="dir_change">Перасунуць тэчку</string>
+    <string name="dir_change_descr">Змяніць месцаванне тэчкі з дадзенымі на карце памяці (некаторыя дадаткі выяўляюць Lucky Patcher па ёй). Па змаўчанні mnt/sdcard/LuckyPatcher</string>
+    <string name="dirbinder">Віртуальныя тэчкі</string>
+    <string name="dirr_chg">Тэчка зменена на:</string>
+    <string name="disable_autoupdate">Адключыць аўтаабнаўленне.</string>
+    <string name="disable_autoupdate_descr">Адключае праверку абнаўленняў у інтэрнэце пры уключэнні Lucky Patcher.</string>
+    <string name="disable_inapp_services_google">Сэрвісы закупаў у Google Play Store</string>
+    <string name="disable_inapp_services_google_descr">Некаторыя дадаткі валяцца з крытычнай памылкаю, калі ў сістэме некалькі сэрвісаў закупаў.</string>
+    <string name="disable_license_services_google">Сэрвісы праверкі і выдачы ліцэнзіі ў Google Play Store</string>
+    <string name="disable_license_services_google_descr">Некаторыя дадаткі валяцца з крытычнай памылкаю, калі ў сістэме некалькі сэрвісаў праверкі ліцэнзіі.</string>
+    <string name="disabled_package">Дадатак вымкнуты (замарожана).</string>
+    <string name="dontusepatch">Выйсце</string>
+    <string name="download">Сцягванне дадзеных...</string>
+    <string name="empty">Пуста</string>
+    <string name="empty_binders">Вы павінны стварыць хоць адну віртуальную тэчку.</string>
+    <string name="enabled_package">Дадатак улучаны.</string>
+    <string name="enter_name_dir">Імя дырэкторыі:</string>
+    <string name="equals_version">У Вас апошняя версія Lucky Patcher...</string>
+    <string name="error_apk_to_system">Нельга ўсталёўваць дадатак як сістэмнае з месца яго ўсталёўкі. Трэба скапіяваць файл apk на sdcard і толькі пасля гэтага ўсталёўваць. Або націснуць у дыялогу дадатку Перанесці ў /system/app.</string>
+    <string name="error_app_installed_on_sdcard">Lucky Patcher павінен быць усталяваны ў унутраную памяць прылады. Інакш, некаторыя функцыі могуць зусім не працаваць. Калі месца ў унутранай памяці бракуе, то зрабіце яго сістэмным.</string>
+    <string name="error_app_installed_on_sdcard_block">Lucky Patcher павінен быць усталяваны ў унутраную памяць прылады. Гэта функцыя не можа быць выканана, калі Lucky Patcher усталяваны на знешнюю sd картку. Перасуньце яго ў унутраную памяць або зрабіце сістэмным.</string>
+    <string name="error_backup_apk">Не атрымалася зрабіць рэзервовую копію файла, бо бракавала дазволаў для капіявання.</string>
+    <string name="error_collect_logs">Адбылася памылка збору інфармацыі пра падзеі. Лог-файл не створаны.</string>
+    <string name="error_create_oat">Памылка стварэння .oat файла для прапатчанага classes.dex. У бягучай версіі вашай прашыўкі .oat файлы генеруюцца дрэнна, спадзяюся ў будучым Google выправіць гэта.</string>
+    <string name="error_detect">У мінулы раз Lucky Patcher завяршыў сваю працу крытычнай памылкай. Вы хочаце даслаць лог падзей, каб я гэта выправіў?</string>
+    <string name="error_get_pkgInfo">Памылка: Не атрымалася атрымаць інфармацыю пра дадатак.</string>
+    <string name="error_launch">Нельга запусціць!</string>
+    <string name="error_lenghts_patterns">Даўжыня шаблону замены не роўная даўжыні шаблону арыгінала.</string>
+    <string name="error_not_found_lic_data">Дадзеныя для стварэння ліцэнзіі не былі знойдзены.</string>
+    <string name="error_not_found_storage_lic">Месца захоўвання ліцэнзіі не знойдзена.</string>
+    <string name="error_odex_app">"Памылка працэсу стварэння odex файлу...
+Напэўна, бракавала вольнага месца дзе знаходзіцца apk файл дадатку."</string>
+    <string name="error_original_pattern">Памылка ў шаблоне арыгінала (не забывайце, што байты пішуцца праз hex).</string>
+    <string name="error_out_of_memory">Недастаткова аператыўнай памяці (RAM) дзеля завяршэння аперацыі. VM Heap занадта маленькага памеру.</string>
+    <string name="error_path">Памылка шляху.</string>
+    <string name="error_path_exists">Дырэкторыя ўжо існуе. Калі ласка, увядзіце новы шлях.</string>
+    <string name="error_replace_pattern">Памылка ў шаблоне замены (не забывайце, што байты пішуцца праз hex).</string>
+    <string name="error_restore">Аднавіць дадатак не атрымалася.</string>
+    <string name="extpat1">Знойдзена</string>
+    <string name="extpat2">"аб'ектаў, падобных на праверку ліцэнзіі:"</string>
+    <string name="extpat3">"Інструкцыя:
+--------------
+- Націсніце на \"Бэкап\";
+- Улучыце WiFi і адчыніце ўвесь трафік да праграмы;
+- Абярыце аб'ект і націсніце \"Патч\";
+- Націсніце \"Запуск\" і праверце стан ліцэнзіі(абнавіце запыт на ліцэнзію);
+- Калі абраны аб'ект не дапамог у атрыманні валіднай ліцэнзіі, націсніце \"Аднавіць\" і паўторыце працэдуру з іншым аб'ектам са спісу.
+- Калі неабходны вынік дасягнуты аб'ектам, націсніце \"Фіксацыя\"."</string>
+    <string name="extres1">"Аб'ект прапатчаны!
+- Націсніце \"Запуск\" і пагледзіце стан ліцэнзіі;
+- Калі абраны аб'ект не дапамог у атрыманні валіднай ліцэнзіі, націсніце \"Аднавіць\" і паўторыце працэдуру з іншым аб'ектам са спісу."</string>
+    <string name="extres2">"Не знойдзена ніводнай пазнакі дзеля абранага аб'екту!
+Гэта можа азначаць, што Вы ўжо прапатчылі раней з гэтым аб'ектам.
+- Калі праграма не павяла сябе нейкім чынам, націсніце \"Аднавіць\", абярыце іншы аб'ект і націсніце \"Патч\"."</string>
+    <string name="fast_start">Хуткі старт</string>
+    <string name="fast_start_descr">Адключае загрузку абразкоў з базы дадзеных пры старце Lucky Patcher. Робіць спіс дадаткаў лагнутым...</string>
+    <string name="file_not_found">Не атрымалася скапіяваць дадатак на sdcard дзеля далейшага ператварэння. Праверце вольнае месца на SD карцы альбо яе наяўнасць.</string>
+    <string name="filter">Фільтар</string>
+    <string name="filter0">Новыя і абноўленыя дадаткі</string>
+    <string name="filter1">Дадаткі з праверкай ліцэнзіі</string>
+    <string name="filter10">Вымкнутыя (замарожаныя) дадатку</string>
+    <string name="filter11">Дадаткі з патчамі карыстальніка</string>
+    <string name="filter12">Дадаткі са сцяжком мадыфікацыі</string>
+    <string name="filter13">Адэксаваныя дадаткі</string>
+    <string name="filter2">Дадаткі з рэкламай</string>
+    <string name="filter3">Дадаткі з карыстальніцкімі патчамі</string>
+    <string name="filter4">Дадаткі з набыткамі ўнутры</string>
+    <string name="filter5">Дадаткі на ўнутранай памяці</string>
+    <string name="filter6">Дадаткі на SdCard</string>
+    <string name="filter7">Сістэмныя дадаткі</string>
+    <string name="filter8">Сістэмныя дадаткі з абнаўленнямі</string>
+    <string name="filter9">Дадаткі з дазволамі SEND_SMS і CALL_PHONE</string>
+    <string name="filterdescr">Можна абраць катэгорыі дадаткаў, якія трэба адлюстроўваць.</string>
+    <string name="final_market_message">Google Play усталяваны. Для яго слушнай працы неабходна прапатчыць core.jar і перазагрузіць прыладу. Прапатчыць і перазагрузіць?:)</string>
+    <string name="fixbutton">Фіксацыя</string>
+    <string name="fixeddescr">Паказаць усе дадаткі, у якіх зафіксаваны змены (зорачка ззяе жоўтым).</string>
+    <string name="fixedtitle">Зафіксаваныя змены</string>
+    <string name="go_to_file_path">Перайсці да файлу</string>
+    <string name="goodresult">"%!
+Калі ласка, запусціце праграму, каб праверыць яе працаздольнасць!
+
+Калі праграма працуе некарэктна, аднавіце яе з рэзервовай копіі, калі яе няма, то пераўсталюйце яе і не ўжывайце патч да гэтай версіі."</string>
+    <string name="have_luck">"***********************
+
+Ваш поспех складае"</string>
+    <string name="header_activities">Activities (дзейнасці):</string>
+    <string name="header_providers">Providers (перадатнікі):</string>
+    <string name="header_receivers">Receivers (прымачы):</string>
+    <string name="header_services">Services (сэрвісы):</string>
+    <string name="help">Дапамога</string>
+    <string name="help_common">Агульная даведка</string>
+    <string name="help_custom">Стварэнне карыстальніцкага патча</string>
+    <string name="hide_notify">Схаваць паведамленні</string>
+    <string name="hide_notify_descr">Схаваць паведамленні Lucky Patcher у панэлі паведамленняў.</string>
+    <string name="hide_title_app">Схаваць загаловак</string>
+    <string name="hide_title_app_descr">Хавае загаловак Lucky Patcher у спісе дадаткаў. Працуе толькі на прыладах з апаратнай кнопкай меню.</string>
+    <string name="host_down">Сервер не даступны. Паспрабуйце пазней.</string>
+    <string name="hosts_default">Усе запісы з hosts выдаленыя ...</string>
+    <string name="hosts_not_found_changes">Змены ў hosts файле не знойдзеныя...</string>
+    <string name="hosts_updated">hosts файл абноўлены...</string>
+    <string name="inapp_emulation_auto_repeat">Аўтаматычная купля з бягучымі наладамі</string>
+    <string name="information">Інфармацыя</string>
+    <string name="install">Усталяваць</string>
+    <string name="install_as_user_app">Усталяваць GooglePlay як карыстальніцкі дадатак.</string>
+    <string name="install_as_user_app_note">Дзеля таго, каб Вы маглі паставіць гэту галачку, у Вас павінен быць ужыты \"Патчы Андроіда\" і ўсталяваны Google Play як сістэмны дадатак..</string>
+    <string name="install_cloned_app">Усталяваць клон</string>
+    <string name="install_date">Дата ўсталёўкі:</string>
+    <string name="installsupersu">Усталяваць SuperSU (ICS)</string>
+    <string name="integrate_to_system">Вы сапраўды жадаеце перанесці абнаўленне дадатку ў /system?</string>
+    <string name="integrate_updates_result">Вынік пераносу абнаўлення</string>
+    <string name="integrate_updates_to_system">Перанесці абнаўленне ў /system</string>
+    <string name="internet_not_found">Неабходны доступ у інтэрнэт..</string>
+    <string name="is_an_invalid_number">Вы памылкова ўвялі лік...</string>
+    <string name="langdef">Рускі</string>
+    <string name="langen">English</string>
+    <string name="langmenu">Мова</string>
+    <string name="launchbutton">Запуск</string>
+    <string name="licensing_hack_menu">Эмуляцыя праверкі ліцэнзіі Google</string>
+    <string name="licensing_hack_menu_descr">Альтэрнатыва для Google Play. Выдае ліцэнзіі дадаткаў. Патрабуе ўжывання \"Патч падтрымкі для InApp і LVL эмуляцыі\" да дадатку або ўжытых \"Патчы Андроіда\". Можа быць дрэнна для легальна купленых дадаткаў (патрабуе ўжывання \"Падтрымка.InApp.LVL...\" для Google Play, каб пазбегнуць такіх праблем).</string>
+    <string name="licensing_hack_menu_disable">Вымкнуць эмуляцыю праверкі ліцэнзіі Google</string>
+    <string name="licensing_hack_menu_enable">Уключыць эмуляцыю праверкі ліцэнзіі Google</string>
+    <string name="loadpkg">Сканаванне праграм</string>
+    <string name="lp_billing_hack_title">Безкаштоўныя набыткі...</string>
+    <string name="lvldescr">Паказаць усе дадаткі з праверкай ліцэнзіі Google.</string>
+    <string name="lvltitle">Праверка ліцэнзіі</string>
+    <string name="market_description_text">"Калі ласка, націсніце кнопку \"Усталяваць\" дзеля ўсталёўкі абранага варыянту Google Play. У мадыфікаванай версіі Google Play: адключана яго абнаўленне, кнопка \"Вярнуць грошы\" не выдаляе дадатак пры звароце грошай, LVL заўсёды адказвае дадаткам, што яны ліцэнзійныя, нават пры адключаным сеціве.
+"</string>
+    <string name="market_install">Усталяваць мадыфікаваны Google Play</string>
+    <string name="market_version1">Мадыфікаваны Google Play 3.10.14 (Android 2.2 і вышэй)</string>
+    <string name="market_version2">Мадыфікаваны Android Market 2.3.6 (Android 2.1)</string>
+    <string name="market_version3">Арыгінальны Google Play 3.10.14 (Android 2.2 і вышэй)</string>
+    <string name="market_version4">Арыгінальны Android Market 2.3.6 (Android 2.1)</string>
+    <string name="menu_download_custom_patches">Сцягнуць карыстальніцкія патчы</string>
+    <string name="messageAndroidManifest">Нельга выняць AndroidManifest.xml. Магчыма ў Вам бракуе вольнага месца на sdcard і дадатак капіюецца не цалкам.</string>
+    <string name="messageODEX1">Ваш dalvik-cache ад core.jar прапатчаны, але такі выгляд патча можа знікнуць пры абнаўленні dalvik-cache. Зараз Ваш core.jar будзе адэксаваны (створаны odex). Калі ласка, зрабіце на аndroid рэзірвовую капію перад тым, як націснеце \"Так\". Падчас гэтага працэсу ваша прылада можа завіснуць на некалькі хвілін, пасля чаго загрузіцца. Калі прылада адмаўляецца загрузіцца сама, перазагрузіцеся ручна. Ёсць некаторая верагоднасць, што пасля гэтага, некаторыя дадаткі будуць працаваць дрэнна, зайдзіце ў \"Развязак праблем\" і націсніце \"Ачыстка ўсіх фіксаў і рэзервовых копій\" і \"Ачыстка dalvik-cache\" дзеля вырашэння гэтай праблемы. Адаксаваць core.jar цяпер?</string>
+    <string name="messagePath">"Уведзены шлях не знойдзены!
+Такі шлях немагчыма стварыць.
+Калі ласка, увядзіце новую дырэкторыю."</string>
+    <string name="messageSD">"SDcard не знойдзена!
+Дзеля гэтай функцыі неабходна SDcard!"</string>
+    <string name="message_allow_non_market_app">Калі ласка, уключыце \"Дазволіць усталёўку дадаткаў не з Market’у\".</string>
+    <string name="message_clear_all_dalvik_cache">Вы сапраўды жадаеце вычысціць dalvik-cache?</string>
+    <string name="message_clear_data">Вы сапраўды жадаеце вычысціць усе дадзеныя дадатку?</string>
+    <string name="message_delete_odex_file">Вы сапраўды жадаеце выдаліць odex файл?</string>
+    <string name="message_done_move_to_internal">Перасоўванне ў унутраную памяць скончана:</string>
+    <string name="message_done_move_to_sdcard">Перасоўванне на sdcard скончана:</string>
+    <string name="message_error_move_to_internal">"Перасоўванне ў унутраную памяць скончана з памылкаю (паспрабуйце зноў):
+"</string>
+    <string name="message_error_move_to_sdcard">"Перасоўванне на sdcard скончана з памылкаю (паспрабуйце перасунуць зноў):
+"</string>
+    <string name="message_exit">Вы сапраўды жадаеце выйсці з Lucky Patcher?</string>
+    <string name="message_reboot">Вы сапраўды жадаеце перазагрузіць прыладу?</string>
+    <string name="message_remove_all_odex">Вы сапраўды жадаеце выдаліць усе odex файлы з /system/app і /data/app? Будуць выдалены толькі тыя odex файлы дадаткаў, якія маюць усярэдзіне classes.dex.</string>
+    <string name="message_warning_InApp_service_disable">Вымыканне арыгінальнага InApp сэрвісу ў Google Play перашкодзіць здзяйсняць набыткі афіцыйна.</string>
+    <string name="message_warning_LVL_emulation_service_enable">Улучэнне LVL эмуляцыі можа прывесці да парушэння механізма атрыманні афіцыйна купленых ліцэнзій для дадаткаў. Калі Вы сутыкнуліся з такой праблемай, выключыце гэту эмуляцыю.</string>
+    <string name="message_warning_LVL_service_disable">Гэта арыгінальны сэрвіс у Google Play і яго адключэнне можа прывесці да адмовы ў атрыманні ліцэнзіі ў афіцыйна купленых дадаткаў.</string>
+    <string name="mod_market_check">Тэст узламанага GooglePlay</string>
+    <string name="mod_market_check_failed">Google Play магчыма ўсталяваны, але працуе не слушна. Тэставая праверка ліцэнзіі правалілася. Магчыма ў Вас не ўжыліся патчы core.jar (можна ўжыць у \"Прылады->Патчы Андроіда\") або не ўсталяваны сам мадыфікаваны Google Play (можна нанова усталяваць \"Прылады->Усталёўка мадыфікаванага GooglePlay\").</string>
+    <string name="mod_market_check_internet_off">Адключыце інтэрнэт на прыладзе і паўтарыце тэст.</string>
+    <string name="mod_market_check_title">Вынікі праверкі GP</string>
+    <string name="mod_market_check_true">"Google Play усталяваны і працуе слушна. Памятайце, што гэты метад працуе не з усімі дадаткамі і гульнямі. Гэта не з'яўляецца памылкаю і не можа быць выпраўлена."</string>
+    <string name="modifdescr">Паказвае ўсе дадаткі, якія былі зменены Lucky Patcher-ам (Зялёная канюшынка).</string>
+    <string name="modiftitle">Змененыя дадаткі</string>
+    <string name="move_data">Усе дадзеныя паспяхова перанесены ў новую дырэкторыю</string>
+    <string name="move_to_internal">Перанесці на прыладу.</string>
+    <string name="move_to_internal_message">Вы сапраўды жадаеце перасунуць дадатак ў унутраную памяць?</string>
+    <string name="move_to_sdcard">Перанесці на sdcard</string>
+    <string name="move_to_sdcard_message">Вы сапраўды жадаеце перасунуць дадатак на sdcard?</string>
+    <string name="move_to_sys">Перанесці ў /system/app</string>
+    <string name="move_to_system">Вы сапраўды жадаеце перасунуць дадатак у /system/app?</string>
+    <string name="mpatcher_help">"Дапамога:
+
+ - Арыгінальныя байты (павінна быць болей за тры):
+ AA 1F ** 01 4C
+ ** - любы байт;
+
+ - Байты для змены (павінна быць болей за тры):
+ EA 2F ** ** **
+ ** - гэтыя байты не будуць зменяны;
+
+Колькасць зыходных байт і колькасць байт на змену павінна супадаць;"</string>
+    <string name="new_method_lvl">Стварыць ліцэнзію для дадатку</string>
+    <string name="new_version">Знойдзена новая версія Lucky Patcher...</string>
+    <string name="no">Не</string>
+    <string name="no_freespace_patch">"Не хапіла вольнага месца ў падзеле, дзе ляжыць apk файл дадатку. Быў прапатчаны dalvik-cache дадатку (гэта будзе працаваць), але такі патч можа знікнуць пры перазагрузцы прылады..
+Вынахад: перанясіце дадатак ва ўнутраную памяць, або вызваліце больш месца, або пакіньце ўсё як ёсць і перыядычна зноўку ужывайце патч."</string>
+    <string name="no_icon">Прыбраць іконкі дадаткаў</string>
+    <string name="no_icon_descr">Прыбірае ўсе іконкі дадаткаў у спісе. Дазваляе хутка запускаць Lucky Patcher і паскарае яго працу. Вельмі карысна для прылад з маленькай колькасцю аператыўнай памяці.</string>
+    <string name="no_root">"Не атрымалася атрымаць права ROOT! Вы павінны атрымаць права ROOT для працягу...
+
+(Калі ласка, абнавіце Busybox і SU)!
+Рэкамендую паспрабаваць усталяваць SuperSU і абнавіць бінарны файл SU праз яго. Каб спампаваць і вызначыць SuperSU, трэба абраць у наладах \"Вынахад праблем->Усталёўка SuperSU (ICS)\"."</string>
+    <string name="no_site">Сайт для абнаўленняў не знойдзены!</string>
+    <string name="no_space">Памылка: недастаткова месца для капіявання дадзеных у абраную дырэкторыю. Калі ласка, увядзіце новую дырэкторыю або вызваліце болей месца.</string>
+    <string name="no_space_in_data_all">Памылка: бракуе месца ў падзеле /data. Калі ласка, ачысціце больш вольнага месца і паўторыце спробу.</string>
+    <string name="no_space_in_system">Памылка: бракуе месца ў падзеле /system для перасоўвання дадатку. Калі ласка ачысціце больш вольнага месца і паўторыце спробу.</string>
+    <string name="no_space_in_system_all">Памылка: бракуе месца ў падзеле /system. Калі ласка, ачысціце больш вольнага месцы і паўторыце спробу.</string>
+    <string name="nofilter">Ніяк</string>
+    <string name="nonedescr">Паказаць усе дадаткі, дзеля якіх нічога ня знойдзена.</string>
+    <string name="nonetitle">Нічога ня знойдзена</string>
+    <string name="not_detect">"SD-картка не вызначана!
+Абмежаваная функцыянальнасць!"</string>
+    <string name="not_found_changelog">Файл са спісам зменаў не знойдзены. Ён будзе спампаваны пры наступным абнаўленні Lucky Patcher праз інтэрнэт.</string>
+    <string name="notify_android_patch_on_boot">Патч Андроіда ўжыты пры перазагрузцы</string>
+    <string name="notify_directory_binder">Віртуальныя тэчкі</string>
+    <string name="notify_directory_binder_from">Дадзеныя з</string>
+    <string name="notify_directory_binder_to">у</string>
+    <string name="notify_patch_on_boot">Патч пры загрузцы</string>
+    <string name="notify_patched">прапатчаны!</string>
+    <string name="odex_all_system_app">Адаксаваць усе сістэмныя дадаткі (больш месца ў унутранай памяці)</string>
+    <string name="odex_all_system_app_message">Вы сапраўды хочаце адэксаваць усе сістэмныя дадаткі?</string>
+    <string name="odexed_not_all_apps">Падчас адэксавання адбылася памылка. Дадаткі адэксаваны не ўсе. Хучэй за ўсё - адсутнасць вольнага месца ў /system.</string>
+    <string name="on_top_apps_marker">Новае</string>
+    <string name="or_hex_str">Арыгінальныя байты(HEX):</string>
+    <string name="orientmenu">Арыентацыя</string>
+    <string name="others">Іншыя</string>
+    <string name="patch_ok">Прапатчыць</string>
+    <string name="patch_progress_data_parse">Аналізуем дадзеныя для патча...</string>
+    <string name="patch_progress_get_classes">Дастаём classes.dex...</string>
+    <string name="patch_progress_strings_analisis">Аналізуем радкі...</string>
+    <string name="patch_step1">Падрыхтоўка дадатку перад патчам...</string>
+    <string name="patch_step2">Адпрацоўка патча дадатку</string>
+    <string name="patch_step3">Аналіз вынікаў патча</string>
+    <string name="patch_step4">Стварэнне odex-файла з занесенымі зменамі</string>
+    <string name="patch_step6">Адпрацоўка абраных опцый дзеля патча</string>
+    <string name="patch_step_http">атрыманне дадзеных ад root</string>
+    <string name="patch_to_Android_At_once">Так як Ваша прашыўка дэадэксавана, Вы можаце ўжыць за адзін раз або \"Праверка подпісу заўсёды слушная\" і \"Адключыць праверку цэласці apk\", або \"Адключыць праверку подпісу ў package manager-е\".</string>
+    <string name="patchbutton">Патч</string>
+    <string name="pattern1">Шаблон N1 - прапатчаны паспяхова...</string>
+    <string name="pattern1_f">Шаблон N1 - не знойдзены...</string>
+    <string name="pattern2">Шаблон N2 - прапатчаны паспяхова...</string>
+    <string name="pattern2_f">Шаблон N2 - не знойдзены...</string>
+    <string name="pattern3">Шаблон N3 - прапатчаны паспяхова...</string>
+    <string name="pattern3_f">Шаблон N3 - не знойдзены...</string>
+    <string name="pattern4">Шаблон N4 - прапатчаны паспяхова...</string>
+    <string name="pattern4_f">Шаблон N4 - не знойдзены...</string>
+    <string name="pattern5">Шаблон N5 - прапатчаны паспяхова...</string>
+    <string name="pattern5_f">Шаблон N5 - не знойдзены...</string>
+    <string name="pattern6">Шаблон N6 - прапатчаны паспяхова...</string>
+    <string name="pattern6_f">Шаблон N6 - не знойдзены...</string>
+    <string name="pattern7">Шаблон N7 - прапатчаны паспяхова...</string>
+    <string name="pattern7_f">Шаблон N7 - не знойдзены...</string>
+    <string name="patternamazon">Amazon Market - прапатчаны паспяхова...</string>
+    <string name="patternamazon_f">Amazon Market - не знойдзены...</string>
+    <string name="patterndependencies">Залежнасць ад Google Play выдалена.</string>
+    <string name="patternsamsung">SamsungApps Patch - прапатчаны паспяхова...</string>
+    <string name="patternsamsung_f">SamsungApps Patch - не знойдзены...</string>
+    <string name="perm_ok">Ужыць і перазагрузіць</string>
+    <string name="permission">Змяніць дазволы для дадатку</string>
+    <string name="permission_not_descr">Апісанне дазволу не знойдзена!</string>
+    <string name="permission_not_found">Дазволы не знойдзены!</string>
+    <string name="permissions">Дазволы</string>
+    <string name="poorresult">"%! Патчар не знайшоў ніводнага месца для патчу!
+Невядомая версія кода або патч ужо ўжываўся да праграмы?!"</string>
+    <string name="punkt1">- Для працы неабходны правы ROOT!</string>
+    <string name="reboot">Перазагрузка прылады</string>
+    <string name="reboot_message">"Перезагрузка...
+Калі перазагрузка не адбудзецца, зрабіце гэта ручна..."</string>
+    <string name="rebuild_info">Вынік перазборкі</string>
+    <string name="rebuild_message">Файл перасабраны і змешчаны ў</string>
+    <string name="remodex">ODEX файл выдалены!</string>
+    <string name="remodexerror">ODEX не выдалены, так як не знойдзены dalvik-cache дадатку.</string>
+    <string name="remove_all_saved_purchases">Выдаліць усе захаваныя набыткі</string>
+    <string name="remove_all_saved_purchases_message">Вы сапраўды жадаеце выдаліць усе захаваныя набыткі з Lucky Patcher-а?</string>
+    <string name="removefixes">Ачыстка ўсіх odex файлаў (в /data/app і /system/app)</string>
+    <string name="rep_hex_str">Байты замены(HEX):</string>
+    <string name="restore_build">Зборка</string>
+    <string name="restore_data_error">Памылка: падчас аднаўлення адбылася памылка, дадзеныя могуць быць адноўлены не цалкам.</string>
+    <string name="restore_data_success">Дадзеныя дадаткі цалкам адноўлены з рэзервовай копіі.</string>
+    <string name="restore_message">Вы сапраўды жадаеце ўсталяваць</string>
+    <string name="restore_version">Версія</string>
+    <string name="restorebutton">Аднавіць</string>
+    <string name="root_access_not_found">Root доступ не атрыманы. Паспрабуйце запусціць Lucky Patcher зноў, калі і гэта не дапаможа, то абнавіце SuperSU, запусціце яго і абнавіце бінарны файл SU, калі ён запатрабуе, а таксама праверце ў спісе SuperSU, каб Lucky Patcher-у быў дазволены root доступ. У крайнім выпадку можна выдаліць дадатак SuperSU, каб root выдаваўся без запыту, але гэта небяспечна (вірусы)...</string>
+    <string name="root_needed">Дзеля гэтага дзеяння неабходны root правы...</string>
+    <string name="safe_perm_use_warning">Каб карыстацца гэтым метадам, Вы павінны зрабіць дадатак сістэмным (перасунуць у /system/app/) або ўжыць патч для core.jar \"Адключыць праверку цэласці apk\" з \"Патчы Андроіда\".</string>
+    <string name="savebutton">"Запісаць аб'ект як карыстальніцкі патч!"</string>
+    <string name="saved_object">захаваны ў /sdcard/LuckyPatcher/ у выглядзе карыстальніцкага патча да гэтага дадатку.</string>
+    <string name="search">Пошук</string>
+    <string name="sel_target">Абраць іншую мэту!</string>
+    <string name="select_filter">Калі ласка, абярыце фільтар для сартавання:</string>
+    <string name="select_market">"Абярыце, калі ласка, версію Google Play для ўсталёўкі:
+"</string>
+    <string name="send_logs">Вы жадаеце даслаць мне лог падзей?</string>
+    <string name="sendlog">Даслаць Log</string>
+    <string name="set_default_to_install">"Абраць месца ўсталёўкі па змаўчанні
+Можа не працаваць для Android >= 4"</string>
+    <string name="set_default_to_install_auto">Усталёўваць аўтаматычна па выбары Android OS</string>
+    <string name="set_default_to_install_internal_memory">Усталёўваць на ўнутраную памяць прылады</string>
+    <string name="set_default_to_install_sdcard">Усталёўваць на SD Card</string>
+    <string name="set_switchers_def">Па змаўчанні</string>
+    <string name="setting_confirm_exit">Пацвярджаць выйсце</string>
+    <string name="setting_confirm_exit_descr">Запыт на выйсце з дадатку.</string>
+    <string name="settings">Налады</string>
+    <string name="settings_force_root">Значэнне праверкі root</string>
+    <string name="settings_force_root_description">Калі ў Вас экзатычны root, і ён не вызначаецца, Вы можаце ўсталяваць яго значэнне ручна.</string>
+    <string name="settings_force_root_off">Усталяваць рэжым без root</string>
+    <string name="settings_force_root_on">Усталяваць root рэжым</string>
+    <string name="settings_root_auto">Аўтаматычна вызначаць root</string>
+    <string name="share_message">Вы сапраўды жадаеце падзяліцца гэтым дадаткам?</string>
+    <string name="share_this_app">Падзяліцца дадаткам</string>
+    <string name="sortbyname">Па назве</string>
+    <string name="sortbystatus">Па статуце</string>
+    <string name="sortbytime">Па даце ўсталёўкі</string>
+    <string name="sortmenu">Сартаванне</string>
+    <string name="stat_boot_ads">Выдаленне рэкламы</string>
+    <string name="stat_boot_custom">Патч карыстальніка</string>
+    <string name="stat_boot_lvl">Патч праверкі ліцэнзіі</string>
+    <string name="stat_launch_activity">Актывіці для запуску:</string>
+    <string name="statads">Прысутнічае рэклама.</string>
+    <string name="statappplace">APK дадатку ў:</string>
+    <string name="statbilling">Выяўлены куплі.</string>
+    <string name="statbuild">Зборка:</string>
+    <string name="statcustom">Знойдзены карыстальніцкі патч.</string>
+    <string name="statdataplace">Дадзеныя ў:</string>
+    <string name="statfix">Адэксаваны (знойдзены odex-файл).</string>
+    <string name="statlvl">Ёсць праверка ліцэнзіі.</string>
+    <string name="statmodified">Дадатак быў мадыфікаваны.</string>
+    <string name="statnotfix">Дэадэксаваны (odex-файл не знойдзены).</string>
+    <string name="statnotfound">Нічога ня знойдзена.</string>
+    <string name="statnotmodified">Дадатак не быў мадыфікаваны.</string>
+    <string name="statnotsys">Дадатак карыстальніка.</string>
+    <string name="statnull">Нічога ня знойдзена для патчаў.</string>
+    <string name="statsys">Сістэмны дадатак.</string>
+    <string name="statuserid">Карыстальніцкі ID:</string>
+    <string name="statversion">Версія:</string>
+    <string name="support_patch_billing">Патч падтрымкі для InApp эмуляцыі</string>
+    <string name="support_patch_billing_descr">Перанакіроўвае білінг з дадатку на Lucky Patcher, і калі не ўжыты патч андроіда \"Праверка подпісу заўсёды слушная\", гэты патч дапаможа спрацоўваць фальшывым набыткам з эмуляцыі InApp.</string>
+    <string name="support_patch_free_intent">Рассыланне Intent для ўсіх</string>
+    <string name="support_patch_free_intent_descr">Карысна для дадаткаў, што ўпарта адмаўляюцца працаваць з эмуляцыяй. Асцярожна: гэты патч зробіць дадатак спамерам Intent дзеля ўсёй сістэмы. Калі гэта частка патча не дапамагла, лепш патч прыбраць з дадатку.</string>
+    <string name="support_patch_lvl">Патч падтрымкі для LVL эмуляцыі</string>
+    <string name="support_patch_lvl_descr">Перанакіроўвае білінг з дадатку на Lucky Patcher, і калі не ўжыты патч андроіда \"Праверка подпісу заўсёды слушная\", то гэты патч дапаможа фальшывай ліцэнзіі з эмуляцыі LVL спрацаваць, як сапраўднай.</string>
+    <string name="switcher_auto_backup">Аўтаматычная рэзервовая копія для новых і абноўленых дадаткаў</string>
+    <string name="switcher_auto_backup_descr">Капіюе apk файл у тэчку рэзервовых копій</string>
+    <string name="switcher_auto_backup_only_gp">Аўтаматычная рэзервовая копія для новых і абноўленых дадаткаў з Google Play</string>
+    <string name="switcher_auto_backup_only_gp_descr">Улічвайце: Lucky Patcher адзначае ўсе дадаткі, што яны ўсталяваны з Google Play, калі пераносіць, абнаўляе або ўсталёўвае, таму такія дадаткі таксама будуць трапляць у рэзервовую копію.</string>
+    <string name="switcher_auto_integrate_update">Аўтаматычная інтэграцыя абнаўленняў у /system для сістэмных дадаткаў</string>
+    <string name="switcher_auto_integrate_update_descr">Дзеля паўторнай інтэграцыі абнаўленняў неабходна перазагрузка</string>
+    <string name="switcher_auto_move_to_internal">Аўтаматычна пераносіць ў унутраную памяць новыя і якія абнаўляюцца дадаткі</string>
+    <string name="switcher_auto_move_to_internal_descr">Для лепшай і хуткай працы дадаткаў.</string>
+    <string name="switcher_auto_move_to_sd">Аўтаматычна пераносіць на sd-картку новыя і якія абнаўляюцца дадаткі</string>
+    <string name="switcher_auto_move_to_sd_descr">Дрэнна для дадаткаў з віджэтамі і дзеяннямі падчас загрузкі прылады</string>
+    <string name="sysdescr">Паказвае ў спісе сістэмныя дадаткі і дазваляе вырабляць з імі шмат дзеянняў.</string>
+    <string name="system_app_change">Вы павінны перазагрузіць прыладу, каб змены набылі моц.</string>
+    <string name="systitle">Сістэмныя дадаткі</string>
+    <string name="text_size">Памер тэксту</string>
+    <string name="title_for_select_integrate_update_apps">Вылучыце дадаткі дзеля інтэграцыі абнаўленняў у /system:</string>
+    <string name="title_for_select_move_to_internal">Вылучыце дадаткі для перасоўвання ў унутраную памяць:</string>
+    <string name="title_for_select_move_to_sdcard">Вылучыце дадаткі для перасоўвання на sdcard:</string>
+    <string name="title_for_select_uninstall">Вылучыце дадаткі для выдалення:</string>
+    <string name="toolbar_adfree">Заблакаваць рэкламу</string>
+    <string name="toolbar_backups">Рэзервовыя копіі</string>
+    <string name="toolbar_rebuild">Перасабраць &amp; усталяваць</string>
+    <string name="toolbar_switchers">Улучэнні</string>
+    <string name="toolbar_system_utils">Дадаткі</string>
+    <string name="truble">Вырашэнне праблемаў</string>
+    <string name="uninstall">Вы сапраўды жадаеце выдаліць гэты дадатак?</string>
+    <string name="uninstallapp">Выдаліць дадатак</string>
+    <string name="unknown_error">Памылка: невядомая.</string>
+    <string name="unused_odex_delete">Непатрэбны ODEX выдалены!</string>
+    <string name="update">Абнавіць</string>
+    <string name="updatebusybox">Абнавіць Busybox</string>
+    <string name="usepatch">Ужыць</string>
+    <string name="vers">Lucky Patcher ver.</string>
+    <string name="vibration">Уключыць вібрацыю.</string>
+    <string name="vibration_descr">Улучае вібрацыю пры націску ў галоўным спісе дадаткаў.</string>
+    <string name="viewlandscape">Ландшафтная</string>
+    <string name="viewlarge">Вялікі</string>
+    <string name="viewmedium">Сярэдні</string>
+    <string name="viewmenu">Прагляд</string>
+    <string name="viewportret">Партрэтная</string>
+    <string name="viewsensor">Датчык арыентацыі</string>
+    <string name="viewsmall">Маленькі</string>
+    <string name="wait">Калі ласка, пачакайце</string>
+    <string name="warning">Увага!</string>
+    <string name="well_done">Паспяхова завершана.</string>
+    <string name="xposed_module_option">Улучыць модуль Xposed</string>
+    <string name="xposed_notify">Lucky Patcher имеет модуль Xposed. мае модуль Xposed. Ён паўтарае ўсе патчы Андроіда. Модуль Xposed працуе больш акуратна і стабільна, чым патчы Андроіда і не павінен мець негатыўных уплываў на сістэму ў цэлым, таму лепш выкарыстоўваць менавіта яго.</string>
+    <string name="xposed_option_off">Дзеля актывацыі опцыі, уключыце модуль LP у наладах Xposed</string>
+    <string name="xposed_settings">Налады Xposed</string>
+    <string name="android_patches_for_bootlist">Андроід патч для dalvik кэша</string>
+    <string name="android_patches_for_bootlist_status">Ужыванне пры перазагрузцы</string>
+    <string name="app_disabler_widget_pkg_not_found">Дадатак выдалены</string>
+    <string name="app_not_found_adapter">Гэты дадатак не знойдзены сярод усталяваных дадаткаў.</string>
+    <string name="apps_not_found">Дадаткі, што задавальняюць фільтар, не знойдзены.</string>
+    <string name="billing_fake_hack_menu">Люстэрка арыгінальнага InApp сэрвісу дзеля эмуляцыі куплі</string>
+    <string name="billing_fake_hack_menu_descr">Дрэнна для некаторых дадаткаў (не працуюць з куплямі, калі ў сістэме больш двух сэрвісаў набыткаў), але мае сэнс для карыстальнікаў без root, каб перанакіраваць дадаткі на эмуляцыю купляў. Карыстальнікам з root эфектыўней выкарыстоўваць \"Proxy сервер для Google Play\" ці \"Патч падтрымкі для InApp і LVL эмуляцыі\".</string>
+    <string name="button_block_internet">Блакаваць</string>
+    <string name="button_integrate_update_apps">Інтэграваць</string>
+    <string name="button_move_to_internal">Перасунуць</string>
+    <string name="button_unblock_internet">Разблакаваць</string>
+    <string name="button_uninstall_apps">Выдаліць</string>
+    <string name="context_block_internet_selected_apps">"Блакаваць інтэрнэт для абраных дадаткаў
+Можа не працаваць на Android 4+"</string>
+    <string name="context_integrate_dalvik">Інтэграваць dalvik код ва ўжо ўсталяваны дадатак</string>
+    <string name="context_patch_framework">Прапатчыць файл прашыўкі</string>
+    <string name="context_unblock_internet_selected_apps">"Разблакаваць інтэрнэт для абраных дадаткаў
+Можа не працаваць на Android 4+"</string>
+    <string name="core_only_dalvik_cache_end">Калі прыладу завісла або не ўсе патчы працуюць, перазагрузіце прыладу ручна.</string>
+    <string name="core_only_dalvik_cache_finished">"Патчы Андроіда для dalvik кэша ўжыты.
+Вынік:
+"</string>
+    <string name="core_result_checkbox">патчыць dalvik-cache пры перазагрузцы (выкарыстоўваць толькі калі знікаюць патчы Андроіда пасля перазагрузкі).</string>
+    <string name="error">Памылка</string>
+    <string name="error_classes_not_found">\".jar\" файл не ўтрымвае classes.dex для патчу. Паспрабуйце прапатчыць \".odex\" файл дзеля гэтага \".jar\" файлу.</string>
+    <string name="error_message_for_share_app">Падзяліцца дадаткам не атрымалася, па невядомай прычыне. Паспрабуйце змяніць працоўную дырэкторыю для Lucky Patcher у яго наладах.</string>
+    <string name="error_odex_app_impossible">Дадатак не ўтрымвае classes.dex. Адэксаванне немагчыма.</string>
+    <string name="file_not_deleted">Файл не быў выдалены.</string>
+    <string name="framework_file_patched">прапатчаны і пераназваны ў</string>
+    <string name="framework_limit">Ваша прашыўка падтрымвае не ўсе неабходныя функцыі, таму некаторыя опцыі могуць не працаваць на прашыўках з версіяй андроіда вышэй 4.3.</string>
+    <string name="framework_patch_not_result">Lucky Patcher не знайшоў месцаў, якія можна прапатчыць. Або файл ужо прапатчаны, або невядомая версія файла.</string>
+    <string name="integrate_dalvik_code_dialog_good_message">Dalvik код быў паспяхова інтэграваны ва ўсталяваны дадатак. Гэта можа працаваць не вельмі добра з-за памылак, але часам гэта працуе не дрэнна...</string>
+    <string name="integrate_dalvik_code_dialog_title">Вынікі інтэграцыі</string>
+    <string name="integrate_dalvik_code_message">Вы сапраўды хочаце інтэграваць dalvik код з абранага файла ў</string>
+    <string name="message_delete_package_new">Усталёўка скончылася памылкаю. Вы павінны выдаліць арыгінальны дадатак перад усталёўкай. Калі гэта не дапаможа, неабходна перазагрузіць прыладу. Паспрабаваць выдаліць арыгінальны дадатак?</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">Патч Андроіда ўжыты да dalvik-cache ад core.jar.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">Патч Андроіда ўжыты да dalvik-cache ад services.jar.</string>
+    <string name="proxyGP">Проксі сэрвер для Google Play</string>
+    <string name="proxyGP_descr">Проксі сэрвер небходны дзеля таго, каб перанакіраваць усе запыты пра закупы і ліцэнзіі ў Lucky Patcher. Гэта пазбаўляе неабходнасці ўжывання патчаў падтрымкі і патрабуе, каб былі ўлучаны \"Эмуляцыя Google Billing\" і \"Сэрвісы купляў у Google Play Store\"</string>
+    <string name="proxyGP_install">Усталяваць Proxy Google Play Store</string>
+    <string name="proxyGP_install_error">Файл усталёўкі Proxy Google Play не знойдзены</string>
+    <string name="proxyGP_install_question">Вы сапраўды маяце патрэбу ў усталяванні Proxy Google Play?</string>
+    <string name="proxyGP_widget_warning_1">Вы павінны выключыць у Xposed модулі Lucky Patcher-а \"Патч падтрымкі для InApp і LVL эмуляцый\", каб выкарыстоўваць проксі Google Play</string>
+    <string name="proxyGP_widget_warning_2">Для выкарыстання Proxy Google Play неабходны root доступ і ўжыты патч Андроіда \"Праверка подпісу заўсёды слушная\"</string>
+    <string name="restored">адноўлена</string>
+    <string name="share">Падзяліцца</string>
+    <string name="title_for_block_internet">Вылучыце дадаткі для блакавання інтэрнэту:</string>
+    <string name="title_for_unblock_internet">Вылучыце дадаткі для разблакоўкі інтэрнэту:</string>
+    <string name="tools_menu_block_internet">Заблакаваць інтэрнэт дадатку</string>
+    <string name="tools_menu_unblock_internet">Разблакаваць інтэрнэт дадатку</string>
+    <string name="warning_inapp_emulation">Ваша прашыўка не падтрымвае InApp эмуляцыю. Калі Ваша прашыўка падтрымвае адключэнне дадаткаў, адключыце Google Play праз менеджар дадаткаў і паспрабуйце зноў уключыць эмуляцыю закупаў.</string>
+</resources>

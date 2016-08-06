@@ -1,0 +1,16 @@
+[BEGIN]
+Go Launcher Prime Unlocker
+v5.12
+
+Patch updated by NOP
+Original by rockz5555
+
+Original bytes:
+12451201546230491D025460
+
+[PACKAGE]
+[CLASSES]
+{"original":"12 45 12 01 54 ?? ?? ?? ?? 02 54 60"}
+{"replaced":"12 15 33 55 03 00 0F 05 ?? ?? 02 54 60"}
+[END]
+Done! 

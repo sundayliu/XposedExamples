@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Info Aplikasi</string>
+    <string name="P_not_found">"Error: Program files tidak ditemukan!
+Periksa lokasi dari dalvik-cache untuk solusinya!
+Default: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Hasil Patch</string>
+    <string name="Yes">Ya</string>
+    <string name="aboutlp">Lucky patcher adalah aplikasi auto dan manual patcher yang ditujukan untuk aplikasi yang terinstal. Dapat merubah per-ijinan, Ataupun Custom Patch yang otomatis melakukan patch aplikasi yang diminta. Saya harap semua itu berguna untuk anda semua.</string>
+    <string name="aboutmenu">Tentang</string>
+    <string name="abouttitle">Tentang Lucky Patcher oleh ChelpuS</string>
+    <string name="additinfo">Tambahan Informasi:</string>
+    <string name="adsdescr">Lihat Aplikasi dengan iklan Google.</string>
+    <string name="adstitle">App dengan iklan</string>
+    <string name="advanced_menu">Buka Menu Patch</string>
+    <string name="allchanges">Semua Rubahan Aplikasi diperbaiki pd ODEX!</string>
+    <string name="apk_create_option">Nama file APK termodif</string>
+    <string name="apkdescr">Saat Membuat Apk Yang Ter-Patch, Anda Dapat Menamainya Sendiri Atau Sesuai Nama Paket</string>
+    <string name="apklabel">Label Aplikasi</string>
+    <string name="apkpackage">Paket Aplikasi</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="backbutton">Cadangkan</string>
+    <string name="bootview">Daftar Boot</string>
+    <string name="cleardalvik">Bersihkan dalvik-cache dan Reboot</string>
+    <string name="cleardata">Hapus Data</string>
+    <string name="contextads">Hapus Iklan Google!</string>
+    <string name="contextboot">"Patch saat reboot!
+(banyak Bug! Hanya untuk patch Libs)"</string>
+    <string name="contextbootads">Hapus Iklan Google</string>
+    <string name="contextbootcustom">Custom patch</string>
+    <string name="contextbootlvl">Hapus Verifikasi Lisensi</string>
+    <string name="contextcustompatch">Custom patch!</string>
+    <string name="contextdeodex">"Hapus ODEX with Changes!
+(pulihkan aplikasi)"</string>
+    <string name="contextextpatch">Manual!</string>
+    <string name="contextfix">Perbaiki rubahan Dalvik-cache</string>
+    <string name="contextignore">Hapus Verifikasi Lisensi!</string>
+    <string name="contextlaunchapp">Jalankan aplikasi!</string>
+    <string name="contextodex">Terapkan Rubahan Dalvik-cache</string>
+    <string name="contextpatt1">License Validator Switch Fix</string>
+    <string name="contextpatt1_descr">Jika ditemukan saat pertama kali jalankan aplikasi, harap aktifkan semua koneksi internet. Kelompok patch ini hanya akan mmemberi perubahan kecil.</string>
+    <string name="contextpatt2">Cached License Fix (Internet Fix)</string>
+    <string name="contextpatt2_descr">Jika ditemukan, maka akan bekerja tanpa perlu koneksi internet.</string>
+    <string name="contextpatt3">Response Code Verification Fix.</string>
+    <string name="contextpatt3_descr">Perbaikan kecil pada Verifikasi Lisensi.</string>
+    <string name="contextpatt4">Ganti Response Code</string>
+    <string name="contextpatt4_descr">Tidak Stabil. Tapi efektif. Jika ditemukan saat pertama kali jalankan aplikasi, harap aktifkan semua koneksi internet. Kelompok patch ini akan memberikan peluang yang lebih besar.</string>
+    <string name="contextrestore">Pulihkan!</string>
+    <string name="contextselpatt">Pola terpilih</string>
+    <string name="copyright">HakCipta ©2011,ChelpuS</string>
+    <string name="createapk">Buat Apk modif</string>
+    <string name="createapkads">Apk tanpa iklan google</string>
+    <string name="createapkcustom">Apk termodif dengan custom patch</string>
+    <string name="createapklvl">Apk tanpa verifikasi lisensi</string>
+    <string name="createapklvlextreme">"Apk dengan lisensi verifikasi dihapuskan 
+(Extreme Auto mode)"</string>
+    <string name="createdialog1">Buat Ulang</string>
+    <string name="createdialog2">"Komplit:
+
+file aplikasi ada pada folder:"</string>
+    <string name="createdialog3">"
+
+Ingat! Kalau aplikasi dijalankan dengan patch, itu belum tentu akan bekerja seperti saat belum dipatch. Jika aplikasi mendeteksi adanya perubahan, maka metode ini tak akan bekerja."</string>
+    <string name="createdialog4">- Error...</string>
+    <string name="createdialog5">Nama File:</string>
+    <string name="customdescr">Lihat Aplikasi dengan Custom Patch.</string>
+    <string name="customtitle">App dengan Custom Patch</string>
+    <string name="delboot">Sentuh tuk hapus dari daftar tunggu</string>
+    <string name="dialog_system">Ini adalah sistem aplikasi. Berhati-hatilah saat melakukan perubahan, yang bisa berakibat buruk pada sistem anda. Apakah anda yakin dengan apa yang anda kerjakan dengan aplikasi ini?</string>
+    <string name="empty">Kosong</string>
+    <string name="equals_version">Anda memiliki versi terbaru dari Lucky Patcher...</string>
+    <string name="extpat1">Ditemukan</string>
+    <string name="extpat2">Target sama dengan lisensi:</string>
+    <string name="extpat3">"Perintah:
+--------------
+-silahkan Sentuh \"Cadangkan\";
+-Hidupkan WiFi dan Buka semua akses jaringan;
+-Pilih Target dan Sentuh\"Patch\";
+-Sentuh \"Jalankan\" dan lihat lisensi aplikasi;
+-Jika target tidak membantu - Sentuh \"Pulihkan\" dan ulangi prosedur dengan target yang lainnya.
+-kalau semua ok, tekan Lakukan Rubahan."</string>
+    <string name="extres1">"target dipatch!
+-Sentuh \"Jalankan\" dan lihat lisensi aplikasi;
+-Jika target tidak membantu, Sentuh \"Pulihkan\" dan ulangi prosedur dengan target yang lainnya."</string>
+    <string name="extres2">"tidak ditemukan label pada target!
+Sudah dipatch?!
+-Sentuh tuk \"Pulihkan\" Pilih target lainnya dan Sentuh \"Patch\"."</string>
+    <string name="filter">Saring</string>
+    <string name="filterdescr">Pilih ketegori untuk melihat aplikasi.</string>
+    <string name="fixbutton">Terapkan Rubahan</string>
+    <string name="fixeddescr">Lihat App dengan Rubahan Perbaikan (Bintang Kuning).</string>
+    <string name="fixedtitle">Perbaikan Dalvik-Cache (ODEX)</string>
+    <string name="goodresult">"% Luck!
+Jalankan aplikasi untuk dicoba!
+
+Jika aplikasi tidak bekerja atau sesuai, silahkan instal ulang dan jangan gunakan aplikasi patch versi ini lagi."</string>
+    <string name="have_luck">"***********************
+
+Anda mempunyai"</string>
+    <string name="help">Bantuan</string>
+    <string name="help_common">Common</string>
+    <string name="help_custom">Buat Custom Patches</string>
+    <string name="installsupersu">Install SuperSU (ICS)</string>
+    <string name="langdef">Bahasa Standar</string>
+    <string name="langen">Inggris</string>
+    <string name="langmenu">Bahasa</string>
+    <string name="launchbutton">Jalankan</string>
+    <string name="loadpkg">Memuat Paket</string>
+    <string name="lvldescr">Lihat aplikasi dengan verifikasi lisensi.</string>
+    <string name="lvltitle">App dengan LVL</string>
+    <string name="new_version">Ditemukan versi terbaru...&lt;/...</string>
+    <string name="no">Tidak</string>
+    <string name="no_root">"Akses Root tak Tersedia! Anda harus punya root akses untuk melanjutkan...
+
+(lakukan update busybox atau su)!
+Silahkan install TitaniumBackup – Berguna untuk deteksi root akses. Jika ada perintah perubahan pada root, klik \"Ya\".
+Pilih setelan Luckypatcher dan klik \"Masalah-> Update Busybox\". Upgrade Busybox ke 1.19.x.
+Atau pilih settings Luckypatcher dan klik \"Masalah-> Install SuperSU (ICS)\" dan install."</string>
+    <string name="no_site">Situs update tak tersedia!</string>
+    <string name="nonedescr">Lihat semua app tanpa memuat apa-apa.</string>
+    <string name="nonetitle">Tidak ditemukan</string>
+    <string name="ok">Ok...</string>
+    <string name="orientmenu">Orientasi</string>
+    <string name="others">Lainny</string>
+    <string name="patch_ok">Terapkan</string>
+    <string name="patchbutton">~Patch~</string>
+    <string name="pattern1">Patch Pola N1 - Berhasil...</string>
+    <string name="pattern1_f">Patch Pola N1 - gagal...</string>
+    <string name="pattern2">Patch Pola N2 - Berhasil...</string>
+    <string name="pattern2_f">Patch Pola N2 - gagal...</string>
+    <string name="pattern3">Patch Pola N3 - Berhasil...</string>
+    <string name="pattern3_f">Patch Pola N3 - gagal...</string>
+    <string name="pattern4">Patch Pola N4 - Berhasil...</string>
+    <string name="pattern4_f">Patch Pola N4 - gagal...</string>
+    <string name="pattern5">Patch Pola N5 - Berhasil...</string>
+    <string name="pattern5_f">Patch Pola N5 - gagal...</string>
+    <string name="pattern6">Patch Pola N6 - Berhasil...</string>
+    <string name="pattern6_f">Patch Pola N6 - gagal...</string>
+    <string name="pattern7">Patch Pola N7 - Berhasil...</string>
+    <string name="pattern7_f">Patch Pola N7 - gagal...</string>
+    <string name="perm_ok">Terapkan (Reboot)</string>
+    <string name="permission">Ubah per-ijinan</string>
+    <string name="permission_not_descr">Tak ada penjelasan tuk ijin ini</string>
+    <string name="permission_not_found">Tak ada per-ijinan!</string>
+    <string name="poorresult">"% Luck! Patch Gagal!
+Versi tidak diketahui, LVL atau patch sudah dilakukan?!"</string>
+    <string name="punkt1">- Aplikasi ini membutuhkan root akses untuk bekerja!</string>
+    <string name="removefixes">"Hapus Perbaikan dan Cadangan
+(media penyimpanan tak memadai)"</string>
+    <string name="restorebutton">Pulihkan</string>
+    <string name="savebutton">Simpan objek ke Custom Patch!</string>
+    <string name="saved_object">Dibuat di /sdcard/LuckyPatcher/ sebagai custom patch.</string>
+    <string name="settings">Setelan</string>
+    <string name="sortbyname">Sortir Nama</string>
+    <string name="sortbystatus">Sortir Status</string>
+    <string name="sortmenu">Sortir</string>
+    <string name="stat_boot_ads">Iklan Google</string>
+    <string name="stat_boot_custom">Custom patch</string>
+    <string name="stat_boot_lvl">Verifikasi Google Lisensi</string>
+    <string name="statads">Iklan Google ditemukan!</string>
+    <string name="statappplace">Penempatan Aplikasi:</string>
+    <string name="statbuild">Build:</string>
+    <string name="statcustom">ditemukan Custom Patch!</string>
+    <string name="statdataplace">Penempatan Data:</string>
+    <string name="statfix">Perubahan pd perbaikan diterapkan!</string>
+    <string name="statlvl">Verifikasi Lisensi ditemukan!</string>
+    <string name="statnotfix">Rubahan pd aplikasi tak dijalankan!</string>
+    <string name="statnotfound">Tidak Ada!</string>
+    <string name="statnotsys">Aplikasi Pengguna!</string>
+    <string name="statnull">Patch tidak ada hasil!</string>
+    <string name="statsys">Aplikasi Sistem!</string>
+    <string name="statuserid">User ID:</string>
+    <string name="statversion">Versi:</string>
+    <string name="sysdescr">Berhati-hatilah saat melakukan perubahan sistem. Selalu buat data cadangan.</string>
+    <string name="systitle">Lihat Sistem Aplikasi</string>
+    <string name="text_size">Ukuran Tulisan</string>
+    <string name="title_upd">Pesan</string>
+    <string name="truble">Masalah</string>
+    <string name="uninstall">Apakah anda ingin hapus aplikasi ini?</string>
+    <string name="uninstallapp">Hapus Aplikasi</string>
+    <string name="update">Update</string>
+    <string name="updatebusybox">Update Busybox</string>
+    <string name="vers">Lucky Patcher ver.</string>
+    <string name="viewlandscape">Mendatar</string>
+    <string name="viewlarge">Tulisan Besar</string>
+    <string name="viewmedium">Tulisan Sedang</string>
+    <string name="viewmenu">Lihat</string>
+    <string name="viewportret">Tinggi</string>
+    <string name="viewsmall">Tulisan Kecil</string>
+    <string name="wait">Harap Tunggu</string>
+    <string name="warning">Peringatan</string>
+</resources>

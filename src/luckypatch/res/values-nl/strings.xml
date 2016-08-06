@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Applicatie Info</string>
+    <string name="P_not_found">"Error: Applicatie programma bestanden niet gevonden!
+Controleer de locatie van de dalvik-cache om de problemen op te lossen!
+Standaard: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Patch resultaten</string>
+    <string name="Yes">Yes</string>
+    <string name="aboutmenu">Over</string>
+    <string name="abouttitle">Over Lucky Patcher door ChelpuS</string>
+    <string name="additinfo">Extra Informatie:</string>
+    <string name="adsdescr">Shows all Aplications with Google Ads.</string>
+    <string name="adstitle">App with Ads</string>
+    <string name="advanced_menu">Open Menu of Patches</string>
+    <string name="apk_create_option">Name for recompiled apk-file</string>
+    <string name="apkdescr">When you create a apk-file based on the patches, you can give name of the Label or Package the Application.</string>
+    <string name="apklabel">Label Application</string>
+    <string name="apkpackage">Package Application</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="backbutton">Backup</string>
+    <string name="bootview">Startlijst</string>
+    <string name="cleardalvik">Leeg dalvik-cache en Herstart</string>
+    <string name="cleardata">Verwijder Data</string>
+    <string name="contextads">Verwijder Google Ads!</string>
+    <string name="contextboot">Patch bij herstart!</string>
+    <string name="contextbootads">Verwijder Google Ads</string>
+    <string name="contextbootcustom">Aangepaste patch</string>
+    <string name="contextbootlvl">Verwijder Licentie Controle</string>
+    <string name="contextcustompatch">Aangepaste patch!</string>
+    <string name="contextdeodex">Verwijder Fix(om app te updaten)</string>
+    <string name="contextextpatch">Handmatig!</string>
+    <string name="contextfix">Fix dalvik-cache veranderingen</string>
+    <string name="contextignore">Verwijder licentie controle!</string>
+    <string name="contextlaunchapp">Start applicatie!</string>
+    <string name="contextodex">Dalvik-cache Fix Toepassen</string>
+    <string name="contextpatt1">License Validator Switch Fix</string>
+    <string name="contextpatt1_descr">If it is found, when you first start the application, enable the Internet. This group of patches makes the less changes.</string>
+    <string name="contextpatt2">Cached License Fix (Internet Fix)</string>
+    <string name="contextpatt2_descr">If it is found, will work without the Internet.</string>
+    <string name="contextpatt3">Response Code Verification Fix</string>
+    <string name="contextpatt3_descr">Mini-fixes for License Verification.</string>
+    <string name="contextpatt4">Replace of the Response Code</string>
+    <string name="contextpatt4_descr">Unstable. But very effective. If it is found, when you first start the application, enable the Internet. This group of patches makes the more changes.</string>
+    <string name="contextrestore">Herstel!</string>
+    <string name="contextselpatt">Selected Patterns</string>
+    <string name="copyright">Copyright ©2011, ChelpuS</string>
+    <string name="createapk">Maak aangepaste apk</string>
+    <string name="createapkads">Apk zonder Google Ads</string>
+    <string name="createapkcustom">Apk is aangepast door een aangepaste patch</string>
+    <string name="createapklvl">Apk zonder Licentie Controle</string>
+    <string name="createdialog1">Build opnieuw</string>
+    <string name="createdialog2">"voltood:
+
+Installatie bestand in de map:"</string>
+    <string name="createdialog3">"
+nthoud! Als de appliactie draait met de patch, betekend dit niet dat het zal werken in de vorm van een aangepaste apk. Als de applicatie zelf controleerd op een verandering, zal deze methode niet werken."</string>
+    <string name="createdialog4">- Error...</string>
+    <string name="createdialog5">Bestandsnaam:</string>
+    <string name="customdescr">Shows all Aplications with Custom Patch.</string>
+    <string name="customtitle">App with Custom Patch</string>
+    <string name="delboot">Klik om uit Startlijst te verwijderen</string>
+    <string name="dialog_system">This is a System Application. Be very careful when performing any operations with them, it could end very badly for Application or Operating System. Are you sure, what you want to work with this application?</string>
+    <string name="empty">Leeg</string>
+    <string name="equals_version">you have the latest version of Lucky Patcher...</string>
+    <string name="extpat1" />
+    <string name="extpat2">objecten gevonden, vergelijkbaar met de licentie:</string>
+    <string name="extpat3">"Instructies:
+--------------
+-Druk aub op \"Backup\";
+-Start WiFi en open al het verkeer;
+-Selecteer het object en druk op \"Patch\";
+-Druk op \"start\" en kijk naar de applicatie licentie;
+-Als dit object niet helpt, druk op \"Herstel\" en herhaal deze procedure met een ander object."</string>
+    <string name="extres1">"Object gepatched!
+-Druk op \"Start\" en kijk naar de applicatie licentie;
+-Als dit object niet helpt, druk op \"Herstel\" en herhaal deze procedure met een ander object."</string>
+    <string name="extres2">"Geen tags gevonden voor dit object!
+Al gepatched?!
+-Druk op \"Herstel\", selecteer een ander object en druk op \"Patch\"."</string>
+    <string name="filter">Filter</string>
+    <string name="filterdescr">Select Category for show applications.</string>
+    <string name="fixeddescr">Shows all Aplications with fixed Changes (Yellow Star).</string>
+    <string name="fixedtitle">Fixed Dalvik-Cache (ODEX)</string>
+    <string name="goodresult">" Geluk!
+Start de applicatie aub om het te testen!
+
+Als het programma niet goed of voldoende werkt, installeer het dan aub opnieuw en gebruik de patch niet nog een keer met deze versie."</string>
+    <string name="have_luck">"***********************
+
+Je hebt"</string>
+    <string name="installsupersu">Instaleer SuperSU (ICS)</string>
+    <string name="langdef">Standaard Taal</string>
+    <string name="langen">Engels</string>
+    <string name="langmenu">Taal</string>
+    <string name="launchbutton">Launch</string>
+    <string name="loadpkg">Packages laden</string>
+    <string name="lvldescr">Shows all Aplications with License verification.</string>
+    <string name="lvltitle">App with LVL</string>
+    <string name="new_version">Nieuwe Versie van Lucky Patcher Gevonden...</string>
+    <string name="no">Nee</string>
+    <string name="no_root">"Geen root toegang gevonden! Je moet root toegang hebben om door te gaan...
+
+(update aub busybox of su)!
+Installeer alstublieft TitaniumBackup - dit is om uw root-toegang te scannen. Als die suggereert om iets met voor root aan te passen, klik op \"Ja\".
+Selecteer de Luckypatcher Intellingen en druk op \"Probleemoplossing-> Update Busybox\". Upgrade Busybox naar 1.19.x.
+Of selecteer de Luckypatcher instellingen en druk op \"Probleemoplossing-> Installeer SuperSU (ICS)\" en installeer."</string>
+    <string name="no_site">Update site niet gevonden!</string>
+    <string name="nonedescr">Shows all Applications to which nothing was found.</string>
+    <string name="nonetitle">Not Found Something</string>
+    <string name="ok">Ok...</string>
+    <string name="orientmenu">Orientation</string>
+    <string name="others">Other</string>
+    <string name="patch_ok">Apply</string>
+    <string name="patchbutton">~Patch~</string>
+    <string name="pattern1">Patroon Patch N1 - geslaagd...</string>
+    <string name="pattern1_f">Patroon Patch N1 - mislukt...</string>
+    <string name="pattern2">Patroon Patch N2 - geslaagd...</string>
+    <string name="pattern2_f">Patroon Patch N2 - mislukt...</string>
+    <string name="pattern3">Patroon Patch N3 - geslaagd...</string>
+    <string name="pattern3_f">Patroon Patch N3 - mislukt...</string>
+    <string name="pattern4">Patroon Patch N4 - geslaagd...</string>
+    <string name="pattern4_f">Patroon Patch N4 - mislukt...</string>
+    <string name="pattern5">Patroon Patch N5 - geslaagd...</string>
+    <string name="pattern5_f">Patroon Patch N5 - mislukt...</string>
+    <string name="pattern6">Patroon Patch N6 - geslaagd...</string>
+    <string name="pattern6_f">Patroon Patch N6 - mislukt...</string>
+    <string name="pattern7">Patroon Patch N7 - geslaagd...</string>
+    <string name="pattern7_f">Patroon Patch N7 - mislukt...</string>
+    <string name="perm_ok">Pas toe (Herstart apparaat)</string>
+    <string name="permission">Verander Toegangsrechten</string>
+    <string name="permission_not_descr">Geen beschrijving beschikbaar voor dit toegangsrecht</string>
+    <string name="permission_not_found">Geen Toegangsrechten gevonden!</string>
+    <string name="poorresult">" Geluk! Patch Mislukt!
+Onbekende versie LVL of de patch is al toegepast?!"</string>
+    <string name="punkt1">- De Patcher heeft root toegang nodig om te werken!</string>
+    <string name="removefixes">Verwijder fixes and backups (om app te updaten)</string>
+    <string name="restorebutton">Restore</string>
+    <string name="savebutton">Save object to Custom Patch!</string>
+    <string name="saved_object">is written to /sdcard/LuckyPatcher/ as a custom patch.</string>
+    <string name="settings">Settings</string>
+    <string name="sortbyname">Sorteer op Naam</string>
+    <string name="sortbystatus">Sorteer op Status</string>
+    <string name="sortmenu">Sorteer</string>
+    <string name="stat_boot_ads">Google Ads</string>
+    <string name="stat_boot_custom">Aangepaste patch</string>
+    <string name="stat_boot_lvl">Google Licentie Controle</string>
+    <string name="statads">Google Ads Gevonden!</string>
+    <string name="statcustom">Aangepaste Patch Gevonden!</string>
+    <string name="statfix">Veranderingen Fixatie is toegepast applied!</string>
+    <string name="statlvl">Licentie Controle Gevonden!</string>
+    <string name="statnotfix">Veranderingen in de applicatie zijn niet opgelost!</string>
+    <string name="statnotfound">Niet gevonden!</string>
+    <string name="statnull">Geen resultaten voor patches!</string>
+    <string name="sysdescr">Be very careful with any actions for system applications. Please make backup befor.</string>
+    <string name="systitle">Show System Applications</string>
+    <string name="text_size">Text Size</string>
+    <string name="title_upd">Message</string>
+    <string name="truble">Probleemoplossing</string>
+    <string name="uninstall">You really want to remove this application?</string>
+    <string name="uninstallapp">De-installeer applicatie</string>
+    <string name="update">Update</string>
+    <string name="updatebusybox">Update Busybox</string>
+    <string name="vers">Lucky Patcher ver.</string>
+    <string name="viewlandscape">Landscape</string>
+    <string name="viewlarge">Grote Tekst</string>
+    <string name="viewmedium">Medium Tekst</string>
+    <string name="viewmenu">Weergave</string>
+    <string name="viewportret">Portrait</string>
+    <string name="viewsmall">Kleine Tekst</string>
+    <string name="wait">Wacht even</string>
+    <string name="warning">Warning</string>
+</resources>

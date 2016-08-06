@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Informações sobre a aplicação</string>
+    <string name="P_not_found">"Erro: Arquivo do Programa não encontrado!
+Verifique a localização dalvik-cache para resolver o problema!
+Default: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Resultados do Patch</string>
+    <string name="aboutmenu">Sobre</string>
+    <string name="abouttitle">Sobre Lucky Patcher by ChelpuS</string>
+    <string name="additinfo">Informações Adicionais:</string>
+    <string name="advanced_menu">Abrir Menu dos Patches</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="backbutton">Cópia de segurança</string>
+    <string name="bootview">Lista de Inicialização</string>
+    <string name="cleardalvik">Limpar Dalvik-cache e Reiniciar</string>
+    <string name="cleardata">Limpar dados</string>
+    <string name="contextads">Remover Anúncios Google!</string>
+    <string name="contextboot">Patch na Reinicialização!</string>
+    <string name="contextbootads">Remover Anúncios Google</string>
+    <string name="contextbootcustom">Patch personalizado</string>
+    <string name="contextbootlvl">Remover Verificação de licença</string>
+    <string name="contextcustompatch">Patch Personalizado!</string>
+    <string name="contextdeodex">Apagar Correcções (para atualizar app)</string>
+    <string name="contextextpatch">Manual!</string>
+    <string name="contextfix">Corrigir alterações Dalvik-cache</string>
+    <string name="contextignore">Remover Verificação de Licença!</string>
+    <string name="contextlaunchapp">Iniciar a aplicação!</string>
+    <string name="contextodex">Aplicar Correcções Dalvik-cache</string>
+    <string name="contextpatt1">Mudar correção de Licença de Validção</string>
+    <string name="contextpatt1_descr">Se for encontrada ligue a Internet na primeira utilização da Aplicação. Este grupo de patches faz menos alterações.</string>
+    <string name="contextpatt2">Correção da Licença armazenada em cache(correção de Internet)</string>
+    <string name="contextpatt2_descr">Se for encontrada, funcionará sem Internet.</string>
+    <string name="contextpatt3">Reaçao da correção de Verificação de Código</string>
+    <string name="contextpatt3_descr">Mini-correções para Verificação de licença.</string>
+    <string name="contextpatt4">Substituição do Código Resposta</string>
+    <string name="contextpatt4_descr">Instável. Mas muito eficaz. Se for encontrada ligue a Internet na primeira utilização da Aplicação. Este grupo de patches faz mais alterações.</string>
+    <string name="contextrestore">Restaurar!</string>
+    <string name="contextselpatt">Padrões selecionados</string>
+    <string name="createapk">Criar apk modificada</string>
+    <string name="createapkads">Apk com Anúncios do Google removidos</string>
+    <string name="createapkcustom">Apk foi modificado pelo patch personalizado</string>
+    <string name="createapklvl">Apk com Verificação de licença removida</string>
+    <string name="createdialog1">Reconstruir</string>
+    <string name="createdialog2">"concluído:
+
+Ficheiro de instalação numa pasta:"</string>
+    <string name="createdialog3">"
+
+Lembre-se que! Se o aplicativo estiver a correr com o patch, isso não significa que ele irá funcionar na forma de um arquivo APK modificado. Se a aplicação verifica a existência de uma alteração, este método não funcionará."</string>
+    <string name="createdialog4">- Erro...</string>
+    <string name="createdialog5">Nome do arquivo:</string>
+    <string name="delboot">Prima para excluir da lista de inicialização</string>
+    <string name="empty">Vazio</string>
+    <string name="equals_version">Você tem a ultima versão do Lucky Patcher...</string>
+    <string name="extpat1">Encontrados</string>
+    <string name="extpat2">objetos semelhantes à Licença:</string>
+    <string name="extpat3">"Instruções:
+--------------
+-Por favor, prima \"Cópia de segurança\";
+-Activar o WiFi e abra todo o tráfego;
+-Selecione o objeto e prima \"Patch\";
+-Prima \"iniciar\" e veja a licença do programa;
+-Se isto não ajudar, prima \"Restaurar\" e repita o procedimento com outro objetivo."</string>
+    <string name="extres1">"Objeto corrigido!
+-Prima \"Iniciar\" e veja a licença do programa;
+-se isto não ajudar, prima \"Restaurar\" e repita o procedimento com outro objeto."</string>
+    <string name="extres2">"Não foram encontradas etiquetas para este objeto!
+o patch já foi aplicado?!
+-Prima \"Restaurar\" e selecione outro objeto e prima \"Patch\"."</string>
+    <string name="goodresult">" Sorte!
+Por favor, execute o programa para testar!
+
+Se o programa não funcionar correctamente, por favor reinstale-o e não volte a usar o patch nesta versão ."</string>
+    <string name="have_luck">"***********************
+
+Você teve"</string>
+    <string name="installsupersu">Instale o SuperSU (ICS)</string>
+    <string name="langdef">Português</string>
+    <string name="langen">English</string>
+    <string name="langmenu">Idioma</string>
+    <string name="launchbutton">Iniciar</string>
+    <string name="loadpkg">Carregando Pacotes</string>
+    <string name="new_version">Nova versão do LuckyPatcher encontrada...</string>
+    <string name="no">Não</string>
+    <string name="no_root">"Acesso á Raíz não encontrado! Você tem de ter ROOT para continuar...
+
+(por favor actualize o busybox ou su)!
+Por favor instale o TitaniumBackup - para analizar o ROOT. Se sugerir alterações na raíz, clique \"Sim\".
+selecionar configurações Luckypatcher e clique \"Resolução de problemas-> actualização do Busybox\". Atualização do Busybox para 1.19.x.
+Ou seleccione definições Luckypatcher e clique \"Resolução de problemas-> instale o SuperSU (ICS)\" e instalar."</string>
+    <string name="no_site">Site para atualização não encontrado!</string>
+    <string name="ok">Ok...</string>
+    <string name="orientmenu">Orientação</string>
+    <string name="patch_ok">Aplicar</string>
+    <string name="patchbutton">~Patch~</string>
+    <string name="pattern1">Patch Padrão N1 - bem sucedido...</string>
+    <string name="pattern1_f">Patch Padrão N1 - falhou...</string>
+    <string name="pattern2">Patch Padrão N2 - bem sucedido...</string>
+    <string name="pattern2_f">Patch Padrão N2 - falhou...</string>
+    <string name="pattern3">Patch Padrão N3 - bem sucedido...</string>
+    <string name="pattern3_f">Patch Padrão N3 - falhou...</string>
+    <string name="pattern4">Patch Padrão N4 - bem sucedido...</string>
+    <string name="pattern4_f">Patch Padrão N4 - falhou...</string>
+    <string name="pattern5">Patch Padrão N5 - bem sucedido...</string>
+    <string name="pattern5_f">Patch Padrão N5 - falhou...</string>
+    <string name="pattern6">Patch Padrão N6 - bem sucedido...</string>
+    <string name="pattern6_f">Patch Padrão N6 - falhou...</string>
+    <string name="pattern7">Patch Padrão N7 - bem sucedido...</string>
+    <string name="pattern7_f">Patch Padrão N7 - falhou...</string>
+    <string name="perm_ok">Aplicar e reiniciar</string>
+    <string name="permission">Alterar Permissões</string>
+    <string name="permission_not_descr">Nenhuma descrição disponível para esta permissão</string>
+    <string name="permission_not_found">Permissões não encontradas!</string>
+    <string name="poorresult">" Sorte! Patch Falhou!
+Versão LVL desconhecida ou o patch já foi aplicado?!"</string>
+    <string name="punkt1">- O Patcher necessita ROOT para funcionar!</string>
+    <string name="removefixes">Apagar correções e cópias de segurança (para atualizar app)</string>
+    <string name="restorebutton">Restaurar</string>
+    <string name="savebutton">Salvar objeto para o patch personalizado!</string>
+    <string name="saved_object">é guardado em /sdcard/LuckyPatcher/ como um patch personalizado.</string>
+    <string name="sortbyname">Ordenar por Nome</string>
+    <string name="sortbystatus">Ordenar por Estado</string>
+    <string name="sortmenu">Ordenar</string>
+    <string name="stat_boot_ads">Anúncios do Google</string>
+    <string name="stat_boot_custom">Patch personalizado</string>
+    <string name="stat_boot_lvl">Verificação de licença do Google</string>
+    <string name="statads">Foram encontrados anuncios do Google!</string>
+    <string name="statcustom">Foi encontrado Patch personalizado!</string>
+    <string name="statfix">A alteração de estabilidade foi aplicada!</string>
+    <string name="statlvl">Foi encontrada verificação de licença!</string>
+    <string name="statnotfix">As alterações na aplicação não foram corrigidas!</string>
+    <string name="statnotfound">Não encontrado!</string>
+    <string name="statnull">Nenhum resultado para patches!</string>
+    <string name="title_upd">Mensagem</string>
+    <string name="truble">Resolução de problemas</string>
+    <string name="uninstallapp">Desinstalar a aplicação</string>
+    <string name="update">Atualizar</string>
+    <string name="updatebusybox">Actualize a Busybox</string>
+    <string name="vers">Versão Lucky Patcher</string>
+    <string name="viewlandscape">Paisagem</string>
+    <string name="viewlarge">Texto Grande</string>
+    <string name="viewmedium">Texto Médio</string>
+    <string name="viewmenu">Ver</string>
+    <string name="viewportret">Retrato</string>
+    <string name="viewsmall">Texto Pequeno</string>
+    <string name="wait">Por favor aguarde</string>
+</resources>

@@ -1,0 +1,155 @@
+﻿<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color:#ffffff">
+<b style="color:#FF0000">DĖMESIO!</b> tam, kad Jūsų kodai dirbtų pagal ART, negalima šuolių nuimti pilnai arba daryti juos besąlyginiais, todėl, kad lieka kodas, į kurį negalės patekti optimizatorius (kabantis kodas), ir jis krenta su kritine klaida per optimizavimą. Kad šito išvengti, būtina pakeisti šuolius apibrėžtais perėjimais, kurie visada suveikia. Pavyzdžiui, jei Jums būtinai reikia kažkokioje vietoje peršokti, tai šuolį ten pakeiskite į if-eq v0,v0 (baitais 32 00 ?? ??). Jei Jums nereikia peršokti kažkokioje vietoje, tai ten galima padėti šuolį if-ne v0,v0 (baitais 33 00 ?? ??) arba patys pažiūrėkite kokiu ekvivalentu galima pakeisti.
+<br/><br/> 
+1. Tekstinį failą reikia pavadinti kaip programos paketas... Pavyzdžiui Titanium Backup reikia sukurti tokį failo vardą: <b style="color:#36ff00">com.keramidas.TitaniumBackup.txt</b> (Būtinai laikytis didžiųjų ir mažųjų raidžių iš paketo pavadinimo, kitaip neras (linux - po galais jį)). Jeigu naudotojo kodo failas programai jau egzistuoja, Jūs galite paprastai pridėti failo pavadinimo pradžioje bet kokį tekstą ir išsaugoti jį šalia esančio. Esant reikalui, pasirenkant programai "Naudotojo kodas", Lucky Patcher Jums pasiūlys naudotojų kodų sąrašą programai koduoti. Jei Jūs norite parašyti kodą iškart serijai programų vienos firmos, tai gale naudotojo kodo, failo pavadinimo, galima panaudoti identifikatorių <b style="color:#36ff00">_%25ALL%25</b>, pavyzdžiui kodo pavadinimas visiems SVOX balsams: atrodys taip: <b>com.svox.classic.langpack_%25ALL%25.txt</b>. Į _%25ALL%25 keičiasi dalis paketo pavadinime, kuri keičiasi priklausomai nuo programos esamos firmos. Jeigu dar būtinai reikia pridėti, pradžioje failo pavadinimo, savo vardą, pavyzdžiui, tai galima pasinaudoti %ALL%_ ir _%ALL%. (Pavyzdys: chelpus.%ALL%_com.android_%ALL%.txt). Per naudotojų kodų vardų išvedimą, pačioje programoje %ALL%_ slepiasi, dėl paprastesnio priėmimo. Pačiam naudotojo kodo tekste galima naudoti %25PACKAGE_NAME%25, vietoj kurio, kodavimo metu, bus įdėtas programos taikinio paketo pavadinimas. Tai naudinga koduose programų grupei, kur kelias iki failo keisis priklausomai nuo paketo pavadinimo (Pavyzdys: /data/data/%25PACKAGE_NAME25%/files/trial.txt).<br/><br/>
+2. Ir taip, Štai pavyzdys. Aš parašiau ten viską, kas yra iš galimybių. Praktikoje Jums prireiks daug mažiau funkcijų. Failo kūne rašome maždaug tokioje formoje (atskirti tik vienetiniu tarpu, kitaip įvyks klaida):<br/><br/>
+<table cellpadding="0" cellspacing="0" border="0" style="background-color:#292929">
+<tr><td>[BEGIN]</td></tr>
+<tr><td>Šis naudotojo kodas prideda roželę į Keramidas dantis. ver.4.4.4</td></tr>
+<tr><td>[PACKAGE]</td></tr>
+<tr><td>[CLASSES]</td></tr>
+<tr><td>{"search":"15 01 00 30 ** 20 ** ** 31 ** 20 ** ** ** ** R0 R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 12 ** R11 R12 R13 0E 00"}</td></tr>
+<tr><td>{"search":"10 ** ** ** ** 0C 01 1A 04 R14 R15 1A 05 00 00 72 30 ** ** ** ** 0C 04"}</td></tr>
+<tr><td>{"search":"0C 01 1A 03 ** ** 72 30 R16 ** ** ** 72 10"}</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>{"group":"1"}</td></tr>
+<tr><td>{"original":"12 ** 22 00 ** 04 ** W0 ** W2 ** W3 22 02 ** 04"}</td></tr>
+<tr><td>{"replaced":"** S1 ** ** ** ** W16 ** W16 ** W16 ** ** ** ** **"}</td></tr>
+<tr><td> &nbsp;</td></tr> 
+<tr><td>{"group":"1"}</td></tr>
+<tr><td>{"original":"0c 07 ** ** ** ** ** ** 38 ** ** ** 70"}</td></tr>
+<tr><td>{"replaced":"** ** ** ** ** ** ** ** W11 W11 W11 W11 **"}</td></tr>
+<tr><td> &nbsp;</td></tr> 
+<tr><td>{"original":"12 ** 12 ** 6a ** ** ** 38 ** ** **"}</td></tr>
+<tr><td>{"replaced":"** S0 ** ** ** ** ** ** 00 00 00 00"}</td></tr>
+<tr><td>{"original":"12 ** 12 ** 6a ** ** ** 38 ** ** **"}</td></tr>
+<tr><td>{"replace_from_file":"array.tb.bin"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>[LIB]</td></tr>
+<tr><td>{"name":"libtitanium.so"}</td></tr>
+<tr><td>{"original":"00 ** 50 e2"}</td></tr>
+<tr><td>{"replaced":"00 00 50 e1"}</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>{"original":"01 0c 80 e2"}</td></tr>
+<tr><td>{"replaced":"00 00 a0 e1"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>[OTHER FILES]</td></tr>
+<tr><td>{"name":"/files/shell.dex"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>{"original":"0F 00 00 00 1A 00 00 00 0F 00 00 00 59 00 00 00 2F"}</td></tr>
+<tr><td>{"replaced":"0F 00 00 00 0F 00 00 00 0F 00 00 00 59 00 00 00 2F"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>[OTHER FILES]</td></tr>
+<tr><td>{"name":"/mnt/sdcard/Android/package-name/files/lives.xml"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>{"original":"63 68 65 6C 70 61"}</td></tr>
+<tr><td>{"insert":"63 68 65 6c 70 61 61 61"}</td></tr>
+<tr><td> &nbsp;</td></tr>
+<tr><td>[END]</td></tr>
+<tr><td>Congratulations! Program cracked!</td></tr>
+<tr><td>Run Titanium Backup and check License State!</td></tr>
+<tr><td>Good Luck!</td></tr>
+<tr><td>Chelpus.</td></tr>
+</table>
+<br/>
+<br/>
+Paaiškinsiu dabar, kas ten kur... Aš tiesa galvoju, tiems kam reikia jau suprato....:<br/>
+<br/>
+Ir taip:<br/>
+<br/>
+<b style="color:#36ff00">[BEGIN]</b> - pradžios žymė, visas tekstas po jos ir iki pirmo lauko [CLASSES], [LIB], [END] ir kt. bus išvestas pradžioje kodo log-o naudotojui.<br/>
+<b style="color:#36ff00">[PACKAGE]</b> - ši žymė sako apie tai, kad mes koduosime ne dalvik-cache tiesiogiai, o ištrauksime classes.dex iš programos apk, perkoduosime (kodais, kurie eina po identifikatorių [CLASSES] arba [ODEX]), sukursime ODEX vaizdą su pakeitimais ir pakišime jį programai. Butent toks vaizdas, pavyzdžiui, reikalingas TitaniumBuckup, todėl, kad jis tikrina jį ir visos patikros sumos, viduje jo, turi būti teisingos. Šitą žymę pageidautina visada naudoti, todėl, kad toks kodas labiau teisingas, bet jei šitai iššaukia kokias nors problemas, galima ir be jos.<br/>
+<b style="color:#36ff00">[CLASSES]</b> - čia eina eilutės kodui classes.dex. Jos gali būti paieška (search) ir originalas-pakeitimas (original-replaced).<br/>
+<b style="color:#36ff00">laukas original-replaced</b> originale mes nurodome baitų eiliškumą, kurios ieškome faile ir pakeisime ją į baitus iš replaced. Reikšmės šioms eilėms paprastai žiūri į IDA Pro. Baitų reikšmės šešioliktainėje formoje atskirtos vieninteliais tarpais, kur <b style="color:#36ff00">**</b> arba <b style="color:#36ff00">??</b> - bet koks baitas (reikalingi, kad kodas dirbtų įvairiose programų versijose, todėl, kad kai kurie baitai keičiasi).<br/>
+<b style="color:#36ff00">laukas replace_from_file</b> - keičia baitus, pradedant surasta vieta, į baitus iš failo su nurodytu vardu ir gulinčiu šalia su naudotojo kodo failu (padaryta ilgiems pakeitimo šablonams, kuriuos sunkiau įrašyti į tekstinį failą).<br/>
+<b style="color:#36ff00">laukas insert</b> - taikomas įvykiuose, kada būtina pakeisti surastą originalą į baitų skaičių viršijantį baitų skaičių originalaus paieškos šablono. Dažniausiai viso šito reikia įvairiems tekstiniams failams. Pavyzdžiui, kada faile xml yra:"lives=9", o pakeisti reikia į "lives=999", būtent šiame įvykyje padės insert, nepakeičiant duomenų po ”lives=9”.<br/>
+<b style="color:#36ff00">laukas search</b> - ieško baitų pažymėtose pozicijose R[0, 1, 2, 3, ...], kur numeris tai numeris dėžutės kur išsaugomi baitai (dežučių numeriai turi eiti paeiliui nuo 0 ir toliau ir neturi pasikartoti).
+Pavyzdžiui: {"search":"15 01 00 R0 R1 R2 12 ** 0E 00"} reiškia, kad baitai tose pozicijose išsaugoti į R0, R1, R2. Dabar, kada surasti ir išsaugoti, galima juos naudoti pakeitimo paieškos šablonuose, pakeičiant tik R į W:
+<br/>čia:<br/>
+<b style="color:#36ff00">** arba ??</b> - reiškia bet kokį baitą,<br/>
+<b style="color:#36ff00">W0, W1, W2</b> - tai išsaugoti baitai į search,<br/>
+<b style="color:#36ff00">S0, S1 ir SQ</b>- tai reiškia nustatyti kintamajį smali į 0 ( pavyzdžiai 43->03, 54->04...) arba 1 (pavyzdžiai 43->13, 04->14...) atitinkamai, SQ vykdo šešioliktainius skaitmenis (pavyzdžiui 23->33, 62->22...):<br/>
+pavyzdžiui, kode yra kintamasis const/4 v?,0x00 - aš nebereikalo ten padėjau ženklą ?, o todėl, kad jo numeris Jums nežinomas (pavyzdžiui, po programos atnaujinimo jis gali pasikeisti), bet Jūs tiksliai žinote, kad ten įneša 0 į kažkokį kintamajį, o Jums reikia įnešti 1, tada pakeitimo šablonas atrodys taip:<br/>
+{"original":"12 ?? ?? ?? ?? ??"}<br/>
+{"replaced":"12 S1 ?? ?? ?? ??"}<br/>
+o jeigu Jums reikia įnešti 0, pakeitimo šablonas atrodys taip:<br/>
+{"original":"12 ?? ?? ?? ?? ??"}<br/>
+{"replaced":"12 S0 ?? ?? ?? ??"}<br/>
+visą kitą paprastai HEX baitai.<br/>
+Baitų kaičius origanal ir replaced būtinai turi sutapti. Ir būtinai atsiminkite, kad baitai dalvik-cache ir classes.dex ne visi vienodi, šituo Jūs galite įsitikinti, nukopijavus dalvik-cache failą iš /data/dalvik-cache/ pas save į kompiuterį ir atidarius per IDA Pro.<br/>
+<b style="color:#36ff00">laukas group</b> - pažymi vienos grupės šablonus (grupės gali būti 1 ir aukščiau). Ką tai reiškia? O reiškia tai, kad jeigu nors vienas iš grupės suveiks, naudotojui parodys dialogą, kad baigėsi sėkmingai. Tai reikia, pavyzdžiui, tam, kad padaryti universalų kodą iškart daugeliui vienos programos versijų (pavyzdžiui, kodas, visoms Google Play versijoms, atnaujinimams atjungti).<br/>
+<b style="color:#36ff00">[ODEX]</b> - vietoj identifikatoriaus [CLASSES], galima naudoti šitą. Tada classes.dex pakeitimai bus išsaugoti ne į dalvik-cache, kur jie periodiškai pradingsta per sistemos cache atnaujinimą, o atskirame ODEX faile šalia programos apk, tai užfiksuos visus pakeitimus ir paliks originalų dalvik-cache nepaliestu, tam jei programa jį patikrins. Galima naudoti [ODEX] po [CLASSES], tada pakeitimai įsineš į dalvik-cache ir automatiškai užsifiksuos ODEX faile.<br/>
+<b style="color:#36ff00">[ODEX-PATCH]</b> - būna situacijos, kada reikia pakeisti jau perkoduotą programą, pavyzdžiui, kurioje jau pašalino licencijos patikrinimą automatiniu kodu, tada į pagalbą ateina ši žymė. Visi šablonai <originalas-pakeitimas> po jos bus panaudoti ODEX failui, kurį jau sukūrė kiti kodai. Pavyzdžiui, tai prireikė pirmą kart Final Fantasy III, kada žmonės gydė žaidimą Ekstremaliu režimu, licencijos patikrinimo pašalinimu, bet kad vertimas atsispindėtų teisingoje kodiruotėje, reikėjo papildomų kodų ODEX faile, kuriuos atsirado galimybė panaudoti su šios žymės pagalba.<br/>
+<b style="color:#36ff00">[LIB]</b> - tai reiškia, kad toliau eis eilutės šios programos bibliotekos kodui, name - bibliotekos vardas. Kartais programose būna keletas bibliotekų skirtingomis procesorių architektūromis, tada geriau naudoti [LIB-ARMEABI], [LIB-ARMEABI-V7A], [LIB-MIPS] arba [LIB-X86] reikalingai bibliotekai, kad šablonai nuo kitos bibliotekos nebūtų panaudoti esamai.<br/>
+<b style="color:#36ff00">[OTHER FILES]</b> - tai reiškia, kad toliau eis kodo failo eilutės gulinčio programos aplanke /data/data/<paketo vardas>, name - tai vardas nuo /data/data/<paketo vardas> ir failo vardas. Kad failai ten atsirastų, reikia nors vieno programos paleidimo. Dar yra kelio nurodymo variantas iki failo į sdcard, tam reikia įrašyti kelią pradedant jį ”/mnt/sdcard/”, tada, jei failas nebus surastas nurodytu keliu, Lucky Pacher keis ”/mnt/sdcard/” į visuotinai pripažintus kitus sdcard vietos variantus. Pavyzdžiui taip: ”/mnt/sdcard/Android/package_name/files/lives.xml” <br/>
+<b style="color:#36ff00">[FILE_IN_APK]</b> - tai reiškia, kad toliau eis kodo failo eilutės, esančios viduje apk (toks kodas dirbs tik panaudojant tokį kodą apk perrinkimui, paprasto kodo režime ši žymė ignoruojama). Tai būtina kodui failų, kurie atsiranda programų darbo procese kokiame nors skyriuje, kad gauti prie jų prieigą kodui (pavyzdžiui, failai iš assets), arba toks failas po panaudojimo ištrinamas ir paskui iš naujo išpakuojamas į vietą, kur buvo ankščiau. Pavyzdys:<br/>
+[BEGIN]<br/>
+Apk perrinkimo kodas<br/>
+[FILE_IN_APK]<br/>
+{"name":"/assets/bin/Data/Managed/O7SharpCompress.dll"}<br/>
+{"original":"4D 5A 90 00 03 00 00 00 04 00 00 00"}<br/>
+{"replaced":"00 00 00 00 00 00 00 00 00 00 00 00"}<br/>
+[END]<br/>
+Failas perrinktas su kodu.<br/>
+<b style="color:#36ff00">[ADD-BOOT]</b> - Automatiškai prideda numatytą naudotojo kodą į užkrovimo lapą, kad kodas butų naudojamas per kiekvieną užkrovimą. Tai reikia per bibliotekų kodavimą arba kada Jūs naudojate [CLASSES] be [ODEX] arba be [PACKAGE], taip kaip koduosis dalvik-cache, o jis turi ypatybę atsinaujinti sistema ir visi pakeitimai dingsta.<br/>
+<b style="color:#36ff00">[COMPONENT]</b> - Kartais programa atjungia savo activity ir kitus komponentus, kad riboti savo funkcionalumą, tada gali praversti ši galimybė, įjungti juos atgal. Taip galima įjungti activity, servisus, perdavėjus ir kitus komponentus. Pagrinde nurodyti jų vardus griežtam sutapimę su didžiosiomis ir mažosiomis raidėmis. Štai pavyzdys, kuris demonstruoja, atjungia komponentą programoje su vardu com.superApp.adsActivity ir leidimu com.android.vending.CHECK_LICENSE<br/>
+[BEGIN]<br/>
+Ads disabler<br/>
+[COMPONENT]<br/>
+{"disable":"com.superApp.adsActivity"}<br/>
+{"disable":"com.android.vending.CHECK_LICENSE"}<br/>
+[END]<br/>
+Congratulations! Ads hidden!<br/>
+<br/>
+Arba štai pavyzdys, kuris demonstruoja komponento įjungimą programoje su vardu com.superApp.adsActivity ir leidimu com.android.vending.CHECK_LICENSE<br/>
+[BEGIN]<br/>
+Ads disabler<br/>
+[COMPONENT]<br/>
+{"enable":"com.superApp.adsActivity"}<br/>
+{"enable":"com.android.vending.CHECK_LICENSE"}<br/>
+[END]<br/>
+Congratulations! Ads hidden!<br/>
+<br/>
+<b style="color:#36ff00">[SQLITE]</b> -Kartais pilnoje programoje būtina ka nors pakeisti duomenų bazėje kurioje ji užrašo kažkokius tai įvykius arba duomenis, tada į pagalbą ateina šis identifikatorius, po jo eina vaizdo konstrukcija:<br/>
+[BEGIN]<br/>
+Trial Reset<br/>
+[SQLITE]<br/>
+{"database":"/data/data/com.package.megaapp/databases/settings.db"}<br/>
+{"execute":"DELETE FROM table_settings WHERE name = 'SETTING__LIC'"}<br/>
+{"execute":"UPDATE table_settings SET UsedDays=0 WHERE name='Trial_set'"}<br/>
+[END]<br/>
+Congratulations! You have new Trial Period!<br/>
+<br/>
+database - tai kelias į duomenų bazę Jūsų prietaise ir tikriausiai kitų naudotojų prietaisuose.<br/>
+execute - tai SQLite užklausa, susidedanti iš paprastų taisyklių (apie tai galima perskaityti internete).<br/>
+<br/>
+<b style="color:#36ff00">[SET_PERMISSIONS]</b> - komandos linux analogas "chmod leidimai failo_vardas" failams iš programos duomenų aplanko (pavyzdžiui, duoti teises tik skaityti po redagavimo):<br/>
+[BEGIN]<br/>
+Trial Reset<br/>
+[SET_PERMISSIONS]<br/>
+{"file_name":"/files/stats"}<br/>
+{"permissions":"777"}<br/>
+<br/>
+[OTHER FILES]<br/>
+{"name":"/files/stats"}<br/>
+<br/>
+{"original":"4D 4D 46 31"}<br/>
+{"replaced:"4D 00 00 00"}<br/>
+<br/>
+[SET_PERMISSIONS]<br/>
+{"file_name":"/files/stats"}<br/>
+{"permissions":"444"}<br/>
+[END]<br/>
+Congratulations! You have new Trial Period!<br/>
+<br/>
+<b style="color:#36ff00">[END]</b> - šablonų pabaigos identifikatorius nuo kodų, visas tekstas su sekančia eilute bus išvestas po sėkmingo programos kodavimo.<br/>
+<br/>
+Viskas, išsaugote failą com.keramidas.TitaniumBackup.txt ir metate į aplanką /sdcard/LuckyPatcher/...
+<br/>
+Dabar programa dega geltonai ir galima jai panaudoti šį kodą.<br/>
+<br/>
+<br/>
+Jei kas, užduokite klausimus. Sėkmės.<br/>
+</body>

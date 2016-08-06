@@ -1,0 +1,205 @@
+﻿
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+</head>
+
+<body topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" bgcolor="#000000" style="color&#58;#ffffff">
+<hr><b style="color&#58;#FF0000">WARNING!</b> Do not remove jumps or make them unconditional! The Optimizer will crash and your patch will not work on ART! To avoid this, use conditional jumps. For example, if there is a need to jump, replace the jump with the <code>if-eq v0,v0 (bytes&#58; 32 00 ?? ??)</code>. If there is no need to jump in a particular place, you can insert a jump such as <code>if-ne v0,v0 (bytes&#58; 33 00 ?? ??)</code>; also feel free to use your own equivalent.<br/><br/>
+The patch file must have the same name as the target APK (this is case sensitive).<br/>
+If the file is a custom patch for the application already exists, you can simply add at the beginning of the file name of any Text and save it as near the existing.<br/>
+If you want to write a patch once a series of programs on a single firm, then the end the custom patch file name, you can use <code> _%25ALL%25</code>, for example the name of the patch for all the votes<code> SVOX</code> will look like this&#58; <code>com.svox.classic.langpack_%25ALL%25.txt</code>. On the<code> _%25ALL%25</code> is replaced by the name part of the package, which varies depending on the application of the firm.
+Do not use special characters/formatting in the patch file (single spaces only). If you need to make a patch for several programs of one firm and add a prefix at the beginning, you can use<code>%25ALL%25_</code>  and<code> _%25ALL%25</code>. (Example name&#58; <code>chelpus.%25ALL%25_com.android._%25ALL%25.txt</code>). You can use to custom patch content<code> %25PACKAGE_NAME%25</code> for path to files, this <code>%25PACKAGE_NAME%25</code> replace to package name of target applications.<br/>
+To search for patterns of bytes use IDA Pro 6.1. It can open dalvik-cache, odex, libraries and classes.dex.<br/>
+If you want to patch dalvik-cache or odex, do not forget that the bytes of data in different firmware versions may vary. And keep in mind that not all classes.dex in the bytes coincide with dalvik-cache and odex. In this example you can see, if you open classes.dex and odex-file in IDA Pro.<br/>
+<br/>
+[BEGIN]<br/>
+&lt;patch comments that are visible to the user pre-patch&gt;<br/>
+Patch for XYZ Pro 5.0.5<br/>
+<br/>
+[PACKAGE]<br/>
+&lt;unpacks classes.dex and applies all the patches from the [CLASSES] to it. And generates, based on the modified classes.dex, odex-file.&gt;<br/>
+<br/>
+[CLASSES]<br/>
+&lt;pattern search/replace for classes.dex (see below)&gt;<br/>
+<code>{"search"&#58;"63 R00 R01 R02 38 00 04 00 12 10 0F 00"}<br/>
+{"group"&#58;"1"}<br/>
+{"original"&#58;"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced"&#58;"12 00 6A W00 W01 W02 00 00 12 <b style="color&#58;#36ff00">S0</b> 0F 00"}</code><br/>
+<br/>
+[LIB]<br/>
+&lt;pattern search/replace for named native libraries (see below)&gt; <br/>
+<code>{"name"&#58;"libtitanium.so"}<br/>
+{"original"&#58;"00 ** 50 e2"}<br/>
+{"replaced"&#58;"00 00 50 e1"}<br/></code>
+<br/>
+[LIB]<br/>
+&lt;pattern search/replace for all native libraries&gt; <br/>
+<code>{"name"&#58;"*"}<br/>
+{"original"&#58;"00 ** 50 e2"}<br/>
+{"replaced"&#58;"00 00 50 e1"}<br/></code>
+<br/>
+[OTHER FILES]<br/>
+&lt;pattern search/replace for named other files in /data/data/Package_Target_APK/ (see below)&gt;<br/>
+<code>{"name"&#58;"/files/shell.dex"}<br/>
+{"original"&#58;"0F 00 00 00 1A 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+{"replaced"&#58;"0F 00 00 00 0F 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+<br/></code>
+[OTHER FILES]<br/>
+&lt;pattern search/insert for named other files in /mnt/sdcard/ (if /mnt/sdcard/ path not found, Lucky Patcher search other variants for sdcard)&gt;<br/>
+<code>{"name"&#58;"/mnt/sdcard/Android/package-name/files/lives.xml"}<br/>
+{"original"&#58;"63 68 65 6C 70 61"}<br/>
+{"insert"&#58;"63 68 65 6c 70 61 61 61"}<br/>
+<br/></code>
+[FILE_IN_APK]<br/>
+&lt;pattern search/replace for file from apk file (this patch working only for rebuild apk with this custom patch)&gt;<br/>
+<code>{"name"&#58;"assets/bin/Data/Managed/O7SharpCompress.dll"}<br/>
+{"original"&#58;"0F 00 00 00 1A 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+{"replaced"&#58;"0F 00 00 00 0F 00 00 00 0F 00 00 00 59 00 00 00 2F"}<br/>
+<br/></code>
+[ADD-BOOT]<br/>
+&lt;automatically adds the current user patch to BootList. Should be used in the patch library (or in the patch [CLASSES] without  [ODEX] or without [PACKAGE])&gt;<br/>
+<br/>
+[END]<br/>
+&lt;patch comments that are visible to the user post-patch&gt;<br/>
+Congratulations, the application has been cracked!<br/>
+<br/>
+<code>"search" </code>&#45; search allows you to search for a pattern and store bytes at specific positions.<br/>
+<code>{"search"&#58;"<b style="color&#58;#36ff00">63 </b><b style="color&#58;#fffc00">R00 R01 R02 </b><b style="color&#58;#36ff00">38 00 04 00 12 10 0F 00</b>"}<br/></code>
+In this example the bytes in green make up your pattern mask, while bytes in yellow labeled R00 -> R02 will be stored.<br/>
+Stored bytes must be in order R00, R01, R02, R03... <br/>
+Stored bytes cannot be repeated.<br/>
+<br/>
+<code>"group"</code> - marks patterns of the group (group number could be 1 or higher). You may be asking 'What does this mean?'. Well, what it means is that If at least one pattern from the group has succeeded, a successfully patched message will be shown. This is useful when you try to make a universal patch for multiple versions of a particular application (for example, patch all versions of Google Play to disable automatic updates).<br/>
+<code>"original" </code>&#45; this is a pattern mask used to find the offset where the patch will be applied.<br/>
+<code>{"original"&#58;"<b style="color&#58;#36ff00">63 </b><b style="color&#58;#fffc00">?? ?? ?? </b><b style="color&#58;#36ff00">38 00 04 00 12 10 0F 00</b>"}<br/></code>
+In this example the bytes in green make up your pattern mask, while bytes in yellow are wildcards (??, **)<br/>
+<code>"replaced"</code> &#45; this will follow an "original" statement, this is what the offset will be overwritten with.	<br/>
+<code>{"replaced"&#58;"<b style="color&#58;#36ff00">12 00 6A </b><b style="color&#58;#fffc00">W00 W01 W02 </b><b style="color&#58;#36ff00">00 00 12 00 0F 00</b>"}<br/></code>
+In this example, bytes in green will overwrite the target location.. bytes in yellow are stored bytes from the previously executed "search"<br/>
+<code>"name"</code> &#45; this is used to target a specific library by name (see above in [LIB]) <br/>
+<b style="color&#58;#36ff00">S0</b> , <b style="color&#58;#36ff00">S1</b>, <b style="color&#58;#36ff00">SQ</b> - sets smali variable to 0 (convert hex number to: 43->03,54->04...) or 1 (convert hex number to: 43->13,04->14...) respectively or set, SQ convert hex  34->44, 51->11 ...<br/>
+For example, there is a variable &#58; <code>const/4 v?,0x00</code> . The question mark shows , that <code>var\</code>'s number is unknown (for example, it has been changed in the newer version), but you are sure, that this var equals 0, and you want to set it to 1. In this case pattern will look like&#58; <br/>
+<code>{"original"&#58;"12 ?? ?? ?? ?? ??"}<br/>
+{"replaced"&#58;"12 S1 ?? ?? ?? ??"}<br/></code>
+And vice versa, to set variable to 0&#58;<br/>
+<code>{"original"&#58;"12 ?? ?? ?? ?? ??"}<br/>
+{"replaced"&#58;"12 S0 ?? ?? ?? ??"}<br/></code>
+<code>"replace_from_file" </code>&#45; this will follow an <code>"original" </code>statement, this is what the offset will be overwritten with bytes from the file (file must saved near custom patch).	<br/>
+<code>{"replace_from_file"&#58;"<b style="color&#58;#36ff00">array.bin</b>"}<br/></code>
+This is done in order to avoid writing very long templates to replace.<br/>
+<code>"insert"</code> &#45; If you want to insert the data length is greater than the length of the original pattern.	<br/>
+(Example)file before patch contain&#58;<code>"chelpa end"</code><br/>
+<code>{"original"&#58;"63 68 65 6C 70 61"}<br/>
+{"insert"&#58;"63 68 65 6c 70 61 61"}<br/></code>
+file after patch contain&#58;<code>"chelpaa end"</code><br/>
+<br/>
+
+[LIB-ARMEABI],[LIB-ARMEABI-V7A],[LIB-MIPS] or [LIB-X86] - for Libraries from <code>/lib/armeabi/, /lib/armeabi-v7a/, /lib/mips/, /lib/x86/</code>. <br/>
+<br/>
+[ODEX-PATCH] - Uses for the patch has already been created odex. For example, an application has been patched with the automatic mode by Remove License Verification, but you need to make additional changes by using a Custom Patch. If we use a simple [PACKAGE]-[CLASSES], [ODEX] or [CLASSES]-[ODEX], odex-file will be created with no change and only then patched. <br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+[ODEX-PATCH]<br/>
+<code>{"original"&#58;"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced"&#58;"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/></code>
+[END]<br/>
+Congratulations! ODEX modified!<br/>
+<br/>
+[CLASSES] without [PACKAGE] - Patches dalvik-cache applications. Do not forget that the system periodically updates dalvik-cache applications and all the changes will disappear. Therefore, we must add [ADD-BOOT]. The patch for dalvik-cache is outdated, as it is unreliable. But it is needed for the ROM Toolbox, because it does not work well with odex-files.
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+[CLASSES]<br/>
+<code>{"original"&#58;"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced"&#58;"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/></code>
+[ADD-BOOT]<br/>
+[END]<br/>
+Congratulations!<br/>
+<br/>
+[ODEX] - Copy dalvik-cache in /data/app/ and rename to odex-file, then all the patches applied to this odex-file. Checksums of the odex will be wrong and cannot pass inspection, unlike odex-file created [PACKAGE] - [CLASSES].
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+[ODEX]<br/>
+<code>{"original"&#58;"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced"&#58;"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/></code>
+[END]<br/>
+Congratulations!<br/>
+<br/>
+[CLASSES]-[ODEX] - Patches dalvik-cache and then copy dalvik-cache in /data/app/ and rename to odex-file. Checksums of the odex and of the dalvik-cache will be wrong and cannot pass inspection, unlike odex-file created [PACKAGE] - [CLASSES].
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+[CLASSES]<br/>
+<code>{"original"&#58;"63 ?? ?? ?? 38 00 04 00 12 10 0F 00"}<br/>
+{"replaced"&#58;"12 00 6A ?? ?? ?? 00 00 12 00 0F 00"}<br/></code>
+[ODEX]<br/>
+[END]<br/>
+Congratulations!<br/>
+<br/>
+[COMPONENT] - Enable or disable components of Applications.
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+[COMPONENT]<br/>
+<code>{"disable"&#58;"com.superApp.adsActivity"}<br/>
+{"enable"&#58;"com.superApp.fullVersion.Provider"}<br/>
+{"disable"&#58;"com.android.vending.CHECK_LICENSE"}<br/></code>
+[END]<br/>
+Congratulations!<br/>
+<br/>
+[SQLITE] - Sometimes the target application must change something in the database, then to help will come this possibility&#58;
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+Trial Reset<br/>
+[SQLITE]<br/>
+<code>{"database"&#58;"/data/data/com.package.megaapp/databases/settings.db"}<br/>
+{"execute"&#58;"DELETE FROM table_settings WHERE name = 'SETTING__LIC'"}<br/>
+{"execute"&#58;"UPDATE table_settings SET UsedDays=0 WHERE name='Trial_set'"}<br/></code>
+[END]<br/>
+Congratulations! Your Trial Period has been reset!<br/>
+<br/>
+database - path to database on Device, or you can use only database name for Lucky Patcher self search file.<br/>
+execute - SQLite query.<br/>
+<br/>
+[SET_PERMISSIONS] - Analog linux command "chmod permissions file_name" for files in data dir of Application&#58;
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+Trial Reset<br/>
+[SET_PERMISSIONS]<br/>
+<code>{"file_name"&#58;"/files/stats"}<br/>
+{"permissions"&#58;"777"}<br/></code>
+<br/>
+[OTHER FILES]<br/>
+<code>{"name"&#58;"/files/stats"}<br/>
+<br/>
+{"original"&#58;"4D 4D 46 31"}<br/>
+{"replaced"&#58;"00 4D 46 30"}<br/>
+<br/></code>
+[SET_PERMISSIONS]<br/>
+<code>{"file_name"&#58;"/files/stats"}<br/>
+{"permissions"&#58;"444"}<br/></code>
+</br>[END]<br/>
+Congratulations! Your Trial Period has been reset!<br/>
+<br/>
+[COPY_FILE] - Copy file from Lucky Patcher dir to path with new file name&#58;
+<br/>Example&#58;<br/>
+<br/>
+[BEGIN]<br/>
+Copy file with money<br/>
+[COPY_FILE]<br/>
+<code>{"file_name"&#58;"money_for_game.bin"}<br/>
+{"to"&#58;"/data/data/game_package/files/settings.xml"}<br/></code>
+</br>[END]<br/>
+Congratulations! Your File is copied and money is modified now!<br/>
+<br/>
+<hr>
+</body>
+
+</html>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonDarkStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/button_alert</item>
+        <item name="android:layout_margin">5.0dip</item>
+    </style>
+    <style name="CustomProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+        <item name="android:minHeight">10.0dip</item>
+    </style>
+    <style name="Theme.MyTheme" parent="@android:style/Theme.Black">
+        <item name="android:buttonStyle">@style/ButtonDarkStyle</item>
+    </style>
+    <style name="MenuDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:buttonStyle">@style/ButtonDarkStyle</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="buydialogstyle" parent="@android:style/Theme.Dialog">
+        <item name="android:buttonStyle">@style/ButtonDarkStyle</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="full_screen_dialog">
+        <item name="android:buttonStyle">@style/ButtonDarkStyle</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+</resources>
